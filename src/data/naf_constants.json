@@ -1,0 +1,226 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "nombre": "Factores de Actividad Física (NAF) para cálculo de GET",
+    "fuente_primaria": "World Health Organization. Energy and Protein Requirements. Technical Report Series 724. 1985.",
+    "fuente_secundaria": "Institute of Medicine. Dietary Reference Intakes for Energy, Carbohydrate, Fiber, Fat, Fatty Acids, Cholesterol, Protein, and Amino Acids. 2005.",
+    "fuente_terciaria": "ASPEN Clinical Guidelines. 2016.",
+    "advertencia": "Los NAF (TDEE factors) varían según contexto poblacional y método de cálculo. Estos son valores de referencia. Ajustar según actividad real del paciente.",
+    "formula_uso": "GET = TMB × NAF. Luego sumar ETA: GET_final = GET + (GET × 0.10)",
+    "unidades": "Multiplicador adimensional (sin unidades). Se aplica directamente sobre TMB en kcal."
+  },
+
+  "factores_actividad_fisica": {
+    "sedentario": {
+      "naf": 1.20,
+      "descripcion": "Poco o ningún ejercicio. Trabajo sedentario (oficina). Actividades mínimas.",
+      "ejemplo_paciente": "Persona con vida principalmente sentada, sin programas de ejercicio",
+      "rango_tipico": "1.15-1.25",
+      "fuente": "OMS 1985"
+    },
+    "ligero": {
+      "naf": 1.375,
+      "descripcion": "Ejercicio ligero 1-3 días/semana. Trabajo con actividad moderada. Caminas regularmente.",
+      "ejemplo_paciente": "Nutriólogo que camina de consultorio a consultorio, 3 días de actividad leve/semana",
+      "rango_tipico": "1.35-1.40",
+      "fuente": "OMS 1985"
+    },
+    "moderado": {
+      "naf": 1.55,
+      "descripcion": "Ejercicio moderado 3-5 días/semana. Trabajo que requiere movimiento. Deportes recreativos regulares.",
+      "ejemplo_paciente": "Persona que camina 45 min 3-4 veces/semana + trabajo activo",
+      "rango_tipico": "1.50-1.60",
+      "fuente": "OMS 1985"
+    },
+    "intenso": {
+      "naf": 1.725,
+      "descripcion": "Ejercicio intenso 6-7 días/semana. Entrenamiento deportivo regular. Trabajo físico moderado a intenso.",
+      "ejemplo_paciente": "Atleta amateur con 60+ min entrenamiento 5-6 días/semana",
+      "rango_tipico": "1.70-1.75",
+      "fuente": "OMS 1985"
+    },
+    "muy_intenso": {
+      "naf": 1.90,
+      "descripcion": "Entrenamiento muy intenso diario. Trabajo físico pesado + ejercicio complementario. Atleta profesional.",
+      "ejemplo_paciente": "Atleta profesional o persona con trabajo construcción + entrenamiento diario",
+      "rango_tipico": "1.85-2.00",
+      "fuente": "OMS 1985"
+    }
+  },
+
+  "factores_estres_metabolico": {
+    "_descripcion": "Multiplicadores a aplicar sobre TMB en pacientes con condiciones hipercatabólicas. Se SUMA al GET, no se multiplica.",
+    "_nota": "Fórmula: GET_estresado = (TMB × NAF) + (TMB × factor_estres)",
+    "_fuente": "ASPEN 2016 + ACCP Guidelines",
+    
+    "cirugía_menor": {
+      "factor_min": 1.0,
+      "factor_max": 1.1,
+      "descripcion": "Procedimientos laparoscópicos, cateterismos, pequeñas biopsias",
+      "duracion_efecto": "3-5 días post-procedimiento"
+    },
+    "cirugía_mayor": {
+      "factor_min": 1.1,
+      "factor_max": 1.3,
+      "descripcion": "Cirugía abierta, resecciones, bypass. Primeros 7-10 días",
+      "duracion_efecto": "7-14 días"
+    },
+    "trauma_cerrado": {
+      "factor_min": 1.15,
+      "factor_max": 1.35,
+      "descripcion": "Accidentes, fracturas múltiples sin quemaduras",
+      "duracion_efecto": "Hasta cicatrización"
+    },
+    "traumatismo_craneoencefalico": {
+      "factor": 1.5,
+      "descripcion": "TCE severo, lesión cerebral traumática",
+      "duracion_efecto": "Prolongado"
+    },
+    "infeccion_leve": {
+      "factor_min": 1.0,
+      "factor_max": 1.2,
+      "descripcion": "Infecciones urinarias, respiratorias altas sin sepsis",
+      "duracion_efecto": "5-10 días"
+    },
+    "neumonía": {
+      "factor_min": 1.2,
+      "factor_max": 1.35,
+      "descripcion": "Infección respiratoria baja confirmada",
+      "duracion_efecto": "Según severidad"
+    },
+    "sepsis": {
+      "factor_min": 1.2,
+      "factor_max": 1.6,
+      "descripcion": "Infección sistémica con respuesta sistémica severa. Aumenta con severidad.",
+      "duracion_efecto": "Mientras dure la sepsis"
+    },
+    "quemaduras_leve": {
+      "factor": 1.2,
+      "descripcion": "Quemaduras de 1º y 2º grado < 15% superficie corporal",
+      "duracion_efecto": "Semanas"
+    },
+    "quemaduras_moderada": {
+      "factor": 1.5,
+      "descripcion": "Quemaduras 15-40% superficie corporal",
+      "duracion_efecto": "Semanas-meses"
+    },
+    "quemaduras_severa": {
+      "factor_min": 1.5,
+      "factor_max": 2.0,
+      "descripcion": "Quemaduras > 40% superficie corporal. Factor varía por profundidad y complicaciones.",
+      "duracion_efecto": "Meses"
+    },
+    "cancer": {
+      "factor_min": 1.0,
+      "factor_max": 1.2,
+      "descripcion": "Aumento metabólico leve en tumores sólidos. Mayor en hematológicos.",
+      "duracion_efecto": "Mientras haya actividad tumoral"
+    },
+    "fiebre": {
+      "aumento_por_celsius": 0.13,
+      "formula": "factor = 1 + (0.13 × grados_sobre_37)",
+      "ejemplo": "Fiebre 39°C → factor = 1 + (0.13 × 2) = 1.26",
+      "fuente": "DuBois equation"
+    }
+  },
+
+  "factores_comparativos": {
+    "_descripcion": "Tabla comparativa de NAF según fuentes — mostrar variación pequeña entre sistemas",
+    "OMS_1985": {
+      "sedentario": 1.20,
+      "ligero": 1.375,
+      "moderado": 1.55,
+      "intenso": 1.725,
+      "muy_intenso": 1.90
+    },
+    "IOM_2005": {
+      "sedentario": 1.25,
+      "ligero": 1.375,
+      "moderado": 1.55,
+      "intenso": 1.75,
+      "muy_intenso": 1.90,
+      "nota": "Ligeramente más altos que OMS en sedentario e intenso"
+    },
+    "Schofield_1985": {
+      "ligero": 1.375,
+      "moderado": 1.55,
+      "nota": "Menos categorías, enfocado en pediatría y adolescentes"
+    }
+  },
+
+  "seleccion_naf_recomendada": {
+    "_para_NUTRIA": "OMS 1985 (estándar internacional de referencia, ampliamente usado en nutrición clínica)",
+    "reasoning": "Valores conservadores, validados en múltiples poblaciones, coinciden con IOM en categorías principales",
+    "excepciones": "En pacientes hispanos/mexicanos, algunos estudios sugieren NAF ligeramente mayor en 'moderado' (1.60 en lugar de 1.55), pero diferencia < 5%"
+  },
+
+  "algoritmo_seleccion_naf": {
+    "paso_1": "Preguntar actividad TÍPICA del paciente (no pico)",
+    "paso_2": "Clasificar en una de 5 categorías",
+    "paso_3": "Aplicar: GET = TMB × NAF_seleccionado",
+    "paso_4": "Sumar ETA: GET_final = GET + (GET × 0.10)",
+    "paso_5": "Si hay factor estrés: GET_estresado = GET_final + (TMB × factor_estres)",
+    
+    "flujo_decision": {
+      "¿Hace ejercicio_estructurado?": {
+        "no": "NAF = 1.20 (sedentario)",
+        "si_1_3_dias": "NAF = 1.375 (ligero)",
+        "si_3_5_dias": "NAF = 1.55 (moderado)",
+        "si_6_7_dias": {
+          "intensidad_baja": "NAF = 1.725 (intenso)",
+          "intensidad_alta_diaria": "NAF = 1.90 (muy intenso)"
+        }
+      },
+      "¿Trabajo_físico_significativo?": {
+        "no_añadir": "Usar solo categoría ejercicio",
+        "si": "Elevar categoría 1 nivel (ej: ligero → moderado)"
+      }
+    }
+  },
+
+  "ejemplos_clinicos": [
+    {
+      "caso": "Mujer 35 años, nutrióloga de consultorio, camina poco",
+      "actividad": "Sedentario + trabajo de pie ocasional",
+      "naf_asignado": 1.20,
+      "razon": "Principalmente sentada, sin ejercicio programado"
+    },
+    {
+      "caso": "Hombre 45 años, ingeniero civil, construye 8h/día",
+      "actividad": "Trabajo físico pesado, sin ejercicio adicional",
+      "naf_asignado": 1.60,
+      "razon": "Elevado de 'moderado' a 'intenso' por trabajo físico"
+    },
+    {
+      "caso": "Mujer 28 años, corre 5km 4 veces/semana + yoga 2x/semana",
+      "actividad": "Ejercicio moderado-intenso regular",
+      "naf_asignado": 1.725,
+      "razon": "6 días de actividad, intensidad mixta (running + yoga)"
+    },
+    {
+      "caso": "Hombre 62 años, jubilado, pasea 30 min/día, sin otra actividad",
+      "actividad": "Paseo cotidiano, sed entario general",
+      "naf_asignado": 1.30,
+      "razon": "Entre sedentario (1.20) y ligero (1.375), pues hay actividad mínima regular"
+    },
+    {
+      "caso": "Mujer post-cirugía abdominal día 5, sin complicaciones, sedentaria",
+      "actividad": "Sedentario + factor estrés cirugía mayor",
+      "calculo": "GET = (TMB × 1.20) + (TMB × 1.20); GET_final = GET + 10% para ETA",
+      "razon": "Multiplicar por NAF sedentario + sumar factor estrés quirúrgico"
+    }
+  ],
+
+  "tabla_rapida_referencia": {
+    "titulo": "Seleccionar NAF según descripción de paciente",
+    "filas": [
+      { "descripcion": "Trabajo sedentario, sin ejercicio", "naf": 1.20 },
+      { "descripcion": "Trabajo sedentario + camina ocasionalmente", "naf": 1.30 },
+      { "descripcion": "Trabajo sedentario + 2-3 días ejercicio leve/semana", "naf": 1.375 },
+      { "descripcion": "Trabajo activo o ejercicio 3-5 días/semana", "naf": 1.55 },
+      { "descripcion": "Trabajo activo + ejercicio moderado 5-6 días/semana", "naf": 1.65 },
+      { "descripcion": "Ejercicio intenso 6-7 días/semana", "naf": 1.725 },
+      { "descripcion": "Entrenamiento atlético profesional", "naf": 1.90 }
+    ]
+  }
+}

@@ -1,12 +1,16 @@
-import { Button } from '@/components/ui/button'
+/**
+ * App.tsx — Punto de entrada de la aplicación NUTRIA
+ *
+ * Responsabilidades:
+ *   1. Renderizar el RouterProvider con la configuración de rutas
+ *   2. Aquí irán en Fase 2: ThemeProvider, QueryClientProvider, etc.
+ *
+ * No contiene lógica de negocio ni UI directa — solo wrappers globales.
+ */
 
-function App() {
-  return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center gap-4">
-      <h1 className="text-4xl font-bold text-blue-600">NUTRIA</h1>
-      <Button>Funcionando ✅</Button>
-    </div>
-  )
+import { RouterProvider } from 'react-router-dom'
+import router from './router'
+
+export default function App() {
+  return <RouterProvider router={router} />
 }
-
-export default App

@@ -1,0 +1,791 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "nombre": "Compendio de Actividades Físicas — METs",
+    "fuente_primaria": "Ainsworth BE, Haskell WL, Herrmann SD, et al. (2011). 2011 Compendium of Physical Activities. Medicine & Science in Sports & Exercise, 43(8):1575-1581.",
+    "fuente_secundaria": "Ainsworth BE, et al. (2000). Compendium of Physical Activities: an update. Med Sci Sports Exerc, 32(9 Suppl):S498-504.",
+    "url_oficial": "https://sites.google.com/site/compendiumofphysicalactivities",
+    "advertencia": "METs son promedios poblacionales. Varían por peso corporal, condición física y técnica. Usar como estimación, no como medición exacta.",
+    "formula_calculo": "Gasto_kcal = MET × 0.0175 × peso_kg × tiempo_min",
+    "formula_fuente": "Jetté M, et al. (1990). Metabolic equivalents (METS) in exercise testing, exercise prescription, and evaluation of functional capacity. Clin Cardiol, 13(8):555-565.",
+    "categorias_disponibles": [
+      "caminar",
+      "correr",
+      "ciclismo",
+      "natacion",
+      "ejercicios_fuerza",
+      "deportes_raqueta",
+      "deportes_equipo",
+      "artes_marciales",
+      "baile",
+      "yoga_pilates",
+      "actividades_acuaticas",
+      "trabajo_fisico",
+      "actividades_hogar",
+      "actividades_recreativas",
+      "sedentario"
+    ]
+  },
+  "formula_ejemplo": {
+    "descripcion": "Mujer 65 kg camina 30 min a paso normal (MET 3.5)",
+    "calculo": "3.5 × 0.0175 × 65 × 30 = 119.4 kcal",
+    "nota": "El factor 0.0175 convierte MET a kcal/kg/min"
+  },
+  "actividades": {
+    "sedentario": [
+      {
+        "id": "sed-001",
+        "actividad": "Dormir",
+        "met": 0.95,
+        "codigo_ainsworth": "07030",
+        "notas": "MET más bajo posible"
+      },
+      {
+        "id": "sed-002",
+        "actividad": "Acostado despierto (ver TV)",
+        "met": 1.3,
+        "codigo_ainsworth": "07020"
+      },
+      {
+        "id": "sed-003",
+        "actividad": "Sentado (trabajo de oficina)",
+        "met": 1.5,
+        "codigo_ainsworth": "11580"
+      },
+      {
+        "id": "sed-004",
+        "actividad": "Sentado (leer, estudiar)",
+        "met": 1.3,
+        "codigo_ainsworth": "09030"
+      },
+      {
+        "id": "sed-005",
+        "actividad": "Sentado (videojuegos)",
+        "met": 1.0,
+        "codigo_ainsworth": "09040"
+      },
+      {
+        "id": "sed-006",
+        "actividad": "De pie tranquilo",
+        "met": 1.3,
+        "codigo_ainsworth": "11100"
+      },
+      {
+        "id": "sed-007",
+        "actividad": "De pie (trabajo ligero)",
+        "met": 2.0,
+        "codigo_ainsworth": "11110"
+      },
+      {
+        "id": "sed-008",
+        "actividad": "Conducir automóvil",
+        "met": 2.5,
+        "codigo_ainsworth": "16010"
+      },
+      {
+        "id": "sed-009",
+        "actividad": "Conducir motocicleta",
+        "met": 3.5,
+        "codigo_ainsworth": "16015"
+      }
+    ],
+    "caminar": [
+      {
+        "id": "cam-001",
+        "actividad": "Caminar muy lento (2.7 km/h)",
+        "met": 2.3,
+        "codigo_ainsworth": "17151",
+        "velocidad_kmh": 2.7
+      },
+      {
+        "id": "cam-002",
+        "actividad": "Caminar lento (3.2 km/h)",
+        "met": 2.8,
+        "codigo_ainsworth": "17010",
+        "velocidad_kmh": 3.2
+      },
+      {
+        "id": "cam-003",
+        "actividad": "Caminar paso normal (4.8 km/h)",
+        "met": 3.5,
+        "codigo_ainsworth": "17020",
+        "velocidad_kmh": 4.8
+      },
+      {
+        "id": "cam-004",
+        "actividad": "Caminar rápido (5.6 km/h)",
+        "met": 4.3,
+        "codigo_ainsworth": "17030",
+        "velocidad_kmh": 5.6
+      },
+      {
+        "id": "cam-005",
+        "actividad": "Caminar muy rápido (6.4 km/h)",
+        "met": 5.0,
+        "codigo_ainsworth": "17031",
+        "velocidad_kmh": 6.4
+      },
+      {
+        "id": "cam-006",
+        "actividad": "Caminar cuesta arriba (pendiente 15%)",
+        "met": 6.0,
+        "codigo_ainsworth": "17080"
+      },
+      {
+        "id": "cam-007",
+        "actividad": "Senderismo con mochila",
+        "met": 7.8,
+        "codigo_ainsworth": "17050"
+      },
+      {
+        "id": "cam-008",
+        "actividad": "Subir escaleras",
+        "met": 8.0,
+        "codigo_ainsworth": "17050",
+        "notas": "Ritmo normal"
+      },
+      {
+        "id": "cam-009",
+        "actividad": "Bajar escaleras",
+        "met": 3.5,
+        "codigo_ainsworth": "17061"
+      }
+    ],
+    "correr": [
+      {
+        "id": "cor-001",
+        "actividad": "Trotar suave (6.4 km/h)",
+        "met": 6.0,
+        "codigo_ainsworth": "12020",
+        "velocidad_kmh": 6.4
+      },
+      {
+        "id": "cor-002",
+        "actividad": "Correr (8.0 km/h)",
+        "met": 8.3,
+        "codigo_ainsworth": "12030",
+        "velocidad_kmh": 8.0
+      },
+      {
+        "id": "cor-003",
+        "actividad": "Correr (9.7 km/h)",
+        "met": 9.8,
+        "codigo_ainsworth": "12040",
+        "velocidad_kmh": 9.7
+      },
+      {
+        "id": "cor-004",
+        "actividad": "Correr (11.3 km/h)",
+        "met": 11.0,
+        "codigo_ainsworth": "12050",
+        "velocidad_kmh": 11.3
+      },
+      {
+        "id": "cor-005",
+        "actividad": "Correr (12.9 km/h)",
+        "met": 11.8,
+        "codigo_ainsworth": "12060",
+        "velocidad_kmh": 12.9
+      },
+      {
+        "id": "cor-006",
+        "actividad": "Correr (16 km/h)",
+        "met": 14.5,
+        "codigo_ainsworth": "12080",
+        "velocidad_kmh": 16.0
+      },
+      {
+        "id": "cor-007",
+        "actividad": "Sprint / velocidad máxima",
+        "met": 23.0,
+        "codigo_ainsworth": "12110"
+      },
+      {
+        "id": "cor-008",
+        "actividad": "Correr en cinta (inclinación)",
+        "met": 10.0,
+        "codigo_ainsworth": "12025"
+      }
+    ],
+    "ciclismo": [
+      {
+        "id": "cic-001",
+        "actividad": "Ciclismo muy lento (<16 km/h)",
+        "met": 4.0,
+        "codigo_ainsworth": "01009",
+        "velocidad_kmh": 16
+      },
+      {
+        "id": "cic-002",
+        "actividad": "Ciclismo lento (16-19 km/h)",
+        "met": 6.0,
+        "codigo_ainsworth": "01010",
+        "velocidad_kmh": 17.5
+      },
+      {
+        "id": "cic-003",
+        "actividad": "Ciclismo moderado (19-22 km/h)",
+        "met": 8.0,
+        "codigo_ainsworth": "01015",
+        "velocidad_kmh": 20.5
+      },
+      {
+        "id": "cic-004",
+        "actividad": "Ciclismo vigoroso (22-25 km/h)",
+        "met": 10.0,
+        "codigo_ainsworth": "01020",
+        "velocidad_kmh": 23.5
+      },
+      {
+        "id": "cic-005",
+        "actividad": "Ciclismo muy rápido (>25 km/h)",
+        "met": 12.0,
+        "codigo_ainsworth": "01030",
+        "velocidad_kmh": 26
+      },
+      {
+        "id": "cic-006",
+        "actividad": "Spinning / ciclismo estacionario (moderado)",
+        "met": 6.8,
+        "codigo_ainsworth": "01050"
+      },
+      {
+        "id": "cic-007",
+        "actividad": "Spinning / ciclismo estacionario (vigoroso)",
+        "met": 8.8,
+        "codigo_ainsworth": "01060"
+      },
+      {
+        "id": "cic-008",
+        "actividad": "Ciclismo de montaña",
+        "met": 8.5,
+        "codigo_ainsworth": "01040"
+      }
+    ],
+    "natacion": [
+      {
+        "id": "nat-001",
+        "actividad": "Natación general (recreativa)",
+        "met": 6.0,
+        "codigo_ainsworth": "18010"
+      },
+      {
+        "id": "nat-002",
+        "actividad": "Natación crawl (moderada)",
+        "met": 8.0,
+        "codigo_ainsworth": "18030"
+      },
+      {
+        "id": "nat-003",
+        "actividad": "Natación crawl (vigorosa)",
+        "met": 10.0,
+        "codigo_ainsworth": "18040"
+      },
+      {
+        "id": "nat-004",
+        "actividad": "Natación mariposa",
+        "met": 13.8,
+        "codigo_ainsworth": "18020"
+      },
+      {
+        "id": "nat-005",
+        "actividad": "Natación pecho",
+        "met": 10.3,
+        "codigo_ainsworth": "18060"
+      },
+      {
+        "id": "nat-006",
+        "actividad": "Natación espalda",
+        "met": 9.5,
+        "codigo_ainsworth": "18025"
+      },
+      {
+        "id": "nat-007",
+        "actividad": "Aqua aeróbics",
+        "met": 5.3,
+        "codigo_ainsworth": "18070"
+      },
+      {
+        "id": "nat-008",
+        "actividad": "Polo acuático",
+        "met": 10.0,
+        "codigo_ainsworth": "18080"
+      }
+    ],
+    "ejercicios_fuerza": [
+      {
+        "id": "fue-001",
+        "actividad": "Pesas / musculación (general)",
+        "met": 3.5,
+        "codigo_ainsworth": "02050"
+      },
+      {
+        "id": "fue-002",
+        "actividad": "Pesas (esfuerzo vigoroso)",
+        "met": 6.0,
+        "codigo_ainsworth": "02048"
+      },
+      {
+        "id": "fue-003",
+        "actividad": "Circuito de entrenamiento",
+        "met": 8.0,
+        "codigo_ainsworth": "02040"
+      },
+      {
+        "id": "fue-004",
+        "actividad": "Flexiones / lagartijas",
+        "met": 8.0,
+        "codigo_ainsworth": "02022"
+      },
+      {
+        "id": "fue-005",
+        "actividad": "Abdominales (crunches)",
+        "met": 2.8,
+        "codigo_ainsworth": "02010"
+      },
+      {
+        "id": "fue-006",
+        "actividad": "Sentadillas con peso",
+        "met": 5.0,
+        "codigo_ainsworth": "02054"
+      },
+      {
+        "id": "fue-007",
+        "actividad": "Crossfit / entrenamiento funcional",
+        "met": 9.0,
+        "notas": "Estimado — varía mucho por intensidad"
+      },
+      {
+        "id": "fue-008",
+        "actividad": "TRX / entrenamiento en suspensión",
+        "met": 7.0,
+        "notas": "Estimado"
+      },
+      {
+        "id": "fue-009",
+        "actividad": "Calistenia (moderada)",
+        "met": 4.0,
+        "codigo_ainsworth": "02020"
+      },
+      {
+        "id": "fue-010",
+        "actividad": "Pilates",
+        "met": 3.0,
+        "codigo_ainsworth": "02130",
+        "notas": "// TODO: verificar fuente para Pilates específico"
+      }
+    ],
+    "yoga_pilates": [
+      {
+        "id": "yog-001",
+        "actividad": "Yoga (general)",
+        "met": 2.5,
+        "codigo_ainsworth": "02160"
+      },
+      {
+        "id": "yog-002",
+        "actividad": "Yoga (vigoroso, hot yoga)",
+        "met": 4.0,
+        "notas": "Estimado"
+      },
+      {
+        "id": "yog-003",
+        "actividad": "Tai Chi",
+        "met": 3.0,
+        "codigo_ainsworth": "02170"
+      },
+      {
+        "id": "yog-004",
+        "actividad": "Stretching / estiramientos",
+        "met": 2.3,
+        "codigo_ainsworth": "02140"
+      },
+      {
+        "id": "yog-005",
+        "actividad": "Meditación sentado",
+        "met": 1.3,
+        "codigo_ainsworth": "09070"
+      }
+    ],
+    "deportes_raqueta": [
+      {
+        "id": "raq-001",
+        "actividad": "Tenis (singles)",
+        "met": 8.0,
+        "codigo_ainsworth": "15030"
+      },
+      {
+        "id": "raq-002",
+        "actividad": "Tenis (dobles)",
+        "met": 6.0,
+        "codigo_ainsworth": "15040"
+      },
+      {
+        "id": "raq-003",
+        "actividad": "Badminton",
+        "met": 5.5,
+        "codigo_ainsworth": "15010"
+      },
+      {
+        "id": "raq-004",
+        "actividad": "Squash",
+        "met": 12.0,
+        "codigo_ainsworth": "15070"
+      },
+      {
+        "id": "raq-005",
+        "actividad": "Ping pong",
+        "met": 4.0,
+        "codigo_ainsworth": "15050"
+      },
+      {
+        "id": "raq-006",
+        "actividad": "Padel",
+        "met": 6.0,
+        "notas": "Estimado — similar a tenis dobles"
+      }
+    ],
+    "deportes_equipo": [
+      {
+        "id": "dep-001",
+        "actividad": "Fútbol (partido)",
+        "met": 10.0,
+        "codigo_ainsworth": "15710"
+      },
+      {
+        "id": "dep-002",
+        "actividad": "Fútbol (entrenamiento)",
+        "met": 7.0,
+        "codigo_ainsworth": "15700"
+      },
+      {
+        "id": "dep-003",
+        "actividad": "Básquetbol (partido)",
+        "met": 8.0,
+        "codigo_ainsworth": "15030"
+      },
+      {
+        "id": "dep-004",
+        "actividad": "Voleibol (partido recreativo)",
+        "met": 4.0,
+        "codigo_ainsworth": "15740"
+      },
+      {
+        "id": "dep-005",
+        "actividad": "Voleibol playa",
+        "met": 8.0,
+        "codigo_ainsworth": "15742"
+      },
+      {
+        "id": "dep-006",
+        "actividad": "Béisbol (pitchear)",
+        "met": 6.0,
+        "codigo_ainsworth": "15020"
+      },
+      {
+        "id": "dep-007",
+        "actividad": "Softbol",
+        "met": 5.0,
+        "codigo_ainsworth": "15720"
+      },
+      {
+        "id": "dep-008",
+        "actividad": "Americano / rugby",
+        "met": 8.0,
+        "codigo_ainsworth": "15050"
+      },
+      {
+        "id": "dep-009",
+        "actividad": "Handball",
+        "met": 12.0,
+        "codigo_ainsworth": "15165"
+      }
+    ],
+    "artes_marciales": [
+      {
+        "id": "art-001",
+        "actividad": "Karate / Taekwondo (sparring)",
+        "met": 10.0,
+        "codigo_ainsworth": "02220"
+      },
+      {
+        "id": "art-002",
+        "actividad": "Judo / lucha",
+        "met": 10.5,
+        "codigo_ainsworth": "02230"
+      },
+      {
+        "id": "art-003",
+        "actividad": "Box (entrenamiento)",
+        "met": 9.0,
+        "codigo_ainsworth": "02110"
+      },
+      {
+        "id": "art-004",
+        "actividad": "Box (combate)",
+        "met": 12.8,
+        "codigo_ainsworth": "02120"
+      },
+      {
+        "id": "art-005",
+        "actividad": "Kick boxing / muay thai",
+        "met": 10.0,
+        "notas": "Estimado"
+      }
+    ],
+    "baile": [
+      {
+        "id": "bai-001",
+        "actividad": "Zumba",
+        "met": 6.0,
+        "notas": "Estimado — varía por intensidad del instructor"
+      },
+      {
+        "id": "bai-002",
+        "actividad": "Baile aeróbico (general)",
+        "met": 6.5,
+        "codigo_ainsworth": "03015"
+      },
+      {
+        "id": "bai-003",
+        "actividad": "Bailar (ritmos lentos)",
+        "met": 3.0,
+        "codigo_ainsworth": "03010"
+      },
+      {
+        "id": "bai-004",
+        "actividad": "Bailar (ritmos rápidos — salsa, cumbia)",
+        "met": 5.5,
+        "codigo_ainsworth": "03015"
+      },
+      {
+        "id": "bai-005",
+        "actividad": "Ballet / danza clásica",
+        "met": 6.0,
+        "codigo_ainsworth": "03030"
+      },
+      {
+        "id": "bai-006",
+        "actividad": "Danza moderna",
+        "met": 4.8,
+        "codigo_ainsworth": "03025"
+      }
+    ],
+    "actividades_hogar": [
+      {
+        "id": "hog-001",
+        "actividad": "Barrer / trapear",
+        "met": 3.3,
+        "codigo_ainsworth": "05040"
+      },
+      {
+        "id": "hog-002",
+        "actividad": "Lavar trastes (de pie)",
+        "met": 2.5,
+        "codigo_ainsworth": "05015"
+      },
+      {
+        "id": "hog-003",
+        "actividad": "Limpiar baños",
+        "met": 3.5,
+        "codigo_ainsworth": "05060"
+      },
+      {
+        "id": "hog-004",
+        "actividad": "Cocinar (de pie)",
+        "met": 2.5,
+        "codigo_ainsworth": "05020"
+      },
+      {
+        "id": "hog-005",
+        "actividad": "Jardinería (general)",
+        "met": 3.5,
+        "codigo_ainsworth": "06080"
+      },
+      {
+        "id": "hog-006",
+        "actividad": "Cargar compras (bolsas)",
+        "met": 2.5,
+        "codigo_ainsworth": "17012"
+      },
+      {
+        "id": "hog-007",
+        "actividad": "Cuidado de niños (activo)",
+        "met": 3.5,
+        "codigo_ainsworth": "05045"
+      },
+      {
+        "id": "hog-008",
+        "actividad": "Lavar ropa (a mano)",
+        "met": 2.3,
+        "codigo_ainsworth": "05130"
+      },
+      {
+        "id": "hog-009",
+        "actividad": "Pintar paredes / albañilería ligera",
+        "met": 3.3,
+        "codigo_ainsworth": "06020"
+      }
+    ],
+    "trabajo_fisico": [
+      {
+        "id": "tra-001",
+        "actividad": "Trabajo de oficina (sentado)",
+        "met": 1.5,
+        "codigo_ainsworth": "11580"
+      },
+      {
+        "id": "tra-002",
+        "actividad": "Trabajo de pie (cajero, maestro)",
+        "met": 2.5,
+        "codigo_ainsworth": "11100"
+      },
+      {
+        "id": "tra-003",
+        "actividad": "Carga y descarga (moderada)",
+        "met": 5.0,
+        "codigo_ainsworth": "11300"
+      },
+      {
+        "id": "tra-004",
+        "actividad": "Construcción (trabajo pesado)",
+        "met": 5.5,
+        "codigo_ainsworth": "06020"
+      },
+      {
+        "id": "tra-005",
+        "actividad": "Agricultura (general)",
+        "met": 4.5,
+        "codigo_ainsworth": "06010"
+      },
+      {
+        "id": "tra-006",
+        "actividad": "Enfermería (activa)",
+        "met": 3.0,
+        "codigo_ainsworth": "11410"
+      },
+      {
+        "id": "tra-007",
+        "actividad": "Bombero (en escena)",
+        "met": 12.0,
+        "codigo_ainsworth": "11110"
+      }
+    ],
+    "actividades_recreativas": [
+      {
+        "id": "rec-001",
+        "actividad": "Golf (caminando con bolsa)",
+        "met": 4.8,
+        "codigo_ainsworth": "15130"
+      },
+      {
+        "id": "rec-002",
+        "actividad": "Golf (con carrito)",
+        "met": 3.5,
+        "codigo_ainsworth": "15120"
+      },
+      {
+        "id": "rec-003",
+        "actividad": "Patinar en hielo (recreativo)",
+        "met": 5.5,
+        "codigo_ainsworth": "15250"
+      },
+      {
+        "id": "rec-004",
+        "actividad": "Patinar en línea (recreativo)",
+        "met": 7.5,
+        "codigo_ainsworth": "15260"
+      },
+      {
+        "id": "rec-005",
+        "actividad": "Escalar (indoor)",
+        "met": 8.0,
+        "codigo_ainsworth": "15661"
+      },
+      {
+        "id": "rec-006",
+        "actividad": "Escalar (outdoor)",
+        "met": 11.0,
+        "codigo_ainsworth": "15660"
+      },
+      {
+        "id": "rec-007",
+        "actividad": "Surf",
+        "met": 3.0,
+        "codigo_ainsworth": "15280"
+      },
+      {
+        "id": "rec-008",
+        "actividad": "Kayak / remo (recreativo)",
+        "met": 5.0,
+        "codigo_ainsworth": "15290"
+      },
+      {
+        "id": "rec-009",
+        "actividad": "Brincar la cuerda (moderado)",
+        "met": 10.0,
+        "codigo_ainsworth": "02050"
+      },
+      {
+        "id": "rec-010",
+        "actividad": "Jugar con niños (activo)",
+        "met": 4.0,
+        "codigo_ainsworth": "09060"
+      }
+    ],
+    "actividades_acuaticas": [
+      {
+        "id": "acu-001",
+        "actividad": "Buceo recreativo",
+        "met": 7.0,
+        "codigo_ainsworth": "15360"
+      },
+      {
+        "id": "acu-002",
+        "actividad": "Esquí acuático",
+        "met": 6.0,
+        "codigo_ainsworth": "15340"
+      },
+      {
+        "id": "acu-003",
+        "actividad": "Remo (competitivo)",
+        "met": 12.0,
+        "codigo_ainsworth": "15340"
+      },
+      {
+        "id": "acu-004",
+        "actividad": "Paddleboard (SUP)",
+        "met": 6.0,
+        "notas": "Estimado"
+      }
+    ]
+  },
+  "clasificacion_intensidad": {
+    "_fuente": "ACSM's Guidelines for Exercise Testing and Prescription. 11th ed. 2022.",
+    "sedentario": {
+      "met_min": 0,
+      "met_max": 1.5,
+      "descripcion": "Sin movimiento o movimiento mínimo"
+    },
+    "ligero": {
+      "met_min": 1.6,
+      "met_max": 3.0,
+      "descripcion": "Puede mantener conversación completa"
+    },
+    "moderado": {
+      "met_min": 3.1,
+      "met_max": 6.0,
+      "descripcion": "Conversación entrecortada, no puede cantar"
+    },
+    "vigoroso": {
+      "met_min": 6.1,
+      "met_max": 8.7,
+      "descripcion": "Solo frases cortas"
+    },
+    "muy_vigoroso": {
+      "met_min": 8.8,
+      "met_max": null,
+      "descripcion": "Sin posibilidad de conversación"
+    }
+  }
+}

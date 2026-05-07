@@ -1,0 +1,317 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "nombre": "Rangos de Referencia de Laboratorio Clínico",
+    "fuentes": [
+      "American Diabetes Association. Standards of Medical Care in Diabetes. Diabetes Care. 2024.",
+      "NOM-015-SSA2-2010. Para la prevención, tratamiento y control de la diabetes mellitus. Secretaría de Salud México.",
+      "NOM-030-SSA2-2009. Para la prevención, detección, diagnóstico, tratamiento y control de la hipertensión arterial sistémica.",
+      "Kasper DL, et al. Harrison's Principles of Internal Medicine. 21st ed. McGraw-Hill. 2022.",
+      "NOM-037-SSA2-2012. Para la prevención, tratamiento y control de las dislipidemias.",
+      "Inker LA et al. New Creatinine- and Cystatin C-Based Equations to Estimate GFR. NEJM. 2021;385:1737-1749. (CKD-EPI 2021)",
+      "KDIGO 2024 Clinical Practice Guidelines for CKD Evaluation and Management."
+    ],
+    "advertencia": "Rangos de referencia para adultos en condiciones de ayuno (8-12h) salvo indicación contraria. Varían por laboratorio, método analítico, altitud y población. Siempre interpretar en contexto clínico completo.",
+    "unidades_principales": "mg/dL, g/dL, mEq/L, U/L, mcg/dL, ng/mL según campo"
+  },
+
+  "metabolismo_glucosa": {
+    "_fuente": "ADA Standards of Care 2024 + NOM-015-SSA2",
+    "glucosa_ayuno_mg_dL": {
+      "optimo":        { "min": 70,  "max": 99,  "interpretacion": "Normal" },
+      "prediabetes":   { "min": 100, "max": 125, "interpretacion": "Glucosa en ayuno alterada (GAA)" },
+      "diabetes":      { "min": 126, "max": null, "interpretacion": "Diagnóstico DM2 (confirmar en 2 ocasiones)" },
+      "hipoglucemia":  { "min": null,"max": 70,  "interpretacion": "Hipoglucemia — evaluar síntomas" },
+      "hipoglucemia_severa": { "min": null, "max": 54, "interpretacion": "Hipoglucemia severa — acción inmediata" },
+      "notas": "Ayuno mínimo 8h. Para diagnóstico de DM2 se requiere repetición o segunda prueba diagnóstica"
+    },
+    "glucosa_postprandial_2h_mg_dL": {
+      "normal":        { "min": null, "max": 139, "interpretacion": "Normal (CTOG 75g)" },
+      "prediabetes":   { "min": 140,  "max": 199, "interpretacion": "Tolerancia alterada a la glucosa (TAG)" },
+      "diabetes":      { "min": 200,  "max": null, "interpretacion": "Diagnóstico DM2" }
+    },
+    "hba1c_pct": {
+      "optimo":        { "min": null, "max": 5.6,  "interpretacion": "Normal" },
+      "prediabetes":   { "min": 5.7,  "max": 6.4,  "interpretacion": "Alto riesgo DM2" },
+      "diabetes_dx":   { "min": 6.5,  "max": null, "interpretacion": "Diagnóstico DM2" },
+      "meta_dm2":      { "min": null, "max": 7.0,  "interpretacion": "Meta de control en DM2 (ADA general)" },
+      "meta_dm2_estricta": { "min": null, "max": 6.5, "interpretacion": "Meta estricta (adultos jóvenes, corta evolución)" },
+      "meta_dm2_laxa": { "min": null, "max": 8.0,  "interpretacion": "Meta laxa (adultos mayores, complicaciones)" },
+      "notas": "No usar en anemia hemolítica, hemoglobinopatías o embarazo. Método: HPLC o inmunoensayo certificado NGSP"
+    },
+    "insulina_ayuno_uIU_mL": {
+      "normal":        { "min": 2.0,  "max": 20.0, "interpretacion": "Rango de referencia general" },
+      "resistencia":   { "min": 20.0, "max": null, "interpretacion": "Posible hiperinsulinemia / resistencia" },
+      "notas": "Altamente variable según método. Interpretar siempre con HOMA-IR"
+    },
+    "homa_ir": {
+      "normal":        { "min": null, "max": 2.5,  "interpretacion": "Sensibilidad insulínica normal" },
+      "resistencia_leve":   { "min": 2.5, "max": 3.5, "interpretacion": "Resistencia a insulina leve" },
+      "resistencia_sig":    { "min": 3.5, "max": null,"interpretacion": "Resistencia a insulina significativa" },
+      "formula": "HOMA-IR = (Glucosa_mg/dL × Insulina_uIU/mL) / 405",
+      "fuente_formula": "Matthews DR et al. Diabetologia. 1985;28(7):412-419."
+    },
+    "peptido_c_ng_mL": {
+      "normal":        { "min": 0.8,  "max": 3.9,  "interpretacion": "Función beta-pancreática presente" },
+      "notas": "Útil para diferenciar DM1 vs DM2. Medir en ayuno"
+    }
+  },
+
+  "perfil_lipidico": {
+    "_fuente": "NOM-037-SSA2 + ATP-III (NCEP) + Harrison",
+    "colesterol_total_mg_dL": {
+      "deseable":      { "min": null, "max": 199, "interpretacion": "Deseable" },
+      "limite_alto":   { "min": 200,  "max": 239, "interpretacion": "Limítrofe alto" },
+      "alto":          { "min": 240,  "max": null, "interpretacion": "Alto — intervención recomendada" }
+    },
+    "ldl_colesterol_mg_dL": {
+      "optimo":           { "min": null, "max": 99,  "interpretacion": "Óptimo (población general)" },
+      "optimo_muy_alto_riesgo": { "min": null, "max": 70, "interpretacion": "Óptimo en ECV establecida / muy alto riesgo" },
+      "casi_optimo":      { "min": 100,  "max": 129, "interpretacion": "Casi óptimo" },
+      "limite_alto":      { "min": 130,  "max": 159, "interpretacion": "Limítrofe alto" },
+      "alto":             { "min": 160,  "max": 189, "interpretacion": "Alto" },
+      "muy_alto":         { "min": 190,  "max": null,"interpretacion": "Muy alto — tratamiento farmacológico urgente" },
+      "notas": "Calcular con fórmula de Friedewald cuando TG < 400 mg/dL"
+    },
+    "hdl_colesterol_mg_dL": {
+      "bajo_hombre":   { "min": null, "max": 40,  "interpretacion": "Bajo — factor de riesgo CV (hombres)" },
+      "bajo_mujer":    { "min": null, "max": 50,  "interpretacion": "Bajo — factor de riesgo CV (mujeres)" },
+      "normal":        { "min": 40,   "max": 59,  "interpretacion": "Normal" },
+      "optimo":        { "min": 60,   "max": null,"interpretacion": "Óptimo — factor protector CV" }
+    },
+    "trigliceridos_mg_dL": {
+      "normal":        { "min": null, "max": 149, "interpretacion": "Normal" },
+      "limite_alto":   { "min": 150,  "max": 199, "interpretacion": "Limítrofe alto" },
+      "alto":          { "min": 200,  "max": 499, "interpretacion": "Alto — riesgo CV y pancreatitis" },
+      "muy_alto":      { "min": 500,  "max": null,"interpretacion": "Muy alto — riesgo pancreatitis severa" },
+      "notas": "Ayuno mínimo 12h. Si >400 mg/dL no usar Friedewald para LDL"
+    },
+    "colesterol_no_hdl_mg_dL": {
+      "calculo": "Colesterol Total − HDL",
+      "deseable":  { "min": null, "max": 129, "interpretacion": "Deseable" },
+      "alto":      { "min": 190,  "max": null,"interpretacion": "Alto" },
+      "notas": "Meta secundaria cuando TG > 200 mg/dL"
+    }
+  },
+
+  "funcion_renal": {
+    "_fuente": "CKD-EPI 2021 (Inker LA et al. NEJM 2021) + KDIGO 2024",
+    "creatinina_serica_mg_dL": {
+      "hombre":        { "min": 0.7,  "max": 1.3,  "interpretacion": "Normal" },
+      "mujer":         { "min": 0.5,  "max": 1.1,  "interpretacion": "Normal" },
+      "notas": "Influenciada por masa muscular. Preferir TFG estimada para evaluación renal"
+    },
+    "bun_nitrogeno_ureico_mg_dL": {
+      "normal":        { "min": 7,    "max": 20,   "interpretacion": "Normal" },
+      "elevado":       { "min": 20,   "max": null, "interpretacion": "Revisar — deshidratación, sangrado GI, ERC, dieta hiperproteica" }
+    },
+    "cociente_bun_creatinina": {
+      "normal":        { "min": 10,   "max": 20 },
+      "preR":          { "min": 20,   "max": null, "interpretacion": "Posible causa prerrenal (deshidratación)" }
+    },
+    "tfg_ckd_epi_mL_min_1_73m2": {
+      "formula_referencia": "CKD-EPI 2021 (sin factor raza). Inker LA et al. NEJM 2021;385:1737.",
+      "G1":  { "min": 90,  "max": null, "estadio": "G1",  "descripcion": "Normal o alta — ERC si hay marcadores" },
+      "G2":  { "min": 60,  "max": 89,   "estadio": "G2",  "descripcion": "Ligeramente disminuida" },
+      "G3a": { "min": 45,  "max": 59,   "estadio": "G3a", "descripcion": "Leve a moderadamente disminuida" },
+      "G3b": { "min": 30,  "max": 44,   "estadio": "G3b", "descripcion": "Moderada a severamente disminuida" },
+      "G4":  { "min": 15,  "max": 29,   "estadio": "G4",  "descripcion": "Severamente disminuida — preparar TRS" },
+      "G5":  { "min": null,"max": 15,   "estadio": "G5",  "descripcion": "Falla renal — diálisis / trasplante" }
+    },
+    "albumina_orina_mg_g_creatinina": {
+      "_fuente": "KDIGO 2024",
+      "A1":  { "min": null, "max": 30,  "categoria": "A1", "descripcion": "Normal a ligeramente aumentada" },
+      "A2":  { "min": 30,   "max": 300, "categoria": "A2", "descripcion": "Moderadamente aumentada (microalbuminuria)" },
+      "A3":  { "min": 300,  "max": null,"categoria": "A3", "descripcion": "Severamente aumentada (macroalbuminuria)" }
+    },
+    "acido_urico_mg_dL": {
+      "hombre":        { "min": 3.5,  "max": 7.2,  "interpretacion": "Normal" },
+      "mujer":         { "min": 2.5,  "max": 6.0,  "interpretacion": "Normal" },
+      "hiperuricemia": { "min": 7.2,  "max": null, "interpretacion": "Hiperuricemia — riesgo gota y ERC" }
+    },
+    "proteinas_totales_orina_mg_24h": {
+      "normal":        { "min": null, "max": 150,  "interpretacion": "Normal" },
+      "proteinuria":   { "min": 150,  "max": null, "interpretacion": "Proteinuria — evaluar causa" }
+    }
+  },
+
+  "funcion_hepatica": {
+    "_fuente": "Harrison's 21st ed. + valores de referencia habituales",
+    "alt_tgp_U_L": {
+      "normal_hombre": { "min": 7,    "max": 56,   "interpretacion": "Normal" },
+      "normal_mujer":  { "min": 7,    "max": 45,   "interpretacion": "Normal" },
+      "elevado":       { "min": 56,   "max": null, "interpretacion": "Posible daño hepatocelular" }
+    },
+    "ast_tgo_U_L": {
+      "normal":        { "min": 10,   "max": 40,   "interpretacion": "Normal" },
+      "elevado":       { "min": 40,   "max": null, "interpretacion": "Posible daño hepatocelular o muscular" }
+    },
+    "cociente_ast_alt": {
+      "normal":        { "min": null, "max": 1.0 },
+      "alcoholico":    { "min": 2.0,  "max": null, "interpretacion": "Ratio >2 sugiere hepatitis alcohólica" }
+    },
+    "ggt_U_L": {
+      "normal_hombre": { "min": 8,    "max": 61 },
+      "normal_mujer":  { "min": 5,    "max": 36 },
+      "notas": "Sensible a alcohol y fármacos"
+    },
+    "fosfatasa_alcalina_U_L": {
+      "adulto":        { "min": 44,   "max": 147,  "interpretacion": "Normal" },
+      "notas": "Elevada fisiológicamente en crecimiento óseo activo (adolescentes)"
+    },
+    "bilirrubina_total_mg_dL": {
+      "normal":        { "min": 0.2,  "max": 1.2,  "interpretacion": "Normal" },
+      "ictericia":     { "min": 3.0,  "max": null, "interpretacion": "Ictericia clínica visible" }
+    },
+    "albumina_serica_g_dL": {
+      "normal":        { "min": 3.5,  "max": 5.0,  "interpretacion": "Normal" },
+      "leve":          { "min": 3.0,  "max": 3.49, "interpretacion": "Hipoalbuminemia leve" },
+      "moderada":      { "min": 2.5,  "max": 2.99, "interpretacion": "Hipoalbuminemia moderada — desnutrición" },
+      "severa":        { "min": null, "max": 2.5,  "interpretacion": "Hipoalbuminemia severa — riesgo vital" },
+      "notas": "Marcador de desnutrición CRÓNICA — no refleja cambios agudos (vida media 20 días)"
+    },
+    "proteinas_totales_serica_g_dL": {
+      "normal":        { "min": 6.0,  "max": 8.3,  "interpretacion": "Normal" }
+    },
+    "prealbumina_transtiretina_mg_dL": {
+      "normal":        { "min": 16,   "max": 40,   "interpretacion": "Normal" },
+      "deficit_leve":  { "min": 10,   "max": 15,   "interpretacion": "Déficit leve — desnutrición aguda" },
+      "deficit_mod":   { "min": 5,    "max": 9,    "interpretacion": "Déficit moderado" },
+      "deficit_sev":   { "min": null, "max": 5,    "interpretacion": "Déficit severo" },
+      "notas": "Vida media 2-3 días — MEJOR marcador de desnutrición aguda que albúmina"
+    }
+  },
+
+  "hemograma": {
+    "_fuente": "Harrison's 21st ed. + NOM-007-SSA3",
+    "hemoglobina_g_dL": {
+      "normal_hombre": { "min": 13.5,  "max": 17.5, "interpretacion": "Normal" },
+      "normal_mujer":  { "min": 12.0,  "max": 15.5, "interpretacion": "Normal" },
+      "anemia_leve":   { "min": 10.0,  "max": null, "interpretacion": "Anemia — ajustar por nivel de corte" },
+      "anemia_mod":    { "min": 8.0,   "max": 9.9,  "interpretacion": "Anemia moderada" },
+      "anemia_sev":    { "min": null,  "max": 8.0,  "interpretacion": "Anemia severa — evaluar transfusión" },
+      "notas": "OMS clasifica anemia desde <13 H / <12 M / <11 embarazo"
+    },
+    "hematocrito_pct": {
+      "normal_hombre": { "min": 41,    "max": 53 },
+      "normal_mujer":  { "min": 36,    "max": 46 }
+    },
+    "vcm_fL": {
+      "microcítica":   { "min": null,  "max": 79,   "interpretacion": "Microcítica — deficit hierro, talasemia" },
+      "normocitica":   { "min": 80,    "max": 100,  "interpretacion": "Normocítica" },
+      "macrocitica":   { "min": 101,   "max": null, "interpretacion": "Macrocítica — déficit B12/folato, alcohol" }
+    },
+    "ferritina_mcg_L": {
+      "normal_hombre": { "min": 30,    "max": 400 },
+      "normal_mujer":  { "min": 13,    "max": 150 },
+      "deficit":       { "min": null,  "max": 12,   "interpretacion": "Depósitos agotados — déficit hierro" },
+      "notas": "Reactante de fase aguda — puede estar elevada en inflamación con déficit real"
+    },
+    "hierro_serico_mcg_dL": {
+      "normal_hombre": { "min": 60,    "max": 170 },
+      "normal_mujer":  { "min": 50,    "max": 170 }
+    },
+    "saturacion_transferrina_pct": {
+      "normal":        { "min": 20,    "max": 50 },
+      "deficit":       { "min": null,  "max": 16,   "interpretacion": "Déficit funcional de hierro" }
+    },
+    "leucocitos_miles_mm3": {
+      "normal":        { "min": 4.5,   "max": 11.0 },
+      "leucopenia":    { "min": null,  "max": 4.5,  "interpretacion": "Leucopenia — evaluar causa" },
+      "leucocitosis":  { "min": 11.0,  "max": null, "interpretacion": "Leucocitosis — infección, inflamación" }
+    },
+    "plaquetas_miles_mm3": {
+      "normal":        { "min": 150,   "max": 400 },
+      "trombocitopenia":{ "min": null, "max": 150,  "interpretacion": "Trombocitopenia" },
+      "trombocitosis": { "min": 400,   "max": null, "interpretacion": "Trombocitosis reactiva o primaria" }
+    }
+  },
+
+  "micronutrientes_sericos": {
+    "_fuente": "Harrison's 21st ed. + Laboratorio de Referencia INNSZ",
+    "vitamina_b12_pg_mL": {
+      "normal":        { "min": 200,   "max": 900 },
+      "deficit_posible":{ "min": 200,  "max": 300, "interpretacion": "Zona gris — correlacionar con síntomas" },
+      "deficit":       { "min": null,  "max": 200,  "interpretacion": "Déficit — suplementar" }
+    },
+    "acido_folico_ng_mL": {
+      "normal":        { "min": 2.7,   "max": 17.0 },
+      "deficit":       { "min": null,  "max": 2.7,  "interpretacion": "Déficit folato" }
+    },
+    "vitamina_d_25oh_ng_mL": {
+      "deficiencia":   { "min": null,  "max": 20,   "interpretacion": "Deficiencia" },
+      "insuficiencia": { "min": 20,    "max": 29,   "interpretacion": "Insuficiencia" },
+      "suficiencia":   { "min": 30,    "max": 100,  "interpretacion": "Suficiencia" },
+      "toxicidad":     { "min": 100,   "max": null, "interpretacion": "Posible toxicidad" }
+    },
+    "calcio_total_serico_mg_dL": {
+      "normal":        { "min": 8.5,   "max": 10.5 },
+      "hipocalcemia":  { "min": null,  "max": 8.5,  "interpretacion": "Hipocalcemia" },
+      "hipercalcemia": { "min": 10.5,  "max": null, "interpretacion": "Hipercalcemia — descartar hiperparatiroidismo" }
+    },
+    "magnesio_serico_mg_dL": {
+      "normal":        { "min": 1.7,   "max": 2.4 },
+      "hipomagnesemia":{ "min": null,  "max": 1.7,  "interpretacion": "Hipomagnesemia — frecuente en DM2 y alcohol" }
+    },
+    "zinc_serico_mcg_dL": {
+      "normal":        { "min": 70,    "max": 120 },
+      "deficit":       { "min": null,  "max": 70,   "interpretacion": "Déficit zinc" }
+    },
+    "potasio_serico_mEq_L": {
+      "normal":        { "min": 3.5,   "max": 5.0 },
+      "hipocalemia":   { "min": null,  "max": 3.5,  "interpretacion": "Hipocalemia — riesgo arrítmico" },
+      "hipercalemia":  { "min": 5.0,   "max": null, "interpretacion": "Hipercalemia — riesgo arrítmico ERC/DM" }
+    },
+    "sodio_serico_mEq_L": {
+      "normal":        { "min": 136,   "max": 145 },
+      "hiponatremia":  { "min": null,  "max": 136,  "interpretacion": "Hiponatremia" },
+      "hipernatremia": { "min": 145,   "max": null, "interpretacion": "Hipernatremia — deshidratación" }
+    }
+  },
+
+  "funcion_tiroidea": {
+    "_fuente": "Harrison's 21st ed.",
+    "tsh_mUI_L": {
+      "normal":         { "min": 0.4,   "max": 4.0 },
+      "hipotiroidismo": { "min": 4.0,   "max": null, "interpretacion": "Posible hipotiroidismo — solicitar T4L" },
+      "hipertiroidismo":{ "min": null,  "max": 0.4,  "interpretacion": "Posible hipertiroidismo" },
+      "notas": "TSH es la prueba de tamizaje inicial. Primer trimestre embarazo: meta TSH <2.5 mUI/L"
+    },
+    "t4_libre_ng_dL": {
+      "normal":         { "min": 0.8,   "max": 1.8 }
+    }
+  },
+
+  "presion_arterial": {
+    "_fuente": "NOM-030-SSA2-2009 + JNC 8 + AHA/ACC 2017",
+    "sistolica_diastolica_mmHg": {
+      "normal":            { "sistolica_max": 120, "diastolica_max": 80,  "interpretacion": "Normal" },
+      "elevada":           { "sistolica_min": 120, "sistolica_max": 129, "diastolica_max": 80, "interpretacion": "Elevada (AHA 2017)" },
+      "hta_estadio1":      { "sistolica_min": 130, "sistolica_max": 139, "diastolica_min": 80, "diastolica_max": 89, "interpretacion": "HTA Estadio 1" },
+      "hta_estadio2":      { "sistolica_min": 140, "diastolica_min": 90, "interpretacion": "HTA Estadio 2" },
+      "crisis_hipertensiva":{ "sistolica_min": 180, "diastolica_min": 120, "interpretacion": "Crisis hipertensiva — urgencia médica" },
+      "notas": "Promedio de ≥2 mediciones en ≥2 visitas. Ayuno no requerido"
+    }
+  },
+
+  "indices_nutricionales": {
+    "proteinas_reactante_fase_aguda": {
+      "pcr_proteina_c_reactiva_mg_L": {
+        "normal":     { "min": null, "max": 1.0,  "interpretacion": "Bajo riesgo CV / sin inflamación" },
+        "riesgo_cv":  { "min": 1.0,  "max": 3.0,  "interpretacion": "Riesgo CV intermedio (PCR-us)" },
+        "alto":       { "min": 3.0,  "max": null, "interpretacion": "Inflamación activa / alto riesgo" }
+      }
+    },
+    "indice_creatinina_talla": {
+      "descripcion": "Índice Creatinina-Talla (ICT) — indicador de masa muscular",
+      "formula": "(Creatinina_orina_24h_mg / Creatinina_ideal_mg) × 100",
+      "interpretacion": {
+        "normal":   { "min": 90,   "max": null, "texto": "Masa muscular adecuada" },
+        "leve":     { "min": 80,   "max": 89,   "texto": "Depleción leve de masa muscular" },
+        "moderada": { "min": 70,   "max": 79,   "texto": "Depleción moderada" },
+        "severa":   { "min": null, "max": 70,   "texto": "Depleción severa" }
+      },
+      "fuente": "Blackburn GL et al. Nutritional assessment of the hospitalized patient. JPEN. 1977."
+    }
+  }
+}

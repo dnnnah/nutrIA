@@ -1,0 +1,485 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "nombre": "Medidas Caseras Mexicanas — Equivalencias en Gramos",
+    "fuentes": [
+      "Pérez Lizaur AB, Palacios González B, Castro Becerra AL. SMAE 5ª ed. Fomento de Nutrición y Salud A.C. 2014.",
+      "Bourges H, Casanueva E, Rosado JL. Recomendaciones de Ingestión de Nutrimentos para la Población Mexicana. Tomo 1. México: Médica Panamericana. 2005.",
+      "Guía de Alimentos para la Población Mexicana. SSA / INNSZ. México.",
+      "Estudio de medidas caseras mexicanas. Laboratorio de Nutriología UNAM. (valores de referencia)"
+    ],
+    "advertencia": "Las medidas caseras son aproximaciones. El peso real varía por densidad del alimento, nivel de compactación y utensilio usado. Para uso clínico, pesar preferentemente con báscula.",
+    "sistema_medicion": "Las medidas corresponden a utensilios estándar mexicanos. La taza de referencia es de 240 mL.",
+    "utensilios_referencia": {
+      "taza": "240 mL (taza de café con leche estándar)",
+      "cucharada_sopera": "15 mL",
+      "cucharadita_cafetera": "5 mL",
+      "vaso_agua": "240 mL",
+      "plato_hondo": "~400-500 mL de capacidad"
+    }
+  },
+
+  "unidades_volumetricas": {
+    "taza_240mL": {
+      "equivalencias": {
+        "ml": 240,
+        "litros": 0.24,
+        "cucharadas_soperas": 16,
+        "cucharaditas": 48,
+        "oz_fl": 8
+      }
+    },
+    "cucharada_sopera_15mL": {
+      "equivalencias": {
+        "ml": 15,
+        "cucharaditas": 3,
+        "taza_fraccion": 0.0625
+      }
+    },
+    "cucharadita_5mL": {
+      "equivalencias": {
+        "ml": 5,
+        "cucharada_fraccion": 0.333
+      }
+    }
+  },
+
+  "medidas_por_alimento": {
+
+    "granos_cereales": {
+      "_descripcion": "Cereales y tubérculos — pesos aproximados de medidas comunes",
+      "arroz_crudo_g": {
+        "taza": 185,
+        "cucharada": 12,
+        "descripcion": "Arroz crudo grano largo"
+      },
+      "arroz_cocido_g": {
+        "taza": 195,
+        "media_taza": 97,
+        "descripcion": "Arroz blanco cocido"
+      },
+      "avena_hojuela_g": {
+        "taza": 90,
+        "media_taza": 45,
+        "cucharada": 6,
+        "descripcion": "Avena en hojuela cruda"
+      },
+      "avena_cocida_g": {
+        "taza": 240,
+        "tres_cuartos_taza": 180,
+        "descripcion": "Avena cocida con agua"
+      },
+      "harina_maiz_g": {
+        "taza": 120,
+        "cucharada": 8,
+        "descripcion": "Harina de maíz nixtamalizada (Maseca)"
+      },
+      "harina_trigo_g": {
+        "taza": 120,
+        "cucharada": 8
+      },
+      "pan_blanco_rebanada_g": {
+        "pieza": 25,
+        "descripcion": "Rebanada estándar pan de caja blanco"
+      },
+      "pan_integral_rebanada_g": {
+        "pieza": 30,
+        "descripcion": "Rebanada pan integral caja"
+      },
+      "tortilla_maiz_g": {
+        "pieza_chica": 22,
+        "pieza_mediana": 30,
+        "pieza_grande": 40,
+        "descripcion": "Tortilla de maíz (18-22 cm diámetro = mediana)"
+      },
+      "tortilla_harina_g": {
+        "pieza_chica": 30,
+        "pieza_mediana": 45,
+        "pieza_grande": 65,
+        "descripcion": "Tortilla de harina de trigo"
+      },
+      "pasta_cruda_g": {
+        "taza": 100,
+        "media_taza": 50,
+        "descripcion": "Pasta tipo espagueti o codito cruda"
+      },
+      "pasta_cocida_g": {
+        "taza": 140,
+        "media_taza": 70
+      },
+      "papa_g": {
+        "pieza_chica": 90,
+        "pieza_mediana": 150,
+        "pieza_grande": 250,
+        "media_taza_cocida": 90,
+        "descripcion": "Papa blanca. Pieza mediana ~ taza"
+      },
+      "camote_g": {
+        "pieza_chica": 100,
+        "pieza_mediana": 160,
+        "media_taza_cocida": 100
+      },
+      "elote_mazorca_g": {
+        "pieza": 300,
+        "peso_neto_granos": 165,
+        "taza_granos": 165,
+        "descripcion": "Elote con olote ~ 300g; neto granos ~ 165g"
+      }
+    },
+
+    "leguminosas": {
+      "frijol_crudo_g": {
+        "taza": 200,
+        "media_taza": 100
+      },
+      "frijol_cocido_g": {
+        "taza": 180,
+        "media_taza": 90,
+        "cucharada": 11,
+        "descripcion": "Frijoles negros o bayos cocidos"
+      },
+      "lenteja_cruda_g": {
+        "taza": 190,
+        "media_taza": 95
+      },
+      "lenteja_cocida_g": {
+        "taza": 190,
+        "media_taza": 95
+      },
+      "garbanzo_cocido_g": {
+        "taza": 200,
+        "media_taza": 100
+      },
+      "soya_texturizada_seca_g": {
+        "taza": 100,
+        "media_taza": 50,
+        "descripcion": "Soya texturizada (TVP) — hidratada duplica volumen"
+      }
+    },
+
+    "frutas": {
+      "manzana_g": {
+        "pieza_chica": 90,
+        "pieza_mediana": 120,
+        "pieza_grande": 180,
+        "descripcion": "Con cáscara, sin semilla"
+      },
+      "platano_g": {
+        "pieza_chica": 80,
+        "pieza_mediana": 120,
+        "pieza_grande": 160,
+        "media_pieza": 70,
+        "descripcion": "Plátano tabasco pelado"
+      },
+      "naranja_g": {
+        "pieza_chica": 130,
+        "pieza_mediana": 180,
+        "pieza_grande": 250,
+        "taza_gajos": 180,
+        "descripcion": "Naranja con cáscara ~ +30%. Taza gajos = peso neto"
+      },
+      "papaya_g": {
+        "rebanada_mediana": 200,
+        "taza_picada": 200,
+        "descripcion": "Papaya maradol sin cáscara ni semillas"
+      },
+      "mango_g": {
+        "pieza_chica": 200,
+        "pieza_mediana": 350,
+        "media_taza_picado": 100,
+        "taza_picado": 200,
+        "descripcion": "Mango manila pelado y sin hueso"
+      },
+      "uva_g": {
+        "taza": 150,
+        "media_taza": 75,
+        "pieza": 5,
+        "descripcion": "Uva red o green, sin semilla"
+      },
+      "fresa_g": {
+        "taza": 150,
+        "media_taza": 75,
+        "pieza": 12,
+        "descripcion": "Fresas limpias sin hojas"
+      },
+      "sandia_g": {
+        "taza_cubos": 155,
+        "rebanada_mediana": 280,
+        "descripcion": "Sandía sin cáscara"
+      },
+      "melon_g": {
+        "taza_cubos": 170,
+        "rebanada_mediana": 200
+      },
+      "guayaba_g": {
+        "pieza_mediana": 90,
+        "taza": 165
+      },
+      "toronja_g": {
+        "media_pieza": 120,
+        "taza_gajos": 230
+      },
+      "kiwi_g": {
+        "pieza_mediana": 75,
+        "descripcion": "Sin cáscara"
+      },
+      "pera_g": {
+        "pieza_chica": 100,
+        "pieza_mediana": 165
+      },
+      "durazno_g": {
+        "pieza_mediana": 150,
+        "descripcion": "Sin hueso"
+      },
+      "ciruela_g": {
+        "pieza": 65
+      }
+    },
+
+    "verduras": {
+      "nopal_g": {
+        "penca_chica": 60,
+        "penca_mediana": 100,
+        "taza_crudo_picado": 90,
+        "taza_cocido": 100
+      },
+      "jitomate_g": {
+        "pieza_chica": 80,
+        "pieza_mediana": 130,
+        "pieza_grande": 200,
+        "taza_picado": 200,
+        "descripcion": "Jitomate bola o saladet"
+      },
+      "tomate_verde_g": {
+        "pieza_chica": 30,
+        "pieza_mediana": 60,
+        "taza": 170
+      },
+      "cebolla_blanca_g": {
+        "pieza_mediana": 110,
+        "taza_picada": 160,
+        "cucharada_picada": 10
+      },
+      "chile_poblano_g": {
+        "pieza_mediana": 100
+      },
+      "chile_serrano_g": {
+        "pieza": 10
+      },
+      "chile_jalapeño_g": {
+        "pieza": 25
+      },
+      "espinaca_g": {
+        "taza_cruda": 30,
+        "dos_tazas_crudas": 60,
+        "taza_cocida": 180,
+        "descripcion": "Se compacta mucho al cocinar"
+      },
+      "lechuga_g": {
+        "taza_picada": 55,
+        "hoja_grande": 30
+      },
+      "zanahoria_g": {
+        "pieza_mediana": 100,
+        "taza_rallada": 110,
+        "media_taza_cocida": 100
+      },
+      "brocoli_g": {
+        "taza_crudo": 90,
+        "media_taza_cocido": 100,
+        "ramo_mediano": 180
+      },
+      "coliflor_g": {
+        "taza_cruda": 100,
+        "media_taza_cocida": 100
+      },
+      "chayote_g": {
+        "pieza_mediana": 200,
+        "taza_cocido": 130,
+        "descripcion": "Sin semilla ni cáscara"
+      },
+      "calabacita_zucchini_g": {
+        "pieza_mediana": 150,
+        "taza_picada": 120
+      },
+      "ejote_g": {
+        "taza": 110,
+        "descripcion": "Ejotes limpios sin puntas"
+      },
+      "betabel_g": {
+        "pieza_mediana": 80,
+        "media_taza_cocido": 85
+      },
+      "pepino_g": {
+        "pieza_mediana": 200,
+        "taza_rebanado": 120
+      },
+      "aguacate_g": {
+        "pieza_mediana": 200,
+        "cuarto_pieza": 50,
+        "media_pieza": 100,
+        "cucharada": 15,
+        "descripcion": "Aguacate Hass pelado sin hueso ~ 70% peso bruto"
+      }
+    },
+
+    "proteinas_animales": {
+      "pollo_g": {
+        "pechuga_entera": 200,
+        "media_pechuga": 100,
+        "muslo": 100,
+        "pierna": 70,
+        "descripcion": "Pesos aproximados cocidos sin hueso"
+      },
+      "carne_res_g": {
+        "bistec_chico": 100,
+        "bistec_mediano": 150,
+        "palma_mano": 85,
+        "descripcion": "1 palma de mano abierta ~ 85g cocida"
+      },
+      "atun_lata_g": {
+        "lata_chica_130g": { "peso_bruto": 130, "peso_escurrido": 90 },
+        "lata_grande_180g": { "peso_bruto": 180, "peso_escurrido": 130 },
+        "cuarto_lata_chica": 30
+      },
+      "sardina_lata_g": {
+        "lata_120g": { "peso_bruto": 120, "peso_escurrido": 100 },
+        "pieza": 20
+      },
+      "huevo_g": {
+        "pieza_grande": 60,
+        "pieza_mediana": 50,
+        "clara": 33,
+        "yema": 18,
+        "descripcion": "Huevo de gallina con cáscara ~ 55-65g; sin cáscara ~ 50-60g"
+      },
+      "jamon_serrano_g": {
+        "rebanada_delgada": 20,
+        "taza_picado": 140
+      },
+      "queso_g": {
+        "queso_fresco_cubo_3cm": 30,
+        "queso_fresco_rebanada": 30,
+        "queso_manchego_rebanada": 25,
+        "queso_oaxaca_hebra": 30,
+        "queso_panela_rebanada": 30,
+        "descripcion": "1 rebanada comercial ~ 25-30g"
+      }
+    },
+
+    "lacteos": {
+      "leche_g": {
+        "taza_240ml": 245,
+        "media_taza": 122,
+        "descripcion": "Leche líquida (densidad ~1.02 g/mL)"
+      },
+      "yogurt_g": {
+        "taza": 245,
+        "tres_cuartos_taza": 184,
+        "vaso_comercial_chico": 125,
+        "descripcion": "Yogurt natural o griego"
+      },
+      "leche_polvo_g": {
+        "cucharada": 8,
+        "tres_cucharadas": 24,
+        "descripcion": "3 cdas polvo + agua = 1 taza leche"
+      }
+    },
+
+    "grasas_aceites": {
+      "aceite_g": {
+        "cucharadita": 4.5,
+        "cucharada": 14,
+        "descripcion": "Aceite de oliva, girasol, canola"
+      },
+      "mantequilla_g": {
+        "cucharadita": 5,
+        "cucharada": 14,
+        "descripcion": "Mantequilla o margarina"
+      },
+      "crema_g": {
+        "cucharada": 15,
+        "descripcion": "Crema ácida mexicana"
+      },
+      "mantequilla_cacahuate_g": {
+        "cucharada": 16,
+        "dos_cucharadas": 32
+      },
+      "semillas_g": {
+        "nuez_entera_pieza": 4,
+        "nuez_media_taza": 60,
+        "almendra_pieza": 1.3,
+        "almendra_cucharada": 10,
+        "pistache_pieza": 0.7,
+        "cacahuate_cucharada": 10,
+        "ajonjoli_cucharada": 9,
+        "chia_cucharada": 10
+      }
+    },
+
+    "azucares_condimentos": {
+      "azucar_g": {
+        "cucharadita": 4,
+        "cucharada": 12,
+        "descripcion": "Azúcar blanca o morena"
+      },
+      "miel_g": {
+        "cucharadita": 7,
+        "cucharada": 21
+      },
+      "piloncillo_g": {
+        "pieza_chica": 80,
+        "cucharada_rallado": 12
+      },
+      "sal_g": {
+        "cucharadita": 6,
+        "cucharada": 18,
+        "pellizco": 0.5
+      },
+      "chocolate_polvo_g": {
+        "cucharada": 7
+      }
+    },
+
+    "bebidas": {
+      "agua_natural_mL": {
+        "vaso": 240,
+        "botella_chica": 600,
+        "botella_grande": 1000
+      },
+      "jugo_naranja_mL": {
+        "vaso": 240,
+        "media_taza": 120,
+        "naranja_piezas_para_1_taza": 3
+      },
+      "leche_mL": {
+        "taza": 240,
+        "vaso": 240
+      }
+    }
+  },
+
+  "conversiones_peso_medida": {
+    "_descripcion": "Conversiones rápidas peso neto útiles en consulta",
+    "equivalencias_generales": [
+      { "medida": "1 taza (verdura cocida o fruta picada)", "g_aprox": 150 },
+      { "medida": "1 taza (cereal cocido)", "g_aprox": 195 },
+      { "medida": "1 taza (leguminosa cocida)", "g_aprox": 190 },
+      { "medida": "1 taza (leche líquida)", "g_aprox": 245 },
+      { "medida": "1 cucharada de aceite", "g_aprox": 14 },
+      { "medida": "1 pieza de fruta mediana", "g_aprox": 120 },
+      { "medida": "1 pieza de huevo grande", "g_aprox": 60 },
+      { "medida": "1 tortilla maíz mediana", "g_aprox": 30 },
+      { "medida": "1 palma de mano (proteína cocida)", "g_aprox": 85 },
+      { "medida": "1 pulgar (queso)", "g_aprox": 30 }
+    ],
+    "regla_mano": {
+      "_descripcion": "Método de la mano para estimación rápida en consulta",
+      "puno_cerrado": { "equivale_a": "1 taza", "uso": "Arroz, pasta, cereales cocidos, leguminosas" },
+      "palma_abierta": { "equivale_a": "85-100g", "uso": "Carnes, pescado, aves (porción de proteína)" },
+      "pulgar_completo": { "equivale_a": "30g", "uso": "Queso, mantequilla" },
+      "punta_pulgar": { "equivale_a": "5-7g", "uso": "Aceite, mantequilla, mayonesa" },
+      "mano_ahuecada": { "equivale_a": "30g", "uso": "Nueces, semillas" }
+    }
+  }
+}
