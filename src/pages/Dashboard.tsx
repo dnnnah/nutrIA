@@ -108,7 +108,7 @@ const RECIENTES_PLACEHOLDER: ItemReciente[] = [
     inicial: 'M',
   },
   {
-    nombre_paciente: 'Carlos R.',
+    nombre_paciente: 'Juan R.',
     accion: 'GET calculado — 2340 kcal',
     hace_tiempo: 'Hace 1 hora',
     inicial: 'C',
