@@ -12,6 +12,8 @@
  * @module useBiochemistry
  */
 
+import { useMemo } from 'react';
+
 import {
   type CategoríaAlbuminuria,
   type ClasificaciónHOMA,
@@ -295,10 +297,22 @@ export const clasificarAlbuminuria = (
 // HOOK REACT
 // ===========================================================================
 
-export const useBiochemistry = () => ({
-  calcularHOMA_IR,
-  calcularCKDEPI,
-  calcularBalanceNitrogenado,
-  evaluarSemáforo,
-  clasificarAlbuminuria,
-});
+/**
+ * Hook de bioquímica clínica.
+ *
+ * Retorna un objeto estable entre re-renders mediante useMemo.
+ * Esto es crítico para que los useMemo en los componentes que usan estas
+ * funciones como dependencias no se invaliden en cada render.
+ *
+ * Las funciones son constantes de módulo (funciones puras), por lo que
+ * el array de dependencias del useMemo interno es vacío y es correcto.
+ */
+export const useBiochemistry = () => {
+  return useMemo(() => ({
+    calcularHOMA_IR,
+    calcularCKDEPI,
+    calcularBalanceNitrogenado,
+    evaluarSemáforo,
+    clasificarAlbuminuria,
+  }), []);
+};

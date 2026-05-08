@@ -44,7 +44,9 @@ import type {
 
 type SemaforoColor = 'verde' | 'amarillo' | 'rojo' | 'gris'
 
-type SexoTipo = 'masculino' | 'femenino' | ''
+// Sexo siempre tiene valor — se inicializa en 'masculino' en todos los estados locales.
+// Esto elimina el guard (!sexo) que bloqueaba el cálculo de CKD-EPI y Balance N.
+type SexoTipo = 'masculino' | 'femenino'
 
 interface ValorLipido {
   colesterol_total: string
@@ -135,36 +137,50 @@ function InputClinico({ label, valor, onChange, unidad, placeholder = '—', id 
   )
 }
 
-interface SelectClinicoProps {
-  label: string
-  valor: string
-  onChange: (v: string) => void
-  opciones: { valor: string; etiqueta: string }[]
-  id: string
-}
-
-function SelectClinico({ label, valor, onChange, opciones, id }: SelectClinicoProps) {
+/**
+ * Toggle Masculino / Femenino — patrón canónico NUTRIA.
+ * Idéntico al de Anthropometry.tsx. Sin estado vacío: siempre hay un sexo seleccionado.
+ */
+function ToggleSexoBio({ label = 'Sexo biológico', valor, onChange }: {
+  label?: string
+  valor: SexoTipo
+  onChange: (s: SexoTipo) => void
+}) {
+  const opts: { id: SexoTipo; label: string }[] = [
+    { id: 'masculino', label: 'Masculino' },
+    { id: 'femenino',  label: 'Femenino' },
+  ]
   return (
     <div className="flex flex-col gap-1">
-      <label
-        htmlFor={id}
-        className="text-[11px] font-semibold uppercase tracking-widest text-[color:var(--color-text-tertiary)]"
+      <span
+        className="text-[11px] font-semibold uppercase tracking-widest"
+        style={{ color: 'var(--color-text-tertiary)' }}
       >
         {label}
-      </label>
-      <select
-        id={id}
-        value={valor}
-        onChange={(e) => onChange(e.target.value)}
-        className="rounded-xl border border-[color:var(--color-border)] bg-white px-3 text-[15px] text-[color:var(--color-text-primary)] outline-none appearance-none"
-        style={{ minHeight: '44px', backgroundImage: 'none' }}
+      </span>
+      <div
+        className="flex rounded-xl p-1 gap-1"
+        style={{ background: 'var(--color-bg)', border: '1px solid var(--color-border)', minHeight: '44px' }}
+        role="group"
         aria-label={label}
       >
-        <option value="">Seleccionar…</option>
-        {opciones.map((op) => (
-          <option key={op.valor} value={op.valor}>{op.etiqueta}</option>
+        {opts.map((o) => (
+          <button
+            key={o.id}
+            type="button"
+            onClick={() => onChange(o.id)}
+            className="flex-1 rounded-lg text-[14px] font-medium transition-all duration-150"
+            style={{
+              background: valor === o.id ? 'var(--color-primary)' : 'transparent',
+              color:      valor === o.id ? '#ffffff' : 'var(--color-text-secondary)',
+              boxShadow:  valor === o.id ? 'var(--shadow)' : 'none',
+            }}
+            aria-pressed={valor === o.id}
+          >
+            {o.label}
+          </button>
         ))}
-      </select>
+      </div>
     </div>
   )
 }
@@ -563,7 +579,7 @@ function SeccionGlucemica() {
 // ─────────────────────────────────────────────────────────────────────────────
 
 function SeccionLipidica() {
-  const [sexo, setSexo]  = useState<SexoTipo>('')
+  const [sexo, setSexo]  = useState<SexoTipo>('masculino')
   const [lipidos, setLipidos] = useState<ValorLipido>({
     colesterol_total: '', ldl: '', hdl: '', trigliceridos: '',
   })
@@ -609,15 +625,10 @@ function SeccionLipidica() {
       <div className="px-4 pb-5 border-t border-[color:var(--color-border)]">
         <div className="pt-4">
           <div className="mb-3">
-            <SelectClinico
-              id="sexo-lipidico"
+            <ToggleSexoBio
               label="Sexo biológico (para HDL)"
               valor={sexo}
-              onChange={(v) => setSexo(v as SexoTipo)}
-              opciones={[
-                { valor: 'masculino', etiqueta: 'Masculino' },
-                { valor: 'femenino',  etiqueta: 'Femenino' },
-              ]}
+              onChange={setSexo}
             />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -667,21 +678,23 @@ function SeccionRenal() {
 
   const [creatinina, setCreatinina] = useState('')
   const [edad,       setEdad]       = useState('')
-  const [sexo,       setSexo]       = useState<SexoTipo>('')
+  const [sexo,       setSexo]       = useState<SexoTipo>('masculino')
 
   const creatNum = parseFloat(creatinina)
   const edadNum  = parseFloat(edad)
 
   const resCKD = useMemo<ResultadoCKDEPI | null>(() => {
-    if (isNaN(creatNum) || isNaN(edadNum) || !sexo || creatNum <= 0 || edadNum <= 0) return null
+    // sexo siempre tiene valor — el guard !sexo ya no es necesario
+    if (isNaN(creatNum) || isNaN(edadNum) || creatNum <= 0 || edadNum <= 0) return null
     try {
       const params: ParámetrosCKDEPI = {
         creatinina_serica_mg_dL: creatNum,
         edad_anios:              edadNum,
-        sexo:                    sexo as 'masculino' | 'femenino',
+        sexo,
       }
       return calcularCKDEPI(params)
-    } catch {
+    } catch (e) {
+      if (import.meta.env.DEV) console.warn('[NUTRIA] CKD-EPI error:', e)
       return null
     }
   }, [creatNum, edadNum, sexo, calcularCKDEPI])
@@ -702,40 +715,35 @@ function SeccionRenal() {
         />
       </div>
 
-      <div className="px-4 pb-5 border-t border-[color:var(--color-border)]">
-        <div className="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <InputClinico
-            id="creatinina"
-            label="Creatinina sérica"
-            valor={creatinina}
-            onChange={setCreatinina}
-            unidad="mg/dL"
-            placeholder="0.7–1.3"
-          />
-          <InputClinico
-            id="edad-renal"
-            label="Edad"
-            valor={edad}
-            onChange={setEdad}
-            unidad="años"
-            placeholder="18–90"
-          />
-          <SelectClinico
-            id="sexo-renal"
-            label="Sexo biológico"
-            valor={sexo}
-            onChange={(v) => setSexo(v as SexoTipo)}
-            opciones={[
-              { valor: 'masculino', etiqueta: 'Masculino' },
-              { valor: 'femenino',  etiqueta: 'Femenino' },
-            ]}
-          />
+      <div className="px-4 pb-6 border-t border-[color:var(--color-border)]">
+        <div className="pt-5 flex flex-col gap-4">
+          {/* Toggle de sexo a ancho completo — arriba */}
+          <ToggleSexoBio valor={sexo} onChange={setSexo} />
+          {/* Creatinina y Edad en grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <InputClinico
+              id="creatinina"
+              label="Creatinina sérica"
+              valor={creatinina}
+              onChange={setCreatinina}
+              unidad="mg/dL"
+              placeholder="0.7–1.3"
+            />
+            <InputClinico
+              id="edad-renal"
+              label="Edad"
+              valor={edad}
+              onChange={setEdad}
+              unidad="años"
+              placeholder="18–90"
+            />
+          </div>
         </div>
 
-        {resCKD && (
+        {resCKD !== null && (
           <>
             <DividerSeccion titulo="Resultado CKD-EPI 2021" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <ResultadoCard
                 label="TFG estimada"
                 valor={resCKD.tfg_mL_min_1_73m2.toFixed(1)}
@@ -746,7 +754,7 @@ function SeccionRenal() {
               />
               <div
                 className="rounded-xl p-4 flex flex-col gap-2"
-                style={{ background: '#F0FDF4' }}
+                style={{ background: '#F2F2F7' }}
               >
                 <div className="flex items-center gap-2 mb-1">
                   <span className="text-[13px] font-medium text-[color:var(--color-text-secondary)]">
@@ -763,13 +771,13 @@ function SeccionRenal() {
             </div>
 
             {/* Tabla de estadios */}
-            <div className="mt-4 rounded-xl border border-[color:var(--color-border)] overflow-hidden">
+            <div className="mt-5 rounded-xl border border-[color:var(--color-border)] overflow-hidden">
               <table className="w-full text-[12px]" aria-label="Tabla de estadios ERC">
                 <thead>
                   <tr style={{ background: '#F2F2F7' }}>
-                    <th className="px-3 py-2 text-left font-semibold text-[color:var(--color-text-secondary)]">Estadio</th>
-                    <th className="px-3 py-2 text-left font-semibold text-[color:var(--color-text-secondary)]">TFG</th>
-                    <th className="px-3 py-2 text-left font-semibold text-[color:var(--color-text-secondary)] hidden sm:table-cell">Descripción</th>
+                    <th className="px-3 py-2.5 text-left font-semibold text-[color:var(--color-text-secondary)]">Estadio</th>
+                    <th className="px-3 py-2.5 text-left font-semibold text-[color:var(--color-text-secondary)]">TFG</th>
+                    <th className="px-3 py-2.5 text-left font-semibold text-[color:var(--color-text-secondary)] hidden sm:table-cell">Descripción</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -791,9 +799,9 @@ function SeccionRenal() {
                         fontWeight: row.estadio === resCKD.estadio_erc ? '600' : '400',
                       }}
                     >
-                      <td className="px-3 py-2 font-mono">{row.estadio}</td>
-                      <td className="px-3 py-2 font-mono">{row.rango}</td>
-                      <td className="px-3 py-2 hidden sm:table-cell text-[color:var(--color-text-secondary)]">{row.desc}</td>
+                      <td className="px-3 py-2.5 font-mono">{row.estadio}</td>
+                      <td className="px-3 py-2.5 font-mono">{row.rango}</td>
+                      <td className="px-3 py-2.5 hidden sm:table-cell text-[color:var(--color-text-secondary)]">{row.desc}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -829,7 +837,8 @@ function SeccionBalanceNitrogenado() {
         nuu_g:               nuuNum,
       }
       return calcularBalanceNitrogenado(params)
-    } catch {
+    } catch (e) {
+      if (import.meta.env.DEV) console.warn('[NUTRIA] Balance Nitrogenado error:', e)
       return null
     }
   }, [protNum, nuuNum, calcularBalanceNitrogenado])
@@ -914,7 +923,7 @@ function SeccionBalanceNitrogenado() {
 // ─────────────────────────────────────────────────────────────────────────────
 
 function SeccionOtros() {
-  const [sexo,      setSexo]      = useState<SexoTipo>('')
+  const [sexo,      setSexo]      = useState<SexoTipo>('masculino')
   const [otros, setOtros] = useState<ValorOtros>({
     acido_urico: '', albumina: '', hemoglobina: '',
   })
@@ -940,16 +949,7 @@ function SeccionOtros() {
       defaultAbierta={false}
     >
       <div className="mb-3">
-        <SelectClinico
-          id="sexo-otros"
-          label="Sexo biológico"
-          valor={sexo}
-          onChange={(v) => setSexo(v as SexoTipo)}
-          opciones={[
-            { valor: 'masculino', etiqueta: 'Masculino' },
-            { valor: 'femenino',  etiqueta: 'Femenino' },
-          ]}
-        />
+        <ToggleSexoBio valor={sexo} onChange={setSexo} />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <InputClinico id="acido-urico"  label="Ácido úrico"  valor={otros.acido_urico}  onChange={actualizar('acido_urico')}  unidad="mg/dL" placeholder="3.5–7.2" />

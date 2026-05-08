@@ -381,8 +381,6 @@ interface BuscadorActividadesProps {
   onSelect: (act: ActividadConCategoria) => void
   peso_kg: number
   tiempo_min: number
-  enComparador: Set<string>
-  onAgregarComparador: (act: ActividadConCategoria) => void
 }
 
 function BuscadorActividades({
@@ -390,8 +388,6 @@ function BuscadorActividades({
   onSelect,
   peso_kg,
   tiempo_min,
-  enComparador,
-  onAgregarComparador,
 }: BuscadorActividadesProps) {
   const [query, setQuery]                   = useState('')
   const [categoriaAbierta, setCategoriaAbierta] = useState<CategoriaActividad | null>(null)
@@ -466,26 +462,13 @@ function BuscadorActividades({
                 </div>
                 <div className="flex flex-col gap-2">
                   {lista.map((act) => (
-                    <div key={act.id} className="flex items-stretch gap-2">
-                      <div className="flex-1">
-                        <CardActividad
-                          actividad={act}
-                          seleccionada={actividadSeleccionada?.id === act.id}
-                          onSelect={onSelect}
-                          gasto_kcal={calcularGasto(act.met)}
-                        />
-                      </div>
-                      {!enComparador.has(act.id) && (
-                        <button
-                          onClick={() => onAgregarComparador(act)}
-                          title="Agregar al comparador"
-                          className="flex-shrink-0 w-10 rounded-xl border border-[color:var(--color-border)] bg-white flex items-center justify-center text-[color:var(--color-text-tertiary)] hover:text-[#007AFF] hover:border-[#007AFF] hover:bg-[#EBF5FF] transition-all duration-150"
-                          aria-label={`Agregar ${act.actividad} al comparador`}
-                        >
-                          <Plus size={16} />
-                        </button>
-                      )}
-                    </div>
+                    <CardActividad
+                      key={act.id}
+                      actividad={act}
+                      seleccionada={actividadSeleccionada?.id === act.id}
+                      onSelect={onSelect}
+                      gasto_kcal={calcularGasto(act.met)}
+                    />
                   ))}
                 </div>
               </div>
@@ -559,26 +542,13 @@ function BuscadorActividades({
                 <div className="border-t border-[color:var(--color-border)] px-3 pb-3">
                   <div className="pt-3 flex flex-col gap-2">
                     {lista.map((act) => (
-                      <div key={act.id} className="flex items-stretch gap-2">
-                        <div className="flex-1">
-                          <CardActividad
-                            actividad={{ ...act, categoria: cat }}
-                            seleccionada={actividadSeleccionada?.id === act.id}
-                            onSelect={onSelect}
-                            gasto_kcal={calcularGasto(act.met)}
-                          />
-                        </div>
-                        {!enComparador.has(act.id) && (
-                          <button
-                            onClick={() => onAgregarComparador({ ...act, categoria: cat })}
-                            title="Agregar al comparador"
-                            className="flex-shrink-0 w-10 rounded-xl border border-[color:var(--color-border)] bg-white flex items-center justify-center text-[color:var(--color-text-tertiary)] hover:text-[#007AFF] hover:border-[#007AFF] hover:bg-[#EBF5FF] transition-all duration-150"
-                            aria-label={`Agregar ${act.actividad} al comparador`}
-                          >
-                            <Plus size={16} />
-                          </button>
-                        )}
-                      </div>
+                      <CardActividad
+                        key={act.id}
+                        actividad={{ ...act, categoria: cat }}
+                        seleccionada={actividadSeleccionada?.id === act.id}
+                        onSelect={onSelect}
+                        gasto_kcal={calcularGasto(act.met)}
+                      />
                     ))}
                   </div>
                 </div>
@@ -600,6 +570,7 @@ export default function Mets() {
   const [duracion,  setDuracion]  = useState('')
   const [actividad, setActividad] = useState<ActividadConCategoria | null>(null)
   const [comparador, setComparador] = useState<ItemComparador[]>([])
+  const [comparadorAbierto, setComparadorAbierto] = useState(false)
 
   const peso_kg    = parseFloat(peso)
   const tiempo_min = parseFloat(duracion)
@@ -727,18 +698,6 @@ export default function Mets() {
         </div>
       </section>
 
-      {/* ── Resultado de actividad seleccionada ── */}
-      {gastoActual !== null && actividad && (
-        <div className="mb-4">
-          <ResultadoPrincipal
-            actividad={actividad}
-            gasto_kcal={gastoActual}
-            peso_kg={peso_kg}
-            tiempo_min={tiempo_min}
-          />
-        </div>
-      )}
-
       {/* ── Advertencia si faltan datos base ── */}
       {!hayDatosBase && (
         <div
@@ -752,41 +711,106 @@ export default function Mets() {
         </div>
       )}
 
-      {/* ── Comparador ── */}
-      {comparador.length > 0 && (
-        <div className="mb-4">
-          <Comparador items={comparador} onEliminar={eliminarDelComparador} />
+      {/* ── Hint: datos ok pero sin actividad seleccionada ── */}
+      {hayDatosBase && !actividad && (
+        <div
+          className="flex items-center gap-3 px-4 py-3 rounded-2xl border mb-4"
+          style={{ background: '#EBF5FF', borderColor: '#93C5FD' }}
+        >
+          <span className="text-base">👆</span>
+          <p className="text-[13px] text-[#1D4ED8]">
+            Toca cualquier actividad para ver el gasto calórico al instante.
+          </p>
         </div>
       )}
 
       {/* ── Buscador de actividades ── */}
-      <section aria-labelledby="buscador-titulo">
-        <div className="flex items-center justify-between mb-3">
-          <p
-            id="buscador-titulo"
-            className="text-[15px] font-semibold text-[color:var(--color-text-primary)]"
-          >
-            Actividades
-          </p>
-          {comparador.length < 3 && actividad && (
-            <span className="text-[11px] text-[color:var(--color-text-tertiary)]">
-              Toca <Plus size={11} className="inline" /> para comparar
-            </span>
-          )}
-        </div>
+      <section aria-labelledby="buscador-titulo" className="mb-4">
+        <p
+          id="buscador-titulo"
+          className="text-[15px] font-semibold text-[color:var(--color-text-primary)] mb-3"
+        >
+          Actividades
+        </p>
 
         <BuscadorActividades
           actividadSeleccionada={actividad}
           onSelect={setActividad}
           peso_kg={hayDatosBase ? peso_kg : 0}
           tiempo_min={hayDatosBase ? tiempo_min : 0}
-          enComparador={enComparador}
-          onAgregarComparador={agregarAlComparador}
         />
       </section>
 
+      {/* ── Resultado — aparece DEBAJO del buscador ── */}
+      {gastoActual !== null && actividad && (
+        <div className="mb-4">
+          <ResultadoPrincipal
+            actividad={actividad}
+            gasto_kcal={gastoActual}
+            peso_kg={peso_kg}
+            tiempo_min={tiempo_min}
+          />
+        </div>
+      )}
+
+      {/* ── Comparador colapsable (flujo secundario) ── */}
+      <section className="rounded-2xl bg-white border border-[color:var(--color-border)] overflow-hidden mb-4" style={{ boxShadow: 'var(--shadow)' }}>
+        <button
+          onClick={() => setComparadorAbierto((p) => !p)}
+          className="w-full flex items-center justify-between px-4 py-4 text-left"
+          style={{ minHeight: '56px' }}
+          aria-expanded={comparadorAbierto}
+        >
+          <div className="flex items-center gap-2.5">
+            <span className="text-[15px] font-semibold text-[color:var(--color-text-primary)]">
+              Comparar actividades
+            </span>
+            {comparador.length > 0 && (
+              <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-[#007AFF] text-white">
+                {comparador.length}/3
+              </span>
+            )}
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-[12px] text-[color:var(--color-text-tertiary)]">
+              Hasta 3 en paralelo
+            </span>
+            {comparadorAbierto
+              ? <ChevronUp size={16} className="text-[color:var(--color-text-tertiary)]" />
+              : <ChevronDown size={16} className="text-[color:var(--color-text-tertiary)]" />
+            }
+          </div>
+        </button>
+
+        {comparadorAbierto && (
+          <div className="px-4 pb-4 border-t border-[color:var(--color-border)]">
+            <div className="pt-4">
+              {/* Agregar actividad seleccionada al comparador */}
+              {actividad && !enComparador.has(actividad.id) && comparador.length < 3 && (
+                <button
+                  onClick={() => agregarAlComparador(actividad)}
+                  className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl border-2 border-dashed border-[#007AFF] text-[#007AFF] text-[13px] font-medium mb-4 transition-colors hover:bg-[#EBF5FF]"
+                  style={{ minHeight: '48px' }}
+                >
+                  <Plus size={16} />
+                  Agregar «{actividad.actividad}» al comparador
+                </button>
+              )}
+
+              {comparador.length === 0 ? (
+                <p className="text-[13px] text-[color:var(--color-text-tertiary)] text-center py-4">
+                  Selecciona una actividad y toca el botón de arriba para compararla.
+                </p>
+              ) : (
+                <Comparador items={comparador} onEliminar={eliminarDelComparador} />
+              )}
+            </div>
+          </div>
+        )}
+      </section>
+
       {/* ── Fuente bibliográfica global ── */}
-      <div className="mt-6 flex items-start gap-1.5 p-3 rounded-xl bg-[#F2F2F7]">
+      <div className="mt-2 flex items-start gap-1.5 p-3 rounded-xl bg-[#F2F2F7]">
         <Info size={12} className="text-[color:var(--color-text-tertiary)] mt-[1px] flex-shrink-0" />
         <p className="text-[11px] text-[color:var(--color-text-tertiary)] leading-relaxed">
           <span className="font-semibold">Fuente: </span>

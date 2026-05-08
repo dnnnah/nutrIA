@@ -15,7 +15,6 @@
  */
 
 import { useState, useMemo } from 'react'
-import { useNavigate } from 'react-router-dom'
 import {
   Calculator as CalculatorIcon,
   ChevronDown,
@@ -28,13 +27,10 @@ import {
   Flame,
   Stethoscope,
   BookOpen,
-  ArrowRight,
+  Save,
 } from 'lucide-react'
 
 import { calcularGET, calcularPesoIdeal_Hamwi } from '../hooks/useEnergyCalculator'
-import { useUIStore } from '../stores/ui.store'
-import { db, ahora } from '../db/schema'
-import { DISTRIBUCIÓN_DEFAULT, DISTRIBUCIÓN_MACROS_DEFAULT } from '../types/plan.types'
 import type {
   CategoríaNAF,
   FactorEstrés,
@@ -293,7 +289,7 @@ function CampoNumerico({
   )
 }
 
-/** Toggle binario para sexo */
+/** Toggle binario para sexo — mismo patrón que Anthropometry.tsx */
 function ToggleSexo({
   valor,
   onChange,
@@ -307,7 +303,7 @@ function ToggleSexo({
   ]
   return (
     <div className="flex flex-col gap-1.5">
-      <span className="text-[13px] font-medium text-[color:var(--color-text-secondary)]">
+      <span className="text-[13px] font-medium" style={{ color: 'var(--color-text-secondary)' }}>
         Sexo biológico
       </span>
       <div
@@ -325,8 +321,8 @@ function ToggleSexo({
             style={{
               minHeight: '44px',
               background: valor === o.id ? 'var(--color-primary)' : 'transparent',
-              color: valor === o.id ? '#ffffff' : 'var(--color-text-secondary)',
-              boxShadow: valor === o.id ? 'var(--shadow)' : 'none',
+              color:      valor === o.id ? '#ffffff' : 'var(--color-text-secondary)',
+              boxShadow:  valor === o.id ? 'var(--shadow)' : 'none',
             }}
             aria-pressed={valor === o.id}
           >
@@ -341,9 +337,6 @@ function ToggleSexo({
 // ─── Componente principal ─────────────────────────────────────────────────────
 
 export default function Calculator() {
-  const navigate = useNavigate()
-  const setGetCalculado = useUIStore((s) => s.setGetCalculado)
-
   // ── Estado del formulario ──────────────────────────────────────────────────
   const [form, setForm] = useState<FormState>({
     peso_kg:       '',
@@ -504,7 +497,7 @@ export default function Calculator() {
                   key={f.id}
                   type="button"
                   onClick={() => set('formula_tmb', f.id)}
-                  className="text-left rounded-xl p-4 transition-all duration-150 relative"
+                  className="text-left rounded-xl p-4 transition-all duration-150"
                   style={{
                     minHeight: '80px',
                     border: activa
@@ -515,25 +508,26 @@ export default function Calculator() {
                   aria-pressed={activa}
                   aria-label={`Seleccionar fórmula ${f.nombre}`}
                 >
-                  <div className="flex items-start justify-between gap-2 mb-1">
-                    <span
-                      className="text-[15px] font-semibold"
-                      style={{ color: 'var(--color-text-primary)' }}
-                    >
-                      {f.nombre}
-                    </span>
-                    <span
-                      className="text-[11px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0"
-                      style={{
-                        background: `${f.badgeColor}20`,
-                        color: f.badgeColor,
-                      }}
-                    >
-                      {f.badge}
-                    </span>
-                  </div>
+                  {/* Nombre en su propia línea */}
                   <p
-                    className="text-[13px] leading-snug"
+                    className="text-[15px] font-semibold leading-tight mb-1"
+                    style={{ color: 'var(--color-text-primary)' }}
+                  >
+                    {f.nombre}
+                  </p>
+                  {/* Badge en línea propia — nunca desborda */}
+                  <span
+                    className="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full mb-1.5"
+                    style={{
+                      background: `${f.badgeColor}20`,
+                      color: f.badgeColor,
+                    }}
+                  >
+                    {f.badge}
+                  </span>
+                  {/* Descripción */}
+                  <p
+                    className="text-[12px] leading-snug"
                     style={{ color: 'var(--color-text-secondary)' }}
                   >
                     {f.descripcion}
@@ -676,38 +670,24 @@ export default function Calculator() {
           {/* Panel colapsable */}
           {estresExpandido && (
             <div id="estres-panel" className="px-5 pb-5 border-t" style={{ borderColor: 'var(--color-border)' }}>
-              {/* Toggle para activar */}
-              <div className="flex items-center justify-between py-4">
-                <div>
-                  <p
-                    className="text-[15px] font-medium"
-                    style={{ color: 'var(--color-text-primary)' }}
-                  >
-                    Aplicar factor de estrés
-                  </p>
-                  <p
-                    className="text-[13px]"
-                    style={{ color: 'var(--color-text-secondary)' }}
-                  >
-                    Incrementa el GET en condiciones críticas
-                  </p>
-                </div>
+              {/* Botón clínico para activar/desactivar estrés */}
+              <div className="py-4">
                 <button
                   type="button"
                   onClick={() => set('estres_activo', !form.estres_activo)}
-                  className="relative w-12 h-7 rounded-full transition-all duration-200 flex-shrink-0"
+                  className="flex items-center gap-2 px-3 py-2 rounded-lg text-[13px] font-medium transition-colors border"
                   style={{
-                    background: form.estres_activo ? 'var(--color-primary)' : 'var(--color-border)',
-                    minWidth: '44px',
-                    minHeight: '44px',
+                    background:   form.estres_activo ? '#FFF3E0' : '#F2F2F7',
+                    color:        form.estres_activo ? '#B45309' : '#8E8E93',
+                    borderColor:  form.estres_activo ? '#FFD9A0' : 'transparent',
+                    minHeight:    '44px',
                   }}
                   aria-pressed={form.estres_activo}
-                  aria-label="Activar factor de estrés metabólico"
+                  aria-label="Activar o desactivar factor de estrés metabólico"
                 >
-                  <span
-                    className="absolute top-1 w-5 h-5 bg-white rounded-full shadow transition-all duration-200"
-                    style={{ left: form.estres_activo ? '22px' : '4px' }}
-                  />
+                  <span>
+                    {form.estres_activo ? '✕ Quitar estrés metabólico' : '+ Agregar estrés metabólico'}
+                  </span>
                 </button>
               </div>
 
@@ -905,7 +885,7 @@ export default function Calculator() {
                 </div>
               )}
 
-              {/* Fuente bibliográfica + botón Usar en Planeador */}
+              {/* Fuente bibliográfica + botón guardar */}
               <div className="flex items-center justify-between px-6 pb-5">
                 <div className="flex items-center gap-1.5 text-white opacity-60">
                   <BookOpen size={12} aria-hidden="true" />
@@ -913,49 +893,17 @@ export default function Calculator() {
                 </div>
                 <button
                   type="button"
-                  onClick={async () => {
-                    // 1. Pasar al Planner via store
-                    setGetCalculado(
-                      resultado.get_con_estres_kcal,
-                      resultado.fuente_bibliografica
-                    )
-                    // 2. Persistir en IndexedDB para Recientes + Dashboard
-                    try {
-                      // Consulta temporal de sesión (id_paciente = 0 = sesión anónima)
-                      const consulta = await db.consultas.add({
-                        id_paciente: 0,
-                        fecha: new Date().toISOString().split('T')[0]!,
-                        created_at: ahora(),
-                        updated_at: ahora(),
-                      })
-                      await db.planes.add({
-                        id_consulta: consulta as number,
-                        fecha: new Date().toISOString().split('T')[0]!,
-                        formula_tmb: resultado.formula_tmb,
-                        tmb_kcal: resultado.tmb_kcal,
-                        naf_usado: resultado.naf_valor,
-                        get_calculado_kcal: resultado.get_con_estres_kcal,
-                        distribucion_macros: DISTRIBUCIÓN_MACROS_DEFAULT,
-                        distribucion_tiempos: DISTRIBUCIÓN_DEFAULT,
-                        created_at: ahora(),
-                        updated_at: ahora(),
-                      })
-                    } catch (err) {
-                      // Fallo silencioso — la navegación sigue igual
-                      console.warn('[NUTRIA] No se pudo guardar en DB:', err)
-                    }
-                    navigate('/planeador')
-                  }}
-                  className="flex items-center gap-1.5 rounded-xl px-4 py-2 text-[13px] font-semibold transition-all active:scale-95"
+                  className="flex items-center gap-1.5 rounded-xl px-4 py-2 text-[13px] font-semibold transition-all"
                   style={{
-                    background: 'rgba(255,255,255,0.25)',
+                    background: 'rgba(255,255,255,0.2)',
                     color: '#fff',
                     minHeight: '44px',
                   }}
-                  aria-label="Usar este GET en el Planeador SMAE"
+                  aria-label="Guardar cálculo (próximamente)"
+                  title="Próximamente — requiere expediente activo"
                 >
-                  Usar en Planeador
-                  <ArrowRight size={14} aria-hidden="true" />
+                  <Save size={14} aria-hidden="true" />
+                  Guardar
                 </button>
               </div>
             </div>
