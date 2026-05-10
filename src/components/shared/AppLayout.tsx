@@ -25,6 +25,9 @@ import {
   X,
   Activity,
   ChevronRight,
+  Heart,
+  Droplets,
+  HeartPulse,
 } from 'lucide-react'
 
 // ─── Tipos ───────────────────────────────────────────────────────────────────
@@ -53,17 +56,20 @@ const GRUPOS_NAV: NavGroup[] = [
   {
     titulo: 'Evaluación',
     items: [
-      { label: 'GET / TMB',      ruta: '/calculadora',  icono: <Calculator size={16} /> },
-      { label: 'Antropometría',  ruta: '/antropometria',icono: <Ruler size={16} /> },
-      { label: 'Laboratorios',   ruta: '/laboratorios', icono: <FlaskConical size={16} /> },
-      { label: 'METs',           ruta: '/mets',         icono: <Zap size={16} /> },
+      { label: 'GET / TMB',       ruta: '/calculadora',             icono: <Calculator   size={16} /> },
+      { label: 'Antropometría',   ruta: '/antropometria',           icono: <Ruler        size={16} /> },
+      { label: 'Laboratorios',    ruta: '/laboratorios',            icono: <FlaskConical size={16} /> },
+      { label: 'Diabetes / SM',   ruta: '/diabetes',                icono: <HeartPulse   size={16} /> },
+      { label: 'Nutrición Renal', ruta: '/renal',                   icono: <Droplets     size={16} /> },
+      { label: 'Obesidad / CV',   ruta: '/obesidad-cardiovascular', icono: <Heart        size={16} /> },
+      { label: 'METs',            ruta: '/mets',                    icono: <Zap          size={16} /> },
     ],
   },
   {
     titulo: 'Planificación',
     items: [
-      { label: 'Planeador SMAE', ruta: '/planeador',  icono: <LayoutGrid size={16} /> },
-      { label: 'Evaluación 24h', ruta: '/adecuacion', icono: <CheckCircle size={16} /> },
+      { label: 'Planeador SMAE', ruta: '/planeador',  icono: <LayoutGrid  size={16} /> },
+      { label: 'Adecuación',     ruta: '/adecuacion', icono: <CheckCircle size={16} /> },
     ],
   },
 ]
@@ -75,10 +81,10 @@ const NAV_FOOTER: NavItem[] = [
 
 // Tab bar para mobile — máximo 4 tabs
 const TABS_MOBILE: NavItem[] = [
-  { label: 'Inicio',      ruta: '/',            icono: <Home size={20} /> },
+  { label: 'Inicio',      ruta: '/',            icono: <Home       size={20} /> },
   { label: 'Calcular',    ruta: '/calculadora', icono: <Calculator size={20} /> },
   { label: 'Planes',      ruta: '/planeador',   icono: <LayoutGrid size={20} /> },
-  { label: 'Referencias', ruta: '/referencias', icono: <BookOpen size={20} /> },
+  { label: 'Referencias', ruta: '/referencias', icono: <BookOpen   size={20} /> },
 ]
 
 // ─── Sub-componentes ──────────────────────────────────────────────────────────
@@ -105,7 +111,9 @@ function SidebarItem({ item, onClick }: { item: NavItem; onClick?: () => void })
           <span
             className={[
               'transition-colors',
-              isActive ? 'text-white' : 'text-[color:var(--color-text-tertiary)] group-hover:text-[color:var(--color-primary)]',
+              isActive
+                ? 'text-white'
+                : 'text-[color:var(--color-text-tertiary)] group-hover:text-[color:var(--color-primary)]',
             ].join(' ')}
           >
             {item.icono}
@@ -176,11 +184,11 @@ function MobileTabBar() {
     <nav
       className="fixed bottom-0 left-0 right-0 z-40 md:hidden"
       style={{
-        background: 'rgba(255,255,255,0.92)',
-        backdropFilter: 'blur(20px)',
-        WebkitBackdropFilter: 'blur(20px)',
-        borderTop: '1px solid var(--color-border)',
-        paddingBottom: 'env(safe-area-inset-bottom)',
+        background:          'rgba(255,255,255,0.92)',
+        backdropFilter:      'blur(20px)',
+        WebkitBackdropFilter:'blur(20px)',
+        borderTop:           '1px solid var(--color-border)',
+        paddingBottom:       'env(safe-area-inset-bottom)',
       }}
     >
       <ul className="flex">
@@ -227,7 +235,7 @@ export default function AppLayout() {
   const location = useLocation()
 
   const cerrarDrawer = useCallback(() => setDrawerAbierto(false), [])
-  const abrirDrawer = useCallback(() => setDrawerAbierto(true), [])
+  const abrirDrawer  = useCallback(() => setDrawerAbierto(true), [])
 
   // Título de la ruta actual para el header mobile
   const tituloActual = (() => {
@@ -249,8 +257,8 @@ export default function AppLayout() {
       <aside
         className="hidden md:flex md:flex-col md:flex-shrink-0"
         style={{
-          width: '220px',
-          background: 'var(--color-surface)',
+          width:       '220px',
+          background:  'var(--color-surface)',
           borderRight: '1px solid var(--color-border)',
         }}
       >
@@ -277,8 +285,8 @@ export default function AppLayout() {
           drawerAbierto ? 'translate-x-0' : '-translate-x-full',
         ].join(' ')}
         style={{
-          width: '260px',
-          background: 'var(--color-surface)',
+          width:       '260px',
+          background:  'var(--color-surface)',
           borderRight: '1px solid var(--color-border)',
         }}
         aria-label="Menú de navegación"
@@ -302,10 +310,10 @@ export default function AppLayout() {
         <header
           className="flex md:hidden items-center px-4 h-14 flex-shrink-0"
           style={{
-            background: 'rgba(255,255,255,0.92)',
-            backdropFilter: 'blur(20px)',
-            WebkitBackdropFilter: 'blur(20px)',
-            borderBottom: '1px solid var(--color-border)',
+            background:          'rgba(255,255,255,0.92)',
+            backdropFilter:      'blur(20px)',
+            WebkitBackdropFilter:'blur(20px)',
+            borderBottom:        '1px solid var(--color-border)',
           }}
         >
           <button
@@ -323,7 +331,7 @@ export default function AppLayout() {
 
         {/* Contenido de la ruta activa */}
         <main
-          className="flex-1 overflow-y-auto pb-[env(safe-area-inset-bottom)]"
+          className="flex-1 overflow-y-auto"
           style={{ paddingBottom: 'calc(56px + env(safe-area-inset-bottom))' }}
           id="main-content"
         >
