@@ -300,9 +300,9 @@ function Buscador({
 /** Fila de tabla genérica */
 function FilaTabla({ celdas }: { celdas: React.ReactNode[] }) {
   return (
-    <tr className="border-t border-[color:var(--color-border)] hover:bg-[color:var(--color-bg)] transition-colors">
+    <tr className="border-b border-[#F2F2F7] bg-white hover:bg-[#F8F8FF] transition-colors">
       {celdas.map((celda, i) => (
-        <td key={i} className="px-3 py-3 text-sm text-[color:var(--color-text-primary)] align-top">
+        <td key={i} className="px-4 py-3 text-[13px] text-[#1C1C1E] align-top">
           {celda}
         </td>
       ))}
@@ -314,11 +314,11 @@ function FilaTabla({ celdas }: { celdas: React.ReactNode[] }) {
 function EncabezadoTabla({ cols }: { cols: string[] }) {
   return (
     <thead>
-      <tr>
+      <tr className="bg-[#F2F2F7] border-b border-[#E5E5EA]">
         {cols.map((col) => (
           <th
             key={col}
-            className="px-3 py-2 text-left text-[11px] font-semibold tracking-wide uppercase text-[color:var(--color-text-tertiary)]"
+            className="px-4 py-3 text-left text-[11px] font-semibold tracking-wider uppercase text-[#8E8E93]"
           >
             {col}
           </th>
@@ -331,15 +331,8 @@ function EncabezadoTabla({ cols }: { cols: string[] }) {
 /** Contenedor de tarjeta con tabla */
 function TarjetaTabla({ children }: { children: React.ReactNode }) {
   return (
-    <div
-      className="rounded-2xl overflow-hidden overflow-x-auto"
-      style={{
-        background: 'var(--color-surface)',
-        border: '1px solid var(--color-border)',
-        boxShadow: 'var(--shadow)',
-      }}
-    >
-      <table className="w-full min-w-[500px]">{children}</table>
+    <div className="overflow-x-auto rounded-xl border border-[#E5E5EA]">
+      <table className="w-full min-w-[500px] bg-white">{children}</table>
     </div>
   )
 }

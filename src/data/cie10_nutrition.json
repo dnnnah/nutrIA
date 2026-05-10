@@ -1,0 +1,586 @@
+{
+  "metadata": {
+    "fuente": "CIE-10 — Clasificación Internacional de Enfermedades",
+    "version": "10ª revisión, 5ª edición en español",
+    "editorial": "OPS/OMS",
+    "año": "2019",
+    "url": "https://ais.paho.org/classifications/Chapters/",
+    "advertencia": "Solo incluye los diagnósticos más relevantes para la práctica de nutrición clínica en México. No sustituye la consulta directa del volumen oficial de la CIE-10.",
+    "uso_clinico": "Registro de diagnóstico en expediente nutricional. El nutriólogo registra el código del diagnóstico médico ya establecido por el médico tratante; no establece diagnóstico médico por sí mismo."
+  },
+  "categorias": [
+    {
+      "id": "E00-E07",
+      "nombre": "Trastornos de la glándula tiroides",
+      "codigos": [
+        {
+          "codigo": "E00",
+          "nombre": "Síndrome de deficiencia congénita de yodo",
+          "relevancia_nutricional": "Deficiencia grave de yodo durante gestación/infancia. Impacto en desarrollo neurológico y crecimiento.",
+          "notas_clinicas": "Suplementación de yodo en gestantes y lactantes. Revisar fuentes dietéticas de yodo (mariscos, sal yodada). No confundir con hipotiroidismo adquirido.",
+          "micronutrientes_clave": ["yodo", "selenio"]
+        },
+        {
+          "codigo": "E01",
+          "nombre": "Trastornos tiroideos y afecciones relacionadas debidos a deficiencia de yodo",
+          "relevancia_nutricional": "Bocio endémico por ingesta insuficiente de yodo. Prevalente en zonas montañosas de México.",
+          "notas_clinicas": "Asegurar ingesta de 150 mcg/día de yodo (adultos). Uso de sal yodada. Evitar exceso de bociógenos (crucíferas crudas, soya en exceso) sin fuente de yodo compensatoria.",
+          "micronutrientes_clave": ["yodo", "selenio", "hierro"],
+          "restricciones": ["crucíferas crudas en exceso sin yodo compensatorio", "soya en exceso"]
+        },
+        {
+          "codigo": "E03.9",
+          "nombre": "Hipotiroidismo, no especificado",
+          "relevancia_nutricional": "Metabolismo basal reducido. Riesgo de ganancia de peso, estreñimiento, dislipidemia. Ajuste calórico cuidadoso.",
+          "notas_clinicas": "Calcular GET con precaución — el hipotiroidismo reduce la TMB real vs. calculada. Dieta alta en fibra para estreñimiento. Administrar levotiroxina en ayuno, separada de calcio y hierro 4h. Limitar crudas crucíferas si hay deficiencia de yodo concomitante.",
+          "micronutrientes_clave": ["yodo", "selenio", "zinc", "hierro"],
+          "restricciones": ["crucíferas crudas en exceso", "soya en exceso cercana a medicación"]
+        },
+        {
+          "codigo": "E05.9",
+          "nombre": "Tirotoxicosis, no especificada (Hipertiroidismo)",
+          "relevancia_nutricional": "Hipermetabolismo — requerimientos calóricos elevados. Catabolismo proteico acelerado. Pérdida de peso involuntaria.",
+          "notas_clinicas": "Aumentar aporte calórico y proteico (1.5-2.0 g/kg). Vigilar densidad ósea (calcio y vitamina D). Limitar yodo dietético en fase activa (evitar mariscos, algas). Pequeñas comidas frecuentes si hay náusea.",
+          "micronutrientes_clave": ["calcio", "vitamina_d", "proteina"],
+          "restricciones": ["algas marinas", "mariscos en exceso durante fase activa"]
+        }
+      ]
+    },
+    {
+      "id": "E10-E14",
+      "nombre": "Diabetes mellitus",
+      "codigos": [
+        {
+          "codigo": "E10",
+          "nombre": "Diabetes mellitus tipo 1",
+          "relevancia_nutricional": "Deficiencia absoluta de insulina. Plan de alimentación debe coordinarse con insulinoterapia. Control de HC por comida (conteo de carbohidratos).",
+          "notas_clinicas": "Conteo de carbohidratos para ajuste de insulina. Distribución consistente de HC. Índice glucémico bajo. Hipoglucemia: protocolo 15-15. Sin restricción calórica automática (a diferencia de DM2). Vigilar micronutrientes por riesgo de deficiencia.",
+          "micronutrientes_clave": ["magnesio", "zinc", "vitamina_d", "cromo"],
+          "restricciones": ["azúcares simples sin cobertura de insulina"]
+        },
+        {
+          "codigo": "E11",
+          "nombre": "Diabetes mellitus tipo 2",
+          "relevancia_nutricional": "Resistencia a insulina. Primera línea: cambio estilo de vida (dieta + actividad física). Pérdida de peso del 5-10% mejora control glucémico.",
+          "notas_clinicas": "Déficit calórico moderado (-500 kcal/día). HC complejos con fibra. Índice glucémico bajo. Limitar azúcares añadidos y ultraprocesados. Distribución por tiempos de comida para evitar picos glucémicos. Monitorear función renal para ajuste de proteínas si hay nefropatía.",
+          "micronutrientes_clave": ["magnesio", "cromo", "zinc", "vitamina_d", "vitamina_b12"],
+          "restricciones": ["azúcares añadidos", "bebidas azucaradas", "harinas refinadas", "grasas trans", "alcohol"]
+        },
+        {
+          "codigo": "E11.2",
+          "nombre": "Diabetes mellitus tipo 2 con complicaciones renales",
+          "relevancia_nutricional": "DM2 + nefropatía diabética. Restricción de proteínas, potasio, fósforo y sodio según estadio ERC.",
+          "notas_clinicas": "Proteínas 0.6-0.8 g/kg/día si ERC G3-G5 sin diálisis. Limitar fósforo (< 800-1000 mg/día). Monitorear potasio según estadio. Sodio < 2g/día. Calcular FG con CKD-EPI.",
+          "micronutrientes_clave": ["fosforo", "potasio", "calcio", "vitamina_d"],
+          "restricciones": ["proteína en exceso", "fósforo", "potasio si hiperkalemia", "sodio", "lácteos en exceso"]
+        },
+        {
+          "codigo": "E11.3",
+          "nombre": "Diabetes mellitus tipo 2 con complicaciones oftálmicas",
+          "relevancia_nutricional": "Retinopatía diabética. Antioxidantes pueden tener papel protector complementario.",
+          "notas_clinicas": "Control glucémico estricto es la intervención principal. Luteína, zeaxantina y omega-3 como coadyuvantes. Vigilar HbA1c < 7% como meta.",
+          "micronutrientes_clave": ["luteina", "zeaxantina", "omega3", "vitamina_c", "vitamina_e"]
+        },
+        {
+          "codigo": "E11.4",
+          "nombre": "Diabetes mellitus tipo 2 con complicaciones neurológicas",
+          "relevancia_nutricional": "Neuropatía diabética. Vitaminas del complejo B (especialmente B12) son cofactores nerviosos. Metformina puede agotar B12.",
+          "notas_clinicas": "Vigilar niveles de vitamina B12 si usa metformina (>2 años). Suplementar si niveles bajos. Ácido alfa-lipoico puede usarse como coadyuvante. Control glucémico como intervención principal.",
+          "micronutrientes_clave": ["vitamina_b12", "vitamina_b1", "acido_alfa_lipoico"]
+        },
+        {
+          "codigo": "E13",
+          "nombre": "Otras formas especificadas de diabetes mellitus",
+          "relevancia_nutricional": "Incluye diabetes secundaria (pancreática, MODY, por fármacos). El manejo nutricional varía según la causa subyacente.",
+          "notas_clinicas": "En diabetes pancreática: evaluar también función exocrina (malabsorción de grasas). En MODY: manejo similar a DM2 o DM1 según genotipo. Coordinar con médico especialista.",
+          "micronutrientes_clave": ["vitaminas_liposolubles", "enzimas_pancreaticas"]
+        }
+      ]
+    },
+    {
+      "id": "E20-E35",
+      "nombre": "Otros trastornos endocrinos",
+      "codigos": [
+        {
+          "codigo": "E24.0",
+          "nombre": "Síndrome de Cushing dependiente de hipófisis (Enfermedad de Cushing)",
+          "relevancia_nutricional": "Hipercortisolismo causa redistribución de grasa (central), sarcopenia, hiperglucemia, osteoporosis e hipertensión.",
+          "notas_clinicas": "Dieta hipocalórica. Restricción de sodio (hipertensión). Calcio y vitamina D altos (osteoporosis). Alta proteína para preservar masa muscular. Control de HC (resistencia a insulina).",
+          "micronutrientes_clave": ["calcio", "vitamina_d", "potasio", "proteina"],
+          "restricciones": ["sodio", "azúcares simples", "alcohol"]
+        },
+        {
+          "codigo": "E27.1",
+          "nombre": "Insuficiencia suprarrenal primaria (Enfermedad de Addison)",
+          "relevancia_nutricional": "Deficiencia de cortisol y aldosterona. Hipotensión, pérdida de sodio, hipoglucemia, pérdida de peso.",
+          "notas_clinicas": "Dieta con sodio adecuado o elevado (no restringir). Pequeñas comidas frecuentes para evitar hipoglucemia. Durante estrés físico o enfermedad: aumentar dosis de medicación (no nutricionalmente manejable). Alta ingesta de HC complejos.",
+          "micronutrientes_clave": ["sodio", "potasio", "vitamina_c"]
+        },
+        {
+          "codigo": "E28.2",
+          "nombre": "Síndrome de ovario poliquístico (SOP)",
+          "relevancia_nutricional": "Resistencia a insulina frecuente. Hiperandrogenismo. Asociado a sobrepeso/obesidad. Riesgo de DM2 y síndrome metabólico.",
+          "notas_clinicas": "Dieta con bajo índice glucémico. Pérdida de peso del 5-10% mejora ciclos menstruales. Limitar HC refinados y azúcares. Considerar inositol (myo-inositol) como coadyuvante. Omega-3 para dislipidemias asociadas.",
+          "micronutrientes_clave": ["inositol", "omega3", "vitamina_d", "magnesio", "zinc"],
+          "restricciones": ["azúcares añadidos", "harinas refinadas", "grasas saturadas en exceso"]
+        },
+        {
+          "codigo": "E34.9",
+          "nombre": "Trastorno endocrino, no especificado",
+          "relevancia_nutricional": "Categoría residual. Individualizar manejo nutricional según sintomatología y laboratorios.",
+          "notas_clinicas": "Coordinar con endocrinólogo para guía específica."
+        }
+      ]
+    },
+    {
+      "id": "E40-E46",
+      "nombre": "Desnutrición",
+      "codigos": [
+        {
+          "codigo": "E40",
+          "nombre": "Kwashiorkor",
+          "relevancia_nutricional": "Deficiencia severa de proteínas con edema. Más frecuente en pediatría. Puede haber ingesta calórica normal pero proteica insuficiente.",
+          "notas_clinicas": "Realimentación gradual — síndrome de realimentación si se hace rápido. Comenzar con 50-60% de requerimientos y aumentar en 3-5 días. Alta proteína. Suplementación de zinc, vitamina A, ácido fólico. Rehidratación oral según protocolo OMS.",
+          "micronutrientes_clave": ["proteina", "zinc", "vitamina_a", "folato", "potasio"]
+        },
+        {
+          "codigo": "E41",
+          "nombre": "Marasmo nutricional",
+          "relevancia_nutricional": "Deficiencia severa de calorías y proteínas. Emaciación marcada. Más frecuente en lactantes.",
+          "notas_clinicas": "Protocolo OMS de manejo de desnutrición aguda severa: F-75 → F-100. Realimentación lenta. Vigilar síndrome de realimentación (hipofosforemia, hipokalemia). Suplementación de micronutrientes.",
+          "micronutrientes_clave": ["energia", "proteina", "fosforo", "potasio", "magnesio", "zinc", "vitamina_a"]
+        },
+        {
+          "codigo": "E42",
+          "nombre": "Marasmo kwashiorkor",
+          "relevancia_nutricional": "Forma mixta severa con emaciación y edema. Alta mortalidad. Requiere manejo hospitalario.",
+          "notas_clinicas": "Manejo igual que marasmo y kwashiorkor. Protocolo OMS estricto. Seguimiento estrecho de electrolitos.",
+          "micronutrientes_clave": ["energia", "proteina", "electrolitos", "zinc", "vitamina_a"]
+        },
+        {
+          "codigo": "E43",
+          "nombre": "Desnutrición proteinoenergética grave, no especificada",
+          "relevancia_nutricional": "IMC < 16 kg/m² o pérdida > 20% del peso habitual. Requiere intervención nutricional urgente.",
+          "notas_clinicas": "Evaluar riesgo de síndrome de realimentación (SRF). Suplementar tiamina antes de HC si riesgo de SRF. Vitaminas del complejo B, zinc, fósforo. Metas calóricas progresivas.",
+          "micronutrientes_clave": ["tiamina", "fosforo", "potasio", "magnesio", "zinc"]
+        },
+        {
+          "codigo": "E44.0",
+          "nombre": "Desnutrición proteinoenergética moderada",
+          "relevancia_nutricional": "IMC 16-17.9 kg/m² o pérdida 10-19.9% del peso habitual. Intervención nutricional prioritaria.",
+          "notas_clinicas": "Plan hipercalórico e hiperproteico. Suplementación de micronutrientes. Metas: aumentar 0.5-1 kg/semana. Seguimiento mensual.",
+          "micronutrientes_clave": ["energia", "proteina", "micronutrientes_completos"]
+        },
+        {
+          "codigo": "E44.1",
+          "nombre": "Desnutrición proteinoenergética leve",
+          "relevancia_nutricional": "IMC 17-18.4 kg/m² o pérdida 5-9.9% del peso habitual. Intervención nutricional y seguimiento.",
+          "notas_clinicas": "Aumento calórico moderado. Proteína 1.2-1.5 g/kg. Revisión de hábitos alimentarios. Seguimiento bimensual."
+        },
+        {
+          "codigo": "E45",
+          "nombre": "Retraso del desarrollo debido a desnutrición proteinoenergética",
+          "relevancia_nutricional": "Talla baja crónica por desnutrición prolongada en la infancia. Z-score talla/edad < -2 DE.",
+          "notas_clinicas": "Rehabilitación nutricional de largo plazo. Catch-up growth con alta densidad energética. Zinc fundamental para crecimiento lineal. Evaluación con curvas OMS.",
+          "micronutrientes_clave": ["zinc", "hierro", "vitamina_a", "calcio", "vitamina_d"]
+        },
+        {
+          "codigo": "E46",
+          "nombre": "Desnutrición proteinoenergética, no especificada",
+          "relevancia_nutricional": "Categoría residual. Usar cuando no se puede especificar el tipo.",
+          "notas_clinicas": "Clasificar según herramientas validadas: NRS-2002 (hospitalizados), MNA (adultos mayores), PG-SGA (oncológico), STAMP/STRONG-kids (pediatría)."
+        }
+      ]
+    },
+    {
+      "id": "E50-E64",
+      "nombre": "Otras deficiencias nutricionales",
+      "codigos": [
+        {
+          "codigo": "E50",
+          "nombre": "Deficiencia de vitamina A",
+          "relevancia_nutricional": "Ceguera nocturna, xeroftalmia, infecciones recurrentes. Prevalente en zonas rurales con baja ingesta de lácteos, huevo y vísceras.",
+          "notas_clinicas": "Suplementación de vitamina A según protocolo OMS (especialmente niños 6-59 meses y embarazadas en zonas de riesgo). Fomentar alimentos fuente: hígado, huevo, zanahoria, mango, papaya. No suplementar en exceso en embarazo (teratogénico > 3000 mcg RAE/día).",
+          "micronutrientes_clave": ["vitamina_a"],
+          "restricciones": ["suplementos de vitamina A preformada en dosis altas durante embarazo"]
+        },
+        {
+          "codigo": "E51",
+          "nombre": "Deficiencia de tiamina (Vitamina B1)",
+          "relevancia_nutricional": "Beriberi. Riesgo en alcohólicos, síndrome de realimentación, dietas muy restrictivas de HC, cirugía bariátrica.",
+          "notas_clinicas": "Suplementar tiamina ANTES de administrar glucosa en riesgo de síndrome de Wernicke (alcohólicos desnutridos). Fuentes: cereales integrales, leguminosas, cerdo. Cocinar destruye tiamina (evitar hervir prolongado).",
+          "micronutrientes_clave": ["tiamina", "magnesio"]
+        },
+        {
+          "codigo": "E52",
+          "nombre": "Deficiencia de niacina (Pelagra)",
+          "relevancia_nutricional": "Dermatitis, diarrea, demencia. Raro en México; riesgo en poblaciones con maíz sin nixtamalizar como único HC.",
+          "notas_clinicas": "La nixtamalización libera niacina biodisponible del maíz. Fuentes: carne, pescado, maíz nixtamalizado, cacahuate. Triptófano se convierte en niacina (60 mg triptófano = 1 mg NE).",
+          "micronutrientes_clave": ["niacina", "triptofano"]
+        },
+        {
+          "codigo": "E53.8",
+          "nombre": "Deficiencia de otras vitaminas del grupo B especificadas",
+          "relevancia_nutricional": "Incluye B6, B12, ácido fólico, biotina, ácido pantoténico. B12 crítica en veganos y usuarios de metformina.",
+          "notas_clinicas": "B12: riesgo en veganos, vegetarianos estrictos, adultos mayores, usuarios de metformina, IBP o antiácidos prolongados. Suplementación de 500-1000 mcg/día oral o 1000 mcg/mes IM. Folato: crítico en embarazo (400-800 mcg/día preconcepcional).",
+          "micronutrientes_clave": ["vitamina_b12", "folato", "vitamina_b6"]
+        },
+        {
+          "codigo": "E54",
+          "nombre": "Deficiencia de vitamina C (Escorbuto)",
+          "relevancia_nutricional": "Infrecuente en México. Riesgo en dietas muy restrictivas sin frutas/verduras, fumadores, adultos mayores institucionalizados.",
+          "notas_clinicas": "Vitamina C mejora absorción de hierro no hemo (hierro de origen vegetal). Fuentes: guayaba, chile, naranja, fresa, brócoli. Fumadores necesitan +35 mg/día adicionales.",
+          "micronutrientes_clave": ["vitamina_c", "hierro"]
+        },
+        {
+          "codigo": "E55.9",
+          "nombre": "Deficiencia de vitamina D, no especificada",
+          "relevancia_nutricional": "Muy prevalente en México. Asociada a osteoporosis, inmunodepresión, DM2, enfermedades autoinmunes.",
+          "notas_clinicas": "Meta: niveles séricos 25(OH)D ≥ 30 ng/mL. Dosis terapéutica: 50,000 UI/semana × 8 semanas, luego mantenimiento 1500-2000 UI/día. Fuentes limitadas en dieta: pescado graso, huevo, lácteos fortificados. Exposición solar 15-30 min/día es la fuente principal.",
+          "micronutrientes_clave": ["vitamina_d", "calcio", "magnesio"]
+        },
+        {
+          "codigo": "E58",
+          "nombre": "Deficiencia dietética de calcio",
+          "relevancia_nutricional": "Riesgo de osteoporosis, tetania, raquitismo. Alta prevalencia en México por baja ingesta de lácteos.",
+          "notas_clinicas": "IDR: 1000 mg/día adultos; 1200 mg/día adultos >50 años; 1300 mg/día adolescentes. Fuentes: lácteos, charales (pez chico con hueso), amaranto, brócoli, tortilla de maíz. Absorción optimizada con vitamina D y en presencia de ácido gástrico.",
+          "micronutrientes_clave": ["calcio", "vitamina_d"],
+          "restricciones": ["oxalatos (espinaca, acelgas) disminuyen absorción de calcio de esa misma comida"]
+        },
+        {
+          "codigo": "E61.0",
+          "nombre": "Deficiencia de cobre",
+          "relevancia_nutricional": "Raro. Riesgo en nutrición parenteral prolongada, cirugía bariátrica, exceso de suplementación de zinc.",
+          "notas_clinicas": "Anemia microcítica que no responde a hierro + neutropenia sugiere deficiencia de cobre. Fuentes: mariscos, hígado, nueces, semillas.",
+          "micronutrientes_clave": ["cobre", "zinc"]
+        },
+        {
+          "codigo": "E61.1",
+          "nombre": "Deficiencia de hierro",
+          "relevancia_nutricional": "Deficiencia de micronutriente más prevalente en México. Anemia ferropénica: mujeres en edad reproductiva, embarazadas, niños < 5 años.",
+          "notas_clinicas": "Hierro hemo (carnes) absorción 20-30%; hierro no hemo (vegetal/leguminosas) absorción 2-20%. Potenciar con vitamina C en misma comida. Separar de calcio, café, té, fitatos 2h. Tratamiento: 150-200 mg Fe elemental/día. Fuentes: hígado, carne roja, frijol, lentejas, amaranto.",
+          "micronutrientes_clave": ["hierro", "vitamina_c"],
+          "restricciones": ["café y té con comidas ricas en hierro", "calcio en alta cantidad con hierro no hemo"]
+        },
+        {
+          "codigo": "E61.3",
+          "nombre": "Deficiencia de zinc",
+          "relevancia_nutricional": "Retraso de crecimiento, hipogeusia, inmunodepresión, cicatrización lenta. Frecuente en dietas vegetarianas sin planificación y ERC.",
+          "notas_clinicas": "IDR: 8-11 mg/día adultos. Fitatos de cereales y leguminosas inhiben absorción. Remojar/germinar leguminosas reduce fitatos. Fuentes: ostión, carne, semillas de calabaza, leguminosas. En ERC: monitorear niveles.",
+          "micronutrientes_clave": ["zinc"]
+        },
+        {
+          "codigo": "E63.9",
+          "nombre": "Deficiencia nutricional, no especificada",
+          "relevancia_nutricional": "Categoría residual para deficiencias no especificadas en otra parte.",
+          "notas_clinicas": "Realizar perfil bioquímico completo. Evaluar con herramienta de tamizaje nutricional validada."
+        },
+        {
+          "codigo": "E64",
+          "nombre": "Secuelas de desnutrición y de otras deficiencias nutricionales",
+          "relevancia_nutricional": "Efectos permanentes de desnutrición previa: baja talla, deterioro cognitivo, mayor riesgo metabólico en adulto (hipótesis Barker).",
+          "notas_clinicas": "Enfoque preventivo: intervención en primeros 1000 días. En adultos con secuelas: manejo de comorbilidades. Dieta variada y densa en micronutrientes."
+        }
+      ]
+    },
+    {
+      "id": "E65-E68",
+      "nombre": "Obesidad y otros problemas de sobrenutrición",
+      "codigos": [
+        {
+          "codigo": "E65",
+          "nombre": "Adiposidad localizada",
+          "relevancia_nutricional": "Grasa localizada sin criterios de obesidad. ICE > 0.5 puede indicar riesgo metabólico aunque IMC sea normal.",
+          "notas_clinicas": "Evaluar con ICC e ICE además de IMC. Intervención con actividad física focalizada y plan hipocalórico moderado si hay riesgo metabólico."
+        },
+        {
+          "codigo": "E66.0",
+          "nombre": "Obesidad debida a exceso de calorías",
+          "relevancia_nutricional": "IMC ≥ 30 kg/m². Primera causa de morbimortalidad prevenible en México. Intervención nutricional es pilar del tratamiento.",
+          "notas_clinicas": "Meta realista: pérdida 5-10% del peso en 6 meses. Déficit de 500-750 kcal/día. Usar peso ajustado para GET (no peso actual). Dieta con alta densidad nutricional, baja densidad energética. Limitar ultraprocesados. Aumentar fibra (25-30 g/día). Proteína 1.2-1.5 g/kg peso ajustado para preservar masa muscular.",
+          "micronutrientes_clave": ["fibra", "proteina", "vitamina_d", "magnesio"],
+          "restricciones": ["ultraprocesados", "bebidas azucaradas", "grasas trans", "alcohol"]
+        },
+        {
+          "codigo": "E66.01",
+          "nombre": "Obesidad mórbida (IMC ≥ 40)",
+          "relevancia_nutricional": "Alto riesgo cardiovascular, metabólico y mecánico. Puede requerir cirugía bariátrica.",
+          "notas_clinicas": "Pre-bariátrico: dieta de muy bajo aporte calórico (VLCD) para reducir grasa hepática. Post-bariátrico: suplementación de B12, hierro, calcio, vitamina D de por vida. Uso de peso ajustado para cálculo de requerimientos.",
+          "micronutrientes_clave": ["vitamina_b12", "hierro", "calcio", "vitamina_d", "zinc", "tiamina"]
+        },
+        {
+          "codigo": "E66.9",
+          "nombre": "Obesidad, no especificada",
+          "relevancia_nutricional": "IMC ≥ 30 sin especificar causa. Intervención nutricional igual que E66.0.",
+          "notas_clinicas": "Descartar causas secundarias (hipotiroidismo, Cushing, SOP, fármacos) antes de atribuir a balance energético positivo."
+        },
+        {
+          "codigo": "E67.0",
+          "nombre": "Hipervitaminosis A",
+          "relevancia_nutricional": "Toxicidad por exceso de retinol (no beta-caroteno). Riesgo con suplementos en dosis altas.",
+          "notas_clinicas": "Teratogénico en embarazo > 3000 mcg RAE/día. Síntomas: náusea, cefalea, descamación, hepatotoxicidad. Revisar suplementos del paciente.",
+          "restricciones": ["suplementos de vitamina A preformada en dosis altas", "hígado en exceso durante embarazo"]
+        },
+        {
+          "codigo": "E68",
+          "nombre": "Secuelas de hiperalimentación",
+          "relevancia_nutricional": "Complicaciones crónicas de sobrenutrición: DM2, dislipidemia, HTA, enfermedad cardiovascular, EHNA.",
+          "notas_clinicas": "Manejo integral. Cada comorbilidad requiere ajustes específicos del plan nutricional."
+        }
+      ]
+    },
+    {
+      "id": "E70-E90",
+      "nombre": "Trastornos metabólicos",
+      "codigos": [
+        {
+          "codigo": "E71.0",
+          "nombre": "Fenilcetonuria clásica",
+          "relevancia_nutricional": "Error innato del metabolismo: incapacidad de metabolizar fenilalanina. Requiere dieta extremadamente especializada de por vida.",
+          "notas_clinicas": "Dieta baja en fenilalanina. Usar fórmulas especiales de aminoácidos sin fenilalanina. Meta: fenilalanina sérica 120-360 µmol/L. Aspartamo (Aspartame) contraindicado absolutamente. Suplementar tirosina.",
+          "micronutrientes_clave": ["tirosina", "fenilalanina"],
+          "restricciones": ["fenilalanina", "proteína animal en exceso", "aspartamo"]
+        },
+        {
+          "codigo": "E74.2",
+          "nombre": "Trastornos del metabolismo de la galactosa (Galactosemia)",
+          "relevancia_nutricional": "Incapacidad de metabolizar galactosa. Riesgo de daño hepático, cataratas y retardo mental si no se trata.",
+          "notas_clinicas": "Eliminar lactosa y galactosa de dieta de por vida. Sustitución de leche materna o de fórmula con fórmulas de soya o amino-ácidos. Vigilar calcio y vitamina D.",
+          "micronutrientes_clave": ["calcio", "vitamina_d"],
+          "restricciones": ["leche y lácteos (lactosa/galactosa)", "leguminosas con altos niveles de galactosa"]
+        },
+        {
+          "codigo": "E78.0",
+          "nombre": "Hipercolesterolemia pura",
+          "relevancia_nutricional": "LDL elevado. Dieta reduce LDL 10-20% (complemento a estatinas). Grasas saturadas y trans son los principales factores dietéticos.",
+          "notas_clinicas": "Limitar grasas saturadas < 7% del VCT. Eliminar grasas trans. Aumentar fibra soluble (avena, chia, linaza, frijol). Esteroles vegetales (2g/día): reducen LDL 5-15%. Omega-3 para TG. Dieta DASH o mediterránea.",
+          "micronutrientes_clave": ["fibra_soluble", "omega3", "esteroles_vegetales"],
+          "restricciones": ["grasas saturadas", "grasas trans", "colesterol dietético > 200 mg/día"]
+        },
+        {
+          "codigo": "E78.1",
+          "nombre": "Hipertrigliceridemia pura",
+          "relevancia_nutricional": "TG elevados (> 150 mg/dL). Muy sensible a dieta: HC simples, alcohol y grasas saturadas los elevan.",
+          "notas_clinicas": "Limitar azúcares añadidos < 10% VCT. Eliminar bebidas azucaradas y alcohol. Reducir HC totales (moderadamente bajo). Omega-3 en altas dosis (4g EPA+DHA/día) reduce TG 20-50%. Si TG > 500 mg/dL: restringir grasas totales < 15% para prevenir pancreatitis.",
+          "micronutrientes_clave": ["omega3"],
+          "restricciones": ["azúcares añadidos", "alcohol", "fructosa en exceso", "harinas refinadas"]
+        },
+        {
+          "codigo": "E78.5",
+          "nombre": "Hiperlipidemia mixta",
+          "relevancia_nutricional": "LDL y TG elevados. Combinar estrategias de E78.0 y E78.1. Patrón de dieta mediterránea es el más evidenciado.",
+          "notas_clinicas": "Dieta mediterránea o DASH. Aceite de oliva extra virgen. Limitar grasas saturadas y trans. Reducir HC simples y alcohol. Aumentar fibra total.",
+          "micronutrientes_clave": ["fibra", "omega3", "esteroles_vegetales"],
+          "restricciones": ["grasas saturadas", "grasas trans", "azúcares añadidos", "alcohol"]
+        },
+        {
+          "codigo": "E79.0",
+          "nombre": "Hiperuricemia sin signos de artritis gotosa inflamatoria",
+          "relevancia_nutricional": "Ácido úrico elevado. Dieta baja en purinas y alcohol puede reducir niveles.",
+          "notas_clinicas": "Limitar carnes rojas, vísceras, mariscos y alcohol (especialmente cerveza). Fructosa elevada aumenta ácido úrico. Aumentar agua (> 2L/día). Leche descremada y vitamina C tienen efecto uricosúrico. Leguminosas tienen purinas pero efecto clínico menor al de las carnes.",
+          "micronutrientes_clave": ["vitamina_c"],
+          "restricciones": ["vísceras", "mariscos", "alcohol", "fructosa en exceso", "bebidas azucaradas"]
+        },
+        {
+          "codigo": "E83.3",
+          "nombre": "Trastornos del metabolismo del fósforo",
+          "relevancia_nutricional": "Hiperfosfatemia en ERC. Hipofosfatemia en síndrome de realimentación, desnutrición.",
+          "notas_clinicas": "En ERC: limitar fósforo < 800-1000 mg/día. Evitar aditivos de fosfato en alimentos procesados (biodisponibilidad 100%). El fósforo orgánico de alimentos integrales tiene menor absorción. En SRF: monitorear y suplementar si < 2.5 mg/dL.",
+          "micronutrientes_clave": ["fosforo", "calcio", "vitamina_d"],
+          "restricciones": ["aditivos de fosfato en procesados si ERC", "lacteos en exceso si ERC"]
+        }
+      ]
+    },
+    {
+      "id": "K70-K77",
+      "nombre": "Enfermedades del hígado",
+      "codigos": [
+        {
+          "codigo": "K70.0",
+          "nombre": "Hígado graso alcohólico (esteatosis hepática alcohólica)",
+          "relevancia_nutricional": "Acumulación de grasa hepática por alcohol. Abstinencia es la intervención principal.",
+          "notas_clinicas": "Abstinencia absoluta de alcohol. Puede haber desnutrición asociada. Suplementar tiamina (B1), folato y vitaminas del complejo B. Dieta equilibrada hipercalórica si hay desnutrición.",
+          "micronutrientes_clave": ["tiamina", "folato", "vitamina_b6", "zinc"],
+          "restricciones": ["alcohol"]
+        },
+        {
+          "codigo": "K75.81",
+          "nombre": "Enfermedad hepática por hígado graso no alcohólico (EHGNA/NAFLD)",
+          "relevancia_nutricional": "Esteatosis hepática sin consumo significativo de alcohol. Asociada a obesidad, DM2, síndrome metabólico.",
+          "notas_clinicas": "Pérdida de peso 7-10% mejora histología hepática. Déficit calórico 500-1000 kcal/día. Dieta mediterránea: la más evidenciada. Limitar fructosa y azúcares añadidos. Café (sin azúcar): efecto hepatoprotector (2-3 tazas/día). Omega-3 reduce TG hepáticos.",
+          "micronutrientes_clave": ["omega3", "vitamina_e", "vitamina_d"],
+          "restricciones": ["fructosa", "azúcares añadidos", "grasas saturadas", "alcohol", "ultraprocesados"]
+        },
+        {
+          "codigo": "K74.6",
+          "nombre": "Otra cirrosis hepática y la no especificada",
+          "relevancia_nutricional": "Desnutrición presente en 50-90% de cirróticos. Metabolismo alterado: ayuno acelerado — comer cada 3-4h. Riesgo de encefalopatía.",
+          "notas_clinicas": "Pequeñas comidas frecuentes (5-6/día). Colación nocturna de HC (evita catabolismo nocturno). Proteína NO restringir salvo encefalopatía activa (mito superado): 1.2-1.5 g/kg. BCAA puede ser útil. Sodio < 2g/día si hay ascitis. Vitamina K si INR elevado. Zinc frecuentemente deficiente.",
+          "micronutrientes_clave": ["proteina_bcaa", "zinc", "vitamina_k", "sodio"],
+          "restricciones": ["sodio si ascitis", "alcohol", "alimentos crudos si inmunodeficiencia severa"]
+        }
+      ]
+    },
+    {
+      "id": "K80-K87",
+      "nombre": "Enfermedades de la vesícula biliar y páncreas",
+      "codigos": [
+        {
+          "codigo": "K80.2",
+          "nombre": "Cálculos biliares con colecistitis aguda",
+          "relevancia_nutricional": "Dieta baja en grasas en fase aguda. Posponer cirugía permite transición gradual.",
+          "notas_clinicas": "Fase aguda: dieta líquida o blanda, baja en grasa (< 30 g/día). Fase crónica/post-colecistectomía: reintroducir grasas gradualmente. La restricción total de grasas no es necesaria a largo plazo. Evitar comidas muy grasosas que desencadenen cólico.",
+          "restricciones": ["grasas en fase aguda", "comidas muy grasosas en fase crónica"]
+        },
+        {
+          "codigo": "K85.9",
+          "nombre": "Pancreatitis aguda, no especificada",
+          "relevancia_nutricional": "Inflamación aguda del páncreas. Reposo pancreático. En casos leves: reiniciar nutrición oral temprana (< 24h).",
+          "notas_clinicas": "Leve-moderada: inicio oral temprano con dieta sólida baja en grasa. SEVERA: nutrición enteral por SNG/SNY temprana (preferida sobre parenteral). El ayuno prolongado aumenta complicaciones. Baja en grasa. Sin alcohol. Vitaminas liposolubles si hay malabsorción.",
+          "micronutrientes_clave": ["vitaminas_liposolubles", "zinc"],
+          "restricciones": ["alcohol", "grasas en exceso", "comidas muy grasosas"]
+        },
+        {
+          "codigo": "K86.1",
+          "nombre": "Otras pancreatitis crónicas",
+          "relevancia_nutricional": "Insuficiencia pancreática exocrina: malabsorción de grasas, proteínas y vitaminas liposolubles. Alto riesgo de desnutrición y diabetes pancreática.",
+          "notas_clinicas": "Suplementación de enzimas pancreáticas (lipasa, amilasa, proteasa) con cada comida. Vitaminas liposolubles (A, D, E, K) en forma hidrosoluble. Dieta moderada en grasa (no restricción severa). Sin alcohol. Monitorear glucemia (riesgo DM). Triglicéridos de cadena media (MCT) si malabsorción severa.",
+          "micronutrientes_clave": ["vitamina_a", "vitamina_d", "vitamina_e", "vitamina_k", "zinc", "magnesio"],
+          "restricciones": ["alcohol", "tabaco"]
+        }
+      ]
+    },
+    {
+      "id": "K90",
+      "nombre": "Malabsorción intestinal",
+      "codigos": [
+        {
+          "codigo": "K90.0",
+          "nombre": "Enfermedad celiaca",
+          "relevancia_nutricional": "Enteropatía autoinmune por gluten. Daño de vellosidades intestinales → malabsorción. Dieta sin gluten de por vida.",
+          "notas_clinicas": "Eliminar trigo, cebada, centeno y avena contaminada. Verificar etiquetas: gluten oculto en salsas, embutidos, condimentos. Posibles deficiencias al diagnóstico: hierro, calcio, vitamina D, folato, B12, zinc. La mucosa se recupera en 6-24 meses con dieta estricta.",
+          "micronutrientes_clave": ["hierro", "calcio", "vitamina_d", "folato", "vitamina_b12", "zinc"],
+          "restricciones": ["trigo", "cebada", "centeno", "avena contaminada", "productos con TACC"]
+        },
+        {
+          "codigo": "K90.1",
+          "nombre": "Esprue tropical",
+          "relevancia_nutricional": "Malabsorción en regiones tropicales. Deficiencias de folato y B12 frecuentes.",
+          "notas_clinicas": "Suplementación de folato y B12. Tratamiento antibiótico. Dieta de fácil digestión.",
+          "micronutrientes_clave": ["folato", "vitamina_b12"]
+        },
+        {
+          "codigo": "K90.3",
+          "nombre": "Esteatorrea pancreática (malabsorción por insuficiencia pancreática exocrina)",
+          "relevancia_nutricional": "Heces grasosas, flatulencia, pérdida de peso. Alta pérdida de vitaminas liposolubles.",
+          "notas_clinicas": "Suplementación de enzimas pancreáticas con cada comida. Vitaminas liposolubles en forma hidrosoluble. MCT como fuente alternativa de grasa si malabsorción severa.",
+          "micronutrientes_clave": ["vitaminas_liposolubles", "enzimas_pancreaticas"]
+        },
+        {
+          "codigo": "K90.4",
+          "nombre": "Malabsorción debida a intolerancia, no clasificada en otra parte",
+          "relevancia_nutricional": "Incluye intolerancia a lactosa, fructosa, sorbital. Muy prevalente (intolerancia a lactosa en 50-80% de mexicanos).",
+          "notas_clinicas": "Intolerancia a lactosa: reducir o eliminar lactosa, usar lactasa, yogur y quesos maduros son tolerados. Preservar calcio con otras fuentes. Intolerancia a fructosa/sorbitol: dieta low-FODMAP.",
+          "micronutrientes_clave": ["calcio", "vitamina_d"]
+        },
+        {
+          "codigo": "K90.9",
+          "nombre": "Malabsorción intestinal, no especificada",
+          "relevancia_nutricional": "Categoría residual. Enfermedad de Crohn con afectación ileal: deficiencia de B12 (absorción en íleon terminal).",
+          "notas_clinicas": "Enfermedad de Crohn: alto riesgo de desnutrición. Vigilar hierro, zinc, B12, folato, vitamina D, vitamina K. Nutrición enteral elemental en brotes severos. Dieta baja en residuos en estenosis.",
+          "micronutrientes_clave": ["vitamina_b12", "hierro", "zinc", "folato", "vitamina_d", "vitamina_k"]
+        }
+      ]
+    },
+    {
+      "id": "N17-N19",
+      "nombre": "Insuficiencia renal",
+      "codigos": [
+        {
+          "codigo": "N17.9",
+          "nombre": "Insuficiencia renal aguda, no especificada",
+          "relevancia_nutricional": "IRA: catabolismo acelerado. Restricciones de K, P, Na según nivel de laboratorios. Soporte nutricional importante.",
+          "notas_clinicas": "Proteína: 1.2-1.5 g/kg (conservador si no en diálisis; liberal si en CRRT). Monitorear K, P y Na diariamente. Limitar líquidos según balance hídrico. Nutricón enteral preferida sobre parenteral si tracto GI funcionante.",
+          "micronutrientes_clave": ["potasio", "fosforo", "sodio"],
+          "restricciones": ["potasio si hiperkalemia", "fosforo si hiperfosfatemia", "sodio si hipernatremia o edema"]
+        },
+        {
+          "codigo": "N18.3",
+          "nombre": "Enfermedad renal crónica, estadio 3 (FG 30-59 mL/min)",
+          "relevancia_nutricional": "Restricción moderada de proteínas, fósforo y sodio. Monitoreo de potasio.",
+          "notas_clinicas": "Proteína 0.6-0.8 g/kg/día para no aceleración del daño renal. Fósforo < 800 mg/día. Sodio < 2g/día. Potasio: monitorear (no restringir si normokalémico). Vigilar PTH y manejo de calcio.",
+          "micronutrientes_clave": ["fosforo", "potasio", "calcio", "vitamina_d"],
+          "restricciones": ["proteína en exceso", "fosforo", "sodio"]
+        },
+        {
+          "codigo": "N18.5",
+          "nombre": "Enfermedad renal crónica, estadio 5 (FG < 15 mL/min)",
+          "relevancia_nutricional": "Prediálisis: restricción severa. En hemodiálisis: proteína aumenta. En diálisis peritoneal: absorbe glucosa del dializado.",
+          "notas_clinicas": "En diálisis: proteína 1.2-1.3 g/kg/día. Fósforo < 800 mg/día (quelantes con comidas). K < 2g/día. Na < 1.5g/día. Líquidos según peso seco y diuresis residual. Vitaminas hidrosolubles se pierden en diálisis: suplementar B1, B6, B12, folato, C. No suplementar vitaminas liposolubles sin indicación.",
+          "micronutrientes_clave": ["vitaminas_hidrosolubles", "calcio", "vitamina_d"],
+          "restricciones": ["fosforo", "potasio", "sodio", "liquidos", "proteína si pre-dialisis"]
+        },
+        {
+          "codigo": "N19",
+          "nombre": "Insuficiencia renal no especificada",
+          "relevancia_nutricional": "Usar CKD-EPI para calcular FG y estadificar antes de prescribir dieta renal.",
+          "notas_clinicas": "Estadificar con CKD-EPI 2021. Ajustar proteína, fósforo, potasio y sodio según estadio ERC. Coordinación con nefrólogo."
+        }
+      ]
+    },
+    {
+      "id": "O20-O29",
+      "nombre": "Otros trastornos relacionados con el embarazo",
+      "codigos": [
+        {
+          "codigo": "O21.0",
+          "nombre": "Hiperemesis gravídica leve",
+          "relevancia_nutricional": "Náuseas y vómitos en el embarazo. Riesgo de déficit de tiamina, deshidratación, pérdida de peso.",
+          "notas_clinicas": "Comidas pequeñas y frecuentes. Alimentos secos al despertar (galletas saladas). Jengibre (250 mg 4 veces/día). Evitar alimentos con olor fuerte. Si persiste >2 semanas con pérdida de peso: hospitalización y nutrición IV con tiamina.",
+          "micronutrientes_clave": ["tiamina", "vitamina_b6", "zinc"],
+          "restricciones": ["alimentos muy grasosos", "olores fuertes"]
+        },
+        {
+          "codigo": "O24.4",
+          "nombre": "Diabetes mellitus gestacional",
+          "relevancia_nutricional": "DM que aparece en embarazo. Control glucémico estricto para prevenir complicaciones perinatales.",
+          "notas_clinicas": "Plan de alimentación individualizado: 175 g HC/día mínimo, distribuidos en 3 comidas y 2-3 colaciones. Evitar ayuno nocturno > 10h (colación nocturna). Preferir HC complejos con fibra. Meta: glucosa en ayuno < 95 mg/dL; 1h postprandial < 140 mg/dL. Aumento de peso según IMC pregestacional (IOM 2009).",
+          "micronutrientes_clave": ["folato", "hierro", "calcio", "vitamina_d"],
+          "restricciones": ["azúcares añadidos", "bebidas azucaradas", "ayuno prolongado"]
+        },
+        {
+          "codigo": "O25",
+          "nombre": "Desnutrición materna",
+          "relevancia_nutricional": "Ingesta insuficiente durante embarazo. Alto riesgo para madre y producto (bajo peso al nacer, prematurez).",
+          "notas_clinicas": "Asegurar adicionales: +340 kcal T2, +450 kcal T3. Proteína 71 g/día. Hierro 27 mg/día. Folato 600 mcg DFE/día. Calcio 1000 mg/día. Suplemento prenatal. Ganancia de peso según IMC pregestacional (IOM 2009).",
+          "micronutrientes_clave": ["folato", "hierro", "calcio", "vitamina_d", "zinc", "yodo", "dha"]
+        }
+      ]
+    },
+    {
+      "id": "Z71",
+      "nombre": "Consulta y asesoramiento nutricional",
+      "codigos": [
+        {
+          "codigo": "Z71.3",
+          "nombre": "Consulta dietética y supervisión del régimen alimentario",
+          "relevancia_nutricional": "Código principal para registrar la consulta nutricional en expediente clínico.",
+          "notas_clinicas": "Usar como diagnóstico principal cuando la consulta es preventiva o de seguimiento sin enfermedad activa. Combinar con el código del diagnóstico médico cuando se trata una enfermedad específica."
+        },
+        {
+          "codigo": "Z72.4",
+          "nombre": "Uso inapropiado de drogas, alcohol y tabaco",
+          "relevancia_nutricional": "El alcoholismo afecta estado nutricional por múltiples mecanismos: desplazamiento de alimentos, malabsorción, hepatotoxicidad.",
+          "notas_clinicas": "Suplementación de tiamina, folato, vitaminas del complejo B. Vigilar magnesio y zinc. Abstinencia como meta principal.",
+          "micronutrientes_clave": ["tiamina", "folato", "vitamina_b6", "magnesio", "zinc"]
+        },
+        {
+          "codigo": "Z73.4",
+          "nombre": "Problemas relacionados con inactividad física",
+          "relevancia_nutricional": "Sedentarismo como factor de riesgo de enfermedades crónicas. Ajuste de NAF para cálculo de GET.",
+          "notas_clinicas": "Usar NAF 1.20 (sedentario) para cálculo de GET. Recomendar actividad física como parte integral del plan nutricional."
+        }
+      ]
+    }
+  ]
+}

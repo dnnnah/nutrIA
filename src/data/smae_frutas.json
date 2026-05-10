@@ -6254,6 +6254,4274 @@
         "glucemico": null,
         "carga_glucemica": null
       }
+    },
+    {
+      "id": "frut-143",
+      "metadata": {
+        "nombre": "Papaya picada",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "taza",
+        "peso_bruto_g": 140,
+        "peso_neto_g": 140
+      },
+      "nutrientes": {
+        "energia_kcal": 55,
+        "macros": {
+          "proteina_g": 0.8,
+          "lipidos_g": 0.1,
+          "hidratos_g": 13.7,
+          "ag_saturados_g": 0.1,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 2.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 29.4,
+          "acido_ascorbico_mg": 86.5,
+          "acido_folico_mcg": 53.2,
+          "calcio_mg": 33.6,
+          "hierro_mg": 0.1,
+          "potasio_mg": 359.8,
+          "sodio_mg": 4.2,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": 59.0,
+        "carga_glucemica": 8.1
+      }
+    },
+    {
+      "id": "frut-144",
+      "metadata": {
+        "nombre": "Papilla de chabacano con tapioca",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "3/4",
+        "unidad": "frasco",
+        "peso_bruto_g": 98,
+        "peso_neto_g": 98
+      },
+      "nutrientes": {
+        "energia_kcal": 61,
+        "macros": {
+          "proteina_g": 0.3,
+          "lipidos_g": 0.0,
+          "hidratos_g": 16.9,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 1.4,
+          "fibra_g": 1.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 70.2,
+          "acido_ascorbico_mg": 2.0,
+          "acido_folico_mcg": 1.5,
+          "calcio_mg": 8.8,
+          "hierro_mg": 0.3,
+          "potasio_mg": 118.0,
+          "sodio_mg": 7.8,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-145",
+      "metadata": {
+        "nombre": "Papilla de ciruela pasa con tapioca",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "3/4",
+        "unidad": "frasco",
+        "peso_bruto_g": 98,
+        "peso_neto_g": 98
+      },
+      "nutrientes": {
+        "energia_kcal": 68,
+        "macros": {
+          "proteina_g": 0.6,
+          "lipidos_g": 0.1,
+          "hidratos_g": 18.2,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 10.7,
+          "fibra_g": 2.6,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 43.9,
+          "acido_ascorbico_mg": 1.0,
+          "acido_folico_mcg": 0.2,
+          "calcio_mg": 14.6,
+          "hierro_mg": 0.4,
+          "potasio_mg": 172.6,
+          "sodio_mg": 4.9,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-146",
+      "metadata": {
+        "nombre": "Papilla de durazno",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "3/4",
+        "unidad": "frasco",
+        "peso_bruto_g": 98,
+        "peso_neto_g": 98
+      },
+      "nutrientes": {
+        "energia_kcal": 63,
+        "macros": {
+          "proteina_g": 0.9,
+          "lipidos_g": 0.3,
+          "hidratos_g": 14.1,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 11.2,
+          "fibra_g": 1.3,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 15.6,
+          "acido_ascorbico_mg": 2.9,
+          "acido_folico_mcg": 3.8,
+          "calcio_mg": 5.9,
+          "hierro_mg": 0.2,
+          "potasio_mg": 158.0,
+          "sodio_mg": 5.9,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-147",
+      "metadata": {
+        "nombre": "Papilla de frutas mixtas",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "3/4",
+        "unidad": "frasco",
+        "peso_bruto_g": 98,
+        "peso_neto_g": 98
+      },
+      "nutrientes": {
+        "energia_kcal": 59,
+        "macros": {
+          "proteina_g": 0.2,
+          "lipidos_g": 0.0,
+          "hidratos_g": 16.0,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": null,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": 30.2,
+          "acido_folico_mcg": null,
+          "calcio_mg": 3.9,
+          "hierro_mg": 0.2,
+          "potasio_mg": 81.9,
+          "sodio_mg": 7.8,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-148",
+      "metadata": {
+        "nombre": "Papilla de guayaba y papaya con tapioca",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "3/4",
+        "unidad": "frasco",
+        "peso_bruto_g": 98,
+        "peso_neto_g": 98
+      },
+      "nutrientes": {
+        "energia_kcal": 61,
+        "macros": {
+          "proteina_g": 0.2,
+          "lipidos_g": 0.1,
+          "hidratos_g": 16.6,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": null,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": 100.6,
+          "acido_folico_mcg": null,
+          "calcio_mg": 2.9,
+          "hierro_mg": 0.1,
+          "potasio_mg": 146.3,
+          "sodio_mg": 8.8,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-149",
+      "metadata": {
+        "nombre": "Papilla de mango con tapioca",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "2/3",
+        "unidad": "frasco",
+        "peso_bruto_g": 85,
+        "peso_neto_g": 85
+      },
+      "nutrientes": {
+        "energia_kcal": 59,
+        "macros": {
+          "proteina_g": 0.3,
+          "lipidos_g": 0.2,
+          "hidratos_g": 16.1,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 11.0,
+          "fibra_g": 0.9,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 56.6,
+          "acido_ascorbico_mg": 1.7,
+          "acido_folico_mcg": null,
+          "calcio_mg": 3.4,
+          "hierro_mg": 0.1,
+          "potasio_mg": 49.9,
+          "sodio_mg": 3.4,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-150",
+      "metadata": {
+        "nombre": "Papilla de manzana",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "2/3",
+        "unidad": "frasco",
+        "peso_bruto_g": 85,
+        "peso_neto_g": 85
+      },
+      "nutrientes": {
+        "energia_kcal": 61,
+        "macros": {
+          "proteina_g": 0.3,
+          "lipidos_g": 0.0,
+          "hidratos_g": 16.6,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": null,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 1.7,
+          "acido_ascorbico_mg": null,
+          "acido_folico_mcg": 0.3,
+          "calcio_mg": 16.1,
+          "hierro_mg": 0.2,
+          "potasio_mg": 42.3,
+          "sodio_mg": 8.5,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-151",
+      "metadata": {
+        "nombre": "Papilla de manzana y chabacano",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "frasco",
+        "peso_bruto_g": 130,
+        "peso_neto_g": 130
+      },
+      "nutrientes": {
+        "energia_kcal": 61,
+        "macros": {
+          "proteina_g": 0.3,
+          "lipidos_g": 0.3,
+          "hidratos_g": 16.1,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 11.3,
+          "fibra_g": 2.3,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 50.7,
+          "acido_ascorbico_mg": 2.6,
+          "acido_folico_mcg": 1.7,
+          "calcio_mg": 7.8,
+          "hierro_mg": 0.4,
+          "potasio_mg": 156.0,
+          "sodio_mg": 3.9,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-152",
+      "metadata": {
+        "nombre": "Papilla de pera",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "3/4",
+        "unidad": "frasco",
+        "peso_bruto_g": 98,
+        "peso_neto_g": 98
+      },
+      "nutrientes": {
+        "energia_kcal": 56,
+        "macros": {
+          "proteina_g": 0.3,
+          "lipidos_g": 0.1,
+          "hidratos_g": 13.3,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 8.4,
+          "fibra_g": 1.2,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 2.9,
+          "acido_ascorbico_mg": 2.0,
+          "acido_folico_mcg": 3.5,
+          "calcio_mg": 7.8,
+          "hierro_mg": 0.2,
+          "potasio_mg": 126.8,
+          "sodio_mg": 2.0,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-153",
+      "metadata": {
+        "nombre": "Papilla de pera y piña",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "frasco",
+        "peso_bruto_g": 130,
+        "peso_neto_g": 130
+      },
+      "nutrientes": {
+        "energia_kcal": 57,
+        "macros": {
+          "proteina_g": 0.4,
+          "lipidos_g": 0.3,
+          "hidratos_g": 14.8,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 9.6,
+          "fibra_g": 3.4,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 3.9,
+          "acido_ascorbico_mg": 2.6,
+          "acido_folico_mcg": 3.6,
+          "calcio_mg": 13.0,
+          "hierro_mg": 0.3,
+          "potasio_mg": 150.8,
+          "sodio_mg": 5.2,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-154",
+      "metadata": {
+        "nombre": "Papilla de plátano y piña con tapioca",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "3/4",
+        "unidad": "frasco",
+        "peso_bruto_g": 98,
+        "peso_neto_g": 98
+      },
+      "nutrientes": {
+        "energia_kcal": 66,
+        "macros": {
+          "proteina_g": 0.2,
+          "lipidos_g": 0.1,
+          "hidratos_g": 17.9,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 8.2,
+          "fibra_g": 1.6,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 3.9,
+          "acido_ascorbico_mg": 2.0,
+          "acido_folico_mcg": 5.4,
+          "calcio_mg": 6.8,
+          "hierro_mg": 0.1,
+          "potasio_mg": 76.1,
+          "sodio_mg": 7.8,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-155",
+      "metadata": {
+        "nombre": "Pasas",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "10",
+        "unidad": "pieza",
+        "peso_bruto_g": 20,
+        "peso_neto_g": 20
+      },
+      "nutrientes": {
+        "energia_kcal": 59,
+        "macros": {
+          "proteina_g": 0.5,
+          "lipidos_g": 0.1,
+          "hidratos_g": 15.7,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 1.4,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": 1.0,
+          "acido_folico_mcg": 0.6,
+          "calcio_mg": 5.6,
+          "hierro_mg": 0.5,
+          "potasio_mg": 165.0,
+          "sodio_mg": 5.6,
+          "fosforo_mg": 15.0
+        }
+      },
+      "indices": {
+        "glucemico": 64.0,
+        "carga_glucemica": 10.0
+      }
+    },
+    {
+      "id": "frut-156",
+      "metadata": {
+        "nombre": "Pasitas",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "10",
+        "unidad": "pieza",
+        "peso_bruto_g": 20,
+        "peso_neto_g": 20
+      },
+      "nutrientes": {
+        "energia_kcal": 59,
+        "macros": {
+          "proteina_g": 0.5,
+          "lipidos_g": 0.1,
+          "hidratos_g": 15.7,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 1.4,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": 1.0,
+          "acido_folico_mcg": 0.6,
+          "calcio_mg": 5.6,
+          "hierro_mg": 0.5,
+          "potasio_mg": 165.0,
+          "sodio_mg": 5.6,
+          "fosforo_mg": 15.0
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-157",
+      "metadata": {
+        "nombre": "Pasitas sin semilla",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "10",
+        "unidad": "pieza",
+        "peso_bruto_g": 20,
+        "peso_neto_g": 20
+      },
+      "nutrientes": {
+        "energia_kcal": 60,
+        "macros": {
+          "proteina_g": 0.6,
+          "lipidos_g": 0.1,
+          "hidratos_g": 15.8,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 11.8,
+          "fibra_g": 0.7,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 0.2,
+          "acido_ascorbico_mg": 0.6,
+          "acido_folico_mcg": 0.6,
+          "calcio_mg": 9.8,
+          "hierro_mg": 0.4,
+          "potasio_mg": 150.2,
+          "sodio_mg": 2.4,
+          "fosforo_mg": 19.4
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-158",
+      "metadata": {
+        "nombre": "Pera",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "pieza",
+        "peso_bruto_g": 95,
+        "peso_neto_g": 81
+      },
+      "nutrientes": {
+        "energia_kcal": 47,
+        "macros": {
+          "proteina_g": 0.3,
+          "lipidos_g": 0.1,
+          "hidratos_g": 12.5,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 7.9,
+          "fibra_g": 2.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 1.5,
+          "acido_ascorbico_mg": 3.4,
+          "acido_folico_mcg": 5.8,
+          "calcio_mg": 8.8,
+          "hierro_mg": 0.2,
+          "potasio_mg": 101.2,
+          "sodio_mg": null,
+          "fosforo_mg": 8.8
+        }
+      },
+      "indices": {
+        "glucemico": 38.0,
+        "carga_glucemica": 4.7
+      }
+    },
+    {
+      "id": "frut-159",
+      "metadata": {
+        "nombre": "Pera Asiática",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "pieza",
+        "peso_bruto_g": 138,
+        "peso_neto_g": 117
+      },
+      "nutrientes": {
+        "energia_kcal": 49,
+        "macros": {
+          "proteina_g": 0.6,
+          "lipidos_g": 0.3,
+          "hidratos_g": 12.4,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.1,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 8.2,
+          "fibra_g": 4.2,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": 4.4,
+          "acido_folico_mcg": null,
+          "calcio_mg": 4.8,
+          "hierro_mg": null,
+          "potasio_mg": 141.8,
+          "sodio_mg": null,
+          "fosforo_mg": 12.5
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-160",
+      "metadata": {
+        "nombre": "Pera Bartlett",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "pieza",
+        "peso_bruto_g": 91,
+        "peso_neto_g": 77
+      },
+      "nutrientes": {
+        "energia_kcal": 45,
+        "macros": {
+          "proteina_g": 0.3,
+          "lipidos_g": 0.1,
+          "hidratos_g": 12.0,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 7.6,
+          "fibra_g": 2.4,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 1.4,
+          "acido_ascorbico_mg": 3.3,
+          "acido_folico_mcg": 5.6,
+          "calcio_mg": 8.4,
+          "hierro_mg": 0.2,
+          "potasio_mg": 96.9,
+          "sodio_mg": null,
+          "fosforo_mg": 8.4
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-161",
+      "metadata": {
+        "nombre": "Pera D'anjou",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "pieza",
+        "peso_bruto_g": 95,
+        "peso_neto_g": 81
+      },
+      "nutrientes": {
+        "energia_kcal": 47,
+        "macros": {
+          "proteina_g": 0.3,
+          "lipidos_g": 0.1,
+          "hidratos_g": 12.5,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 7.9,
+          "fibra_g": 2.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 1.5,
+          "acido_ascorbico_mg": 3.4,
+          "acido_folico_mcg": 5.8,
+          "calcio_mg": 8.8,
+          "hierro_mg": 0.2,
+          "potasio_mg": 101.2,
+          "sodio_mg": null,
+          "fosforo_mg": 8.8
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-162",
+      "metadata": {
+        "nombre": "Pera de agua",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "pieza",
+        "peso_bruto_g": 91,
+        "peso_neto_g": 74
+      },
+      "nutrientes": {
+        "energia_kcal": 43,
+        "macros": {
+          "proteina_g": 0.3,
+          "lipidos_g": 0.1,
+          "hidratos_g": 11.4,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 7.2,
+          "fibra_g": 2.3,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 1.3,
+          "acido_ascorbico_mg": 3.1,
+          "acido_folico_mcg": 5.3,
+          "calcio_mg": 8.0,
+          "hierro_mg": 0.2,
+          "potasio_mg": 92.4,
+          "sodio_mg": null,
+          "fosforo_mg": 8.0
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-163",
+      "metadata": {
+        "nombre": "Pera de San Juan",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "2",
+        "unidad": "pieza",
+        "peso_bruto_g": 130,
+        "peso_neto_g": 105
+      },
+      "nutrientes": {
+        "energia_kcal": 61,
+        "macros": {
+          "proteina_g": 0.4,
+          "lipidos_g": 0.1,
+          "hidratos_g": 16.3,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.1,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 10.3,
+          "fibra_g": 3.3,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 1.9,
+          "acido_ascorbico_mg": 4.4,
+          "acido_folico_mcg": null,
+          "calcio_mg": 11.4,
+          "hierro_mg": 0.3,
+          "potasio_mg": 131.9,
+          "sodio_mg": null,
+          "fosforo_mg": 11.4
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-164",
+      "metadata": {
+        "nombre": "Pera deshidratada",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "orejón",
+        "peso_bruto_g": 18,
+        "peso_neto_g": 18
+      },
+      "nutrientes": {
+        "energia_kcal": 46,
+        "macros": {
+          "proteina_g": 0.3,
+          "lipidos_g": 0.1,
+          "hidratos_g": 12.2,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 1.3,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": 1.2,
+          "acido_folico_mcg": null,
+          "calcio_mg": 6.0,
+          "hierro_mg": 0.4,
+          "potasio_mg": 93.3,
+          "sodio_mg": 1.1,
+          "fosforo_mg": 10.3
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-165",
+      "metadata": {
+        "nombre": "Pera en almíbar",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "pieza",
+        "peso_bruto_g": 76,
+        "peso_neto_g": 76
+      },
+      "nutrientes": {
+        "energia_kcal": 44,
+        "macros": {
+          "proteina_g": 0.3,
+          "lipidos_g": 0.1,
+          "hidratos_g": 11.7,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 7.4,
+          "fibra_g": 2.4,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": 0.6,
+          "acido_folico_mcg": 0.9,
+          "calcio_mg": 3.9,
+          "hierro_mg": 0.2,
+          "potasio_mg": 50.3,
+          "sodio_mg": 3.9,
+          "fosforo_mg": 5.5
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-166",
+      "metadata": {
+        "nombre": "Pera Mantequilla",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "pieza",
+        "peso_bruto_g": 83,
+        "peso_neto_g": 70
+      },
+      "nutrientes": {
+        "energia_kcal": 41,
+        "macros": {
+          "proteina_g": 0.3,
+          "lipidos_g": 0.1,
+          "hidratos_g": 10.8,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 6.9,
+          "fibra_g": 2.2,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 1.3,
+          "acido_ascorbico_mg": 3.0,
+          "acido_folico_mcg": 5.1,
+          "calcio_mg": 7.6,
+          "hierro_mg": 0.2,
+          "potasio_mg": 87.9,
+          "sodio_mg": null,
+          "fosforo_mg": 7.6
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-167",
+      "metadata": {
+        "nombre": "Pera picada",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "taza",
+        "peso_bruto_g": 150,
+        "peso_neto_g": 150
+      },
+      "nutrientes": {
+        "energia_kcal": 63,
+        "macros": {
+          "proteina_g": 0.8,
+          "lipidos_g": 0.3,
+          "hidratos_g": 16.0,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.1,
+          "ag_poliinsaturados_g": 0.2,
+          "colesterol_mg": 0.0,
+          "azucar_g": 10.6,
+          "fibra_g": 5.4,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 2.7,
+          "acido_ascorbico_mg": 6.3,
+          "acido_folico_mcg": 10.8,
+          "calcio_mg": 16.3,
+          "hierro_mg": 0.4,
+          "potasio_mg": 188.0,
+          "sodio_mg": null,
+          "fosforo_mg": 16.3
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-168",
+      "metadata": {
+        "nombre": "Pera Piña",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "pieza",
+        "peso_bruto_g": 100,
+        "peso_neto_g": 80
+      },
+      "nutrientes": {
+        "energia_kcal": 46,
+        "macros": {
+          "proteina_g": 0.3,
+          "lipidos_g": 0.1,
+          "hidratos_g": 12.4,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 7.8,
+          "fibra_g": 2.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 1.4,
+          "acido_ascorbico_mg": 3.4,
+          "acido_folico_mcg": 5.8,
+          "calcio_mg": 8.7,
+          "hierro_mg": 0.2,
+          "potasio_mg": 100.2,
+          "sodio_mg": null,
+          "fosforo_mg": 8.7
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-169",
+      "metadata": {
+        "nombre": "Pera rebanada",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "2/3",
+        "unidad": "taza",
+        "peso_bruto_g": 98,
+        "peso_neto_g": 98
+      },
+      "nutrientes": {
+        "energia_kcal": 41,
+        "macros": {
+          "proteina_g": 0.5,
+          "lipidos_g": 0.2,
+          "hidratos_g": 10.4,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.1,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 6.9,
+          "fibra_g": 3.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 1.8,
+          "acido_ascorbico_mg": 4.1,
+          "acido_folico_mcg": 7.0,
+          "calcio_mg": 10.6,
+          "hierro_mg": 0.2,
+          "potasio_mg": 122.2,
+          "sodio_mg": null,
+          "fosforo_mg": 10.6
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-170",
+      "metadata": {
+        "nombre": "Pera roja",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "pieza",
+        "peso_bruto_g": 90,
+        "peso_neto_g": 81
+      },
+      "nutrientes": {
+        "energia_kcal": 47,
+        "macros": {
+          "proteina_g": 0.3,
+          "lipidos_g": 0.1,
+          "hidratos_g": 12.5,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 7.9,
+          "fibra_g": 2.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": 0.6,
+          "acido_folico_mcg": 1.0,
+          "calcio_mg": 4.2,
+          "hierro_mg": 0.2,
+          "potasio_mg": 53.6,
+          "sodio_mg": 4.2,
+          "fosforo_mg": 5.8
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-171",
+      "metadata": {
+        "nombre": "Pera roja rebanada",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "taza",
+        "peso_bruto_g": 80,
+        "peso_neto_g": 80
+      },
+      "nutrientes": {
+        "energia_kcal": 46,
+        "macros": {
+          "proteina_g": 0.3,
+          "lipidos_g": 0.1,
+          "hidratos_g": 12.4,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 7.8,
+          "fibra_g": 2.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": 0.6,
+          "acido_folico_mcg": 1.0,
+          "calcio_mg": 4.1,
+          "hierro_mg": 0.2,
+          "potasio_mg": 52.9,
+          "sodio_mg": 4.1,
+          "fosforo_mg": 5.7
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-172",
+      "metadata": {
+        "nombre": "Perón",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "pieza",
+        "peso_bruto_g": 150,
+        "peso_neto_g": 105
+      },
+      "nutrientes": {
+        "energia_kcal": 65,
+        "macros": {
+          "proteina_g": 0.4,
+          "lipidos_g": 0.4,
+          "hidratos_g": 16.7,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 2.2,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 1.1,
+          "acido_ascorbico_mg": 5.3,
+          "acido_folico_mcg": null,
+          "calcio_mg": 10.5,
+          "hierro_mg": 0.8,
+          "potasio_mg": null,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-173",
+      "metadata": {
+        "nombre": "Perón picado",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "taza",
+        "peso_bruto_g": 125,
+        "peso_neto_g": 125
+      },
+      "nutrientes": {
+        "energia_kcal": 78,
+        "macros": {
+          "proteina_g": 0.5,
+          "lipidos_g": 0.5,
+          "hidratos_g": 19.9,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 2.6,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 1.3,
+          "acido_ascorbico_mg": 6.3,
+          "acido_folico_mcg": null,
+          "calcio_mg": 12.5,
+          "hierro_mg": 1.0,
+          "potasio_mg": null,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-174",
+      "metadata": {
+        "nombre": "Pérsimo",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "2",
+        "unidad": "pieza",
+        "peso_bruto_g": 50,
+        "peso_neto_g": 50
+      },
+      "nutrientes": {
+        "energia_kcal": 64,
+        "macros": {
+          "proteina_g": 0.4,
+          "lipidos_g": 0.2,
+          "hidratos_g": 16.8,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": null,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": 34.0,
+          "acido_folico_mcg": null,
+          "calcio_mg": 14.0,
+          "hierro_mg": 1.3,
+          "potasio_mg": 156.0,
+          "sodio_mg": null,
+          "fosforo_mg": 14.0
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-175",
+      "metadata": {
+        "nombre": "Pérsimo Japonés",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "pieza",
+        "peso_bruto_g": 84,
+        "peso_neto_g": 84
+      },
+      "nutrientes": {
+        "energia_kcal": 59,
+        "macros": {
+          "proteina_g": 0.5,
+          "lipidos_g": 0.2,
+          "hidratos_g": 15.6,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.1,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 10.5,
+          "fibra_g": 3.0,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 182.5,
+          "acido_ascorbico_mg": 6.5,
+          "acido_folico_mcg": 6.5,
+          "calcio_mg": 6.5,
+          "hierro_mg": 0.1,
+          "potasio_mg": 135.0,
+          "sodio_mg": 1.0,
+          "fosforo_mg": 14.5
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-176",
+      "metadata": {
+        "nombre": "Piña deshidratada enchilada",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "17",
+        "unidad": "gramos",
+        "peso_bruto_g": 17,
+        "peso_neto_g": 17
+      },
+      "nutrientes": {
+        "energia_kcal": 60,
+        "macros": {
+          "proteina_g": 0.2,
+          "lipidos_g": 0.0,
+          "hidratos_g": 15.0,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 10.7,
+          "fibra_g": 0.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": null,
+          "acido_folico_mcg": null,
+          "calcio_mg": null,
+          "hierro_mg": null,
+          "potasio_mg": null,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-177",
+      "metadata": {
+        "nombre": "Piña en almíbar",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "reb",
+        "peso_bruto_g": 50,
+        "peso_neto_g": 50
+      },
+      "nutrientes": {
+        "energia_kcal": 42,
+        "macros": {
+          "proteina_g": 0.2,
+          "lipidos_g": 0.1,
+          "hidratos_g": 10.8,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 0.4,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 0.5,
+          "acido_ascorbico_mg": 2.0,
+          "acido_folico_mcg": 2.3,
+          "calcio_mg": 13.6,
+          "hierro_mg": 0.7,
+          "potasio_mg": 51.3,
+          "sodio_mg": 0.5,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-178",
+      "metadata": {
+        "nombre": "Piña en almíbar",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/3",
+        "unidad": "taza",
+        "peso_bruto_g": 63,
+        "peso_neto_g": 63
+      },
+      "nutrientes": {
+        "energia_kcal": 53,
+        "macros": {
+          "proteina_g": 0.2,
+          "lipidos_g": 0.1,
+          "hidratos_g": 13.6,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 0.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 0.7,
+          "acido_ascorbico_mg": 4.7,
+          "acido_folico_mcg": 3.0,
+          "calcio_mg": 8.9,
+          "hierro_mg": 0.2,
+          "potasio_mg": 65.8,
+          "sodio_mg": 0.7,
+          "fosforo_mg": 4.5
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-180",
+      "metadata": {
+        "nombre": "Piña rebanada",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "reb",
+        "peso_bruto_g": 84,
+        "peso_neto_g": 84
+      },
+      "nutrientes": {
+        "energia_kcal": 42,
+        "macros": {
+          "proteina_g": 0.5,
+          "lipidos_g": 0.1,
+          "hidratos_g": 11.0,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.1,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 8.3,
+          "fibra_g": 1.2,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 1.6,
+          "acido_ascorbico_mg": 13.0,
+          "acido_folico_mcg": 8.7,
+          "calcio_mg": 6.0,
+          "hierro_mg": 0.3,
+          "potasio_mg": 94.8,
+          "sodio_mg": 1.1,
+          "fosforo_mg": 6.0
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-181",
+      "metadata": {
+        "nombre": "Pitahaya",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "2",
+        "unidad": "pieza",
+        "peso_bruto_g": 240,
+        "peso_neto_g": 108
+      },
+      "nutrientes": {
+        "energia_kcal": 52,
+        "macros": {
+          "proteina_g": 1.7,
+          "lipidos_g": 0.6,
+          "hidratos_g": 11.2,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 2.2,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": 17.3,
+          "acido_folico_mcg": null,
+          "calcio_mg": 11.9,
+          "hierro_mg": 2.1,
+          "potasio_mg": null,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-183",
+      "metadata": {
+        "nombre": "Plátano deshidratado",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/4",
+        "unidad": "taza",
+        "peso_bruto_g": 20,
+        "peso_neto_g": 20
+      },
+      "nutrientes": {
+        "energia_kcal": 69,
+        "macros": {
+          "proteina_g": 0.8,
+          "lipidos_g": 0.4,
+          "hidratos_g": 17.7,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 9.5,
+          "fibra_g": 2.0,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": null,
+          "acido_folico_mcg": null,
+          "calcio_mg": null,
+          "hierro_mg": null,
+          "potasio_mg": null,
+          "sodio_mg": 1.3,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-184",
+      "metadata": {
+        "nombre": "Plátano Dominico",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "3",
+        "unidad": "pieza",
+        "peso_bruto_g": 105,
+        "peso_neto_g": 57
+      },
+      "nutrientes": {
+        "energia_kcal": 54,
+        "macros": {
+          "proteina_g": 1.0,
+          "lipidos_g": 0.1,
+          "hidratos_g": 14.0,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 7.4,
+          "fibra_g": 1.2,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 20.4,
+          "acido_ascorbico_mg": 13.0,
+          "acido_folico_mcg": 12.5,
+          "calcio_mg": 4.5,
+          "hierro_mg": 0.7,
+          "potasio_mg": 209.8,
+          "sodio_mg": 1.7,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-185",
+      "metadata": {
+        "nombre": "Plátano machacado",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/4",
+        "unidad": "taza",
+        "peso_bruto_g": 56,
+        "peso_neto_g": 56
+      },
+      "nutrientes": {
+        "energia_kcal": 50,
+        "macros": {
+          "proteina_g": 0.6,
+          "lipidos_g": 0.2,
+          "hidratos_g": 12.8,
+          "ag_saturados_g": 0.1,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 6.9,
+          "fibra_g": 1.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 34.9,
+          "acido_ascorbico_mg": 7.3,
+          "acido_folico_mcg": 12.4,
+          "calcio_mg": 7.3,
+          "hierro_mg": 0.4,
+          "potasio_mg": 208.1,
+          "sodio_mg": 0.6,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-186",
+      "metadata": {
+        "nombre": "Plátano Macho",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/4",
+        "unidad": "pieza",
+        "peso_bruto_g": 95,
+        "peso_neto_g": 49
+      },
+      "nutrientes": {
+        "energia_kcal": 95,
+        "macros": {
+          "proteina_g": 0.5,
+          "lipidos_g": 0.2,
+          "hidratos_g": 11.6,
+          "ag_saturados_g": 0.1,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 6.0,
+          "fibra_g": 1.0,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 38.0,
+          "acido_ascorbico_mg": 4.4,
+          "acido_folico_mcg": 9.4,
+          "calcio_mg": 3.0,
+          "hierro_mg": 0.1,
+          "potasio_mg": 195.6,
+          "sodio_mg": 0.5,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-187",
+      "metadata": {
+        "nombre": "Plátano Macho rebanado",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/3",
+        "unidad": "taza",
+        "peso_bruto_g": 51,
+        "peso_neto_g": 51
+      },
+      "nutrientes": {
+        "energia_kcal": 99,
+        "macros": {
+          "proteina_g": 0.5,
+          "lipidos_g": 0.3,
+          "hidratos_g": 12.0,
+          "ag_saturados_g": 0.1,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 6.3,
+          "fibra_g": 1.1,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 39.5,
+          "acido_ascorbico_mg": 4.6,
+          "acido_folico_mcg": 9.8,
+          "calcio_mg": 3.1,
+          "hierro_mg": 0.2,
+          "potasio_mg": 203.3,
+          "sodio_mg": 0.5,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-188",
+      "metadata": {
+        "nombre": "Plátano Manzano",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "pieza",
+        "peso_bruto_g": 90,
+        "peso_neto_g": 49
+      },
+      "nutrientes": {
+        "energia_kcal": 47,
+        "macros": {
+          "proteina_g": 0.5,
+          "lipidos_g": 0.3,
+          "hidratos_g": 11.8,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 5.9,
+          "fibra_g": 1.0,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 6.8,
+          "acido_ascorbico_mg": 6.3,
+          "acido_folico_mcg": 10.7,
+          "calcio_mg": 3.9,
+          "hierro_mg": 0.6,
+          "potasio_mg": 179.8,
+          "sodio_mg": 0.5,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-189",
+      "metadata": {
+        "nombre": "Plátano morado",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "pieza",
+        "peso_bruto_g": 90,
+        "peso_neto_g": 49
+      },
+      "nutrientes": {
+        "energia_kcal": 41,
+        "macros": {
+          "proteina_g": 0.9,
+          "lipidos_g": 0.1,
+          "hidratos_g": 10.3,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 5.9,
+          "fibra_g": 1.0,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 20.4,
+          "acido_ascorbico_mg": 3.9,
+          "acido_folico_mcg": 10.7,
+          "calcio_mg": 6.8,
+          "hierro_mg": 0.7,
+          "potasio_mg": 179.8,
+          "sodio_mg": 0.5,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-191",
+      "metadata": {
+        "nombre": "Pomarosa",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "140",
+        "unidad": "gramos",
+        "peso_bruto_g": 140,
+        "peso_neto_g": 95
+      },
+      "nutrientes": {
+        "energia_kcal": 60,
+        "macros": {
+          "proteina_g": 0.6,
+          "lipidos_g": 0.2,
+          "hidratos_g": 15.6,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 1.3,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 32.4,
+          "acido_ascorbico_mg": 20.9,
+          "acido_folico_mcg": null,
+          "calcio_mg": 34.3,
+          "hierro_mg": 0.4,
+          "potasio_mg": 117.1,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-193",
+      "metadata": {
+        "nombre": "Prisco",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "3 1/2",
+        "unidad": "pieza",
+        "peso_bruto_g": 175,
+        "peso_neto_g": 154
+      },
+      "nutrientes": {
+        "energia_kcal": 59,
+        "macros": {
+          "proteina_g": 0.9,
+          "lipidos_g": 0.2,
+          "hidratos_g": 14.9,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.1,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 2.2,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 53.9,
+          "acido_ascorbico_mg": 15.4,
+          "acido_folico_mcg": null,
+          "calcio_mg": 32.3,
+          "hierro_mg": 0.5,
+          "potasio_mg": 311.1,
+          "sodio_mg": 1.5,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-194",
+      "metadata": {
+        "nombre": "Pulpa de fresa",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "2",
+        "unidad": "cda",
+        "peso_bruto_g": 25,
+        "peso_neto_g": 25
+      },
+      "nutrientes": {
+        "energia_kcal": 44,
+        "macros": {
+          "proteina_g": 0.1,
+          "lipidos_g": 0.1,
+          "hidratos_g": 11.9,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 0.2,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": null,
+          "acido_folico_mcg": null,
+          "calcio_mg": null,
+          "hierro_mg": null,
+          "potasio_mg": null,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-195",
+      "metadata": {
+        "nombre": "Pulpa de guanábana",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "2",
+        "unidad": "cda",
+        "peso_bruto_g": 25,
+        "peso_neto_g": 25
+      },
+      "nutrientes": {
+        "energia_kcal": 45,
+        "macros": {
+          "proteina_g": 0.1,
+          "lipidos_g": 0.1,
+          "hidratos_g": 12.3,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 0.1,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": null,
+          "acido_folico_mcg": null,
+          "calcio_mg": null,
+          "hierro_mg": null,
+          "potasio_mg": null,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-196",
+      "metadata": {
+        "nombre": "Pulpa de mamey",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "6",
+        "unidad": "cda",
+        "peso_bruto_g": 75,
+        "peso_neto_g": 75
+      },
+      "nutrientes": {
+        "energia_kcal": 52,
+        "macros": {
+          "proteina_g": 1.3,
+          "lipidos_g": 0.5,
+          "hidratos_g": 12.2,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 3.4,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 45.8,
+          "acido_ascorbico_mg": 17.3,
+          "acido_folico_mcg": null,
+          "calcio_mg": 34.5,
+          "hierro_mg": 1.8,
+          "potasio_mg": null,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-197",
+      "metadata": {
+        "nombre": "Pulpa de tamarindo",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "8",
+        "unidad": "cda",
+        "peso_bruto_g": 100,
+        "peso_neto_g": 100
+      },
+      "nutrientes": {
+        "energia_kcal": 57,
+        "macros": {
+          "proteina_g": 0.1,
+          "lipidos_g": 0.1,
+          "hidratos_g": 14.7,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 12.7,
+          "fibra_g": 0.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": null,
+          "acido_folico_mcg": null,
+          "calcio_mg": null,
+          "hierro_mg": null,
+          "potasio_mg": null,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-198",
+      "metadata": {
+        "nombre": "Pulpa de zapote negro",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "taza",
+        "peso_bruto_g": 105,
+        "peso_neto_g": 105
+      },
+      "nutrientes": {
+        "energia_kcal": 59,
+        "macros": {
+          "proteina_g": 0.8,
+          "lipidos_g": 0.1,
+          "hidratos_g": 15.2,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 1.3,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 10.5,
+          "acido_ascorbico_mg": 87.2,
+          "acido_folico_mcg": null,
+          "calcio_mg": 49.4,
+          "hierro_mg": 1.7,
+          "potasio_mg": null,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-199",
+      "metadata": {
+        "nombre": "Puré de ciruela pasa",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "3",
+        "unidad": "cda",
+        "peso_bruto_g": 41,
+        "peso_neto_g": 41
+      },
+      "nutrientes": {
+        "energia_kcal": 51,
+        "macros": {
+          "proteina_g": 0.5,
+          "lipidos_g": 0.1,
+          "hidratos_g": 13.6,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.1,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 0.2,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 12.0,
+          "acido_ascorbico_mg": 0.8,
+          "acido_folico_mcg": null,
+          "calcio_mg": 8.7,
+          "hierro_mg": 0.4,
+          "potasio_mg": 128.7,
+          "sodio_mg": 0.8,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-200",
+      "metadata": {
+        "nombre": "Puré de guayaba",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "frasco",
+        "peso_bruto_g": 65,
+        "peso_neto_g": 65
+      },
+      "nutrientes": {
+        "energia_kcal": 49,
+        "macros": {
+          "proteina_g": 0.1,
+          "lipidos_g": 0.1,
+          "hidratos_g": 12.0,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 1.7,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": 67.0,
+          "acido_folico_mcg": null,
+          "calcio_mg": 2.0,
+          "hierro_mg": 0.1,
+          "potasio_mg": 97.5,
+          "sodio_mg": 5.9,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-201",
+      "metadata": {
+        "nombre": "Puré de Guayaba Gerber 2A Etapa",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "frasco",
+        "peso_bruto_g": 65,
+        "peso_neto_g": 65
+      },
+      "nutrientes": {
+        "energia_kcal": 49,
+        "macros": {
+          "proteina_g": 0.1,
+          "lipidos_g": 0.1,
+          "hidratos_g": 12.0,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 1.7,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": 67.0,
+          "acido_folico_mcg": null,
+          "calcio_mg": 2.0,
+          "hierro_mg": 0.1,
+          "potasio_mg": 97.5,
+          "sodio_mg": 5.9,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-202",
+      "metadata": {
+        "nombre": "Puré de manzana",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "6",
+        "unidad": "cda",
+        "peso_bruto_g": 83,
+        "peso_neto_g": 83
+      },
+      "nutrientes": {
+        "energia_kcal": 63,
+        "macros": {
+          "proteina_g": 0.1,
+          "lipidos_g": 0.1,
+          "hidratos_g": 16.4,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 13.6,
+          "fibra_g": 1.0,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": 1.3,
+          "acido_folico_mcg": null,
+          "calcio_mg": null,
+          "hierro_mg": null,
+          "potasio_mg": 60.4,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-203",
+      "metadata": {
+        "nombre": "Puré de manzana sin azúcar",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "taza",
+        "peso_bruto_g": 122,
+        "peso_neto_g": 122
+      },
+      "nutrientes": {
+        "energia_kcal": 52,
+        "macros": {
+          "proteina_g": 0.2,
+          "lipidos_g": 0.1,
+          "hidratos_g": 13.8,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 1.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 4.0,
+          "acido_ascorbico_mg": 1.0,
+          "acido_folico_mcg": 1.0,
+          "calcio_mg": 4.0,
+          "hierro_mg": 0.2,
+          "potasio_mg": 92.0,
+          "sodio_mg": 2.0,
+          "fosforo_mg": 9.0
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-204",
+      "metadata": {
+        "nombre": "Puré de plátano",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/4",
+        "unidad": "taza",
+        "peso_bruto_g": 56,
+        "peso_neto_g": 56
+      },
+      "nutrientes": {
+        "energia_kcal": 50,
+        "macros": {
+          "proteina_g": 0.6,
+          "lipidos_g": 0.2,
+          "hidratos_g": 12.8,
+          "ag_saturados_g": 0.1,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 6.9,
+          "fibra_g": 1.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 34.9,
+          "acido_ascorbico_mg": 7.3,
+          "acido_folico_mcg": 12.4,
+          "calcio_mg": 7.3,
+          "hierro_mg": 0.4,
+          "potasio_mg": 208.1,
+          "sodio_mg": 0.6,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-205",
+      "metadata": {
+        "nombre": "Rambután",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "7",
+        "unidad": "pieza",
+        "peso_bruto_g": 175,
+        "peso_neto_g": 88
+      },
+      "nutrientes": {
+        "energia_kcal": 55,
+        "macros": {
+          "proteina_g": 0.6,
+          "lipidos_g": 0.3,
+          "hidratos_g": 15.0,
+          "ag_saturados_g": 0.1,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 14.4,
+          "fibra_g": 0.9,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 8.6,
+          "acido_ascorbico_mg": 3.8,
+          "acido_folico_mcg": 3.8,
+          "calcio_mg": 12.4,
+          "hierro_mg": 0.3,
+          "potasio_mg": 167.4,
+          "sodio_mg": 1.9,
+          "fosforo_mg": 8.6
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-206",
+      "metadata": {
+        "nombre": "Rambután en almíbar",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/4",
+        "unidad": "taza",
+        "peso_bruto_g": 54,
+        "peso_neto_g": 54
+      },
+      "nutrientes": {
+        "energia_kcal": 44,
+        "macros": {
+          "proteina_g": 0.4,
+          "lipidos_g": 0.1,
+          "hidratos_g": 11.2,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 0.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": 2.5,
+          "acido_folico_mcg": 4.3,
+          "calcio_mg": null,
+          "hierro_mg": 0.2,
+          "potasio_mg": 22.5,
+          "sodio_mg": 6.0,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": 33.0,
+        "carga_glucemica": 3.7
+      }
+    },
+    {
+      "id": "frut-207",
+      "metadata": {
+        "nombre": "Rollo de frutas",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "pieza",
+        "peso_bruto_g": 21,
+        "peso_neto_g": 21
+      },
+      "nutrientes": {
+        "energia_kcal": 78,
+        "macros": {
+          "proteina_g": 0.0,
+          "lipidos_g": 0.6,
+          "hidratos_g": 18.0,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.3,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 10.3,
+          "fibra_g": 0.0,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 3.0,
+          "acido_ascorbico_mg": 1.0,
+          "acido_folico_mcg": 2.0,
+          "calcio_mg": 7.0,
+          "hierro_mg": 0.2,
+          "potasio_mg": 62.0,
+          "sodio_mg": 13.0,
+          "fosforo_mg": 7.0
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-208",
+      "metadata": {
+        "nombre": "Salsa de arándano en gelatina enlatada",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "reb",
+        "peso_bruto_g": 29,
+        "peso_neto_g": 29
+      },
+      "nutrientes": {
+        "energia_kcal": 43,
+        "macros": {
+          "proteina_g": 0.1,
+          "lipidos_g": 0.1,
+          "hidratos_g": 11.1,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 10.8,
+          "fibra_g": 0.3,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 0.5,
+          "acido_ascorbico_mg": 0.5,
+          "acido_folico_mcg": 0.3,
+          "calcio_mg": null,
+          "hierro_mg": 0.1,
+          "potasio_mg": 7.5,
+          "sodio_mg": 8.5,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-209",
+      "metadata": {
+        "nombre": "Sandía picada",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "taza",
+        "peso_bruto_g": 160,
+        "peso_neto_g": 160
+      },
+      "nutrientes": {
+        "energia_kcal": 48,
+        "macros": {
+          "proteina_g": 1.0,
+          "lipidos_g": 0.2,
+          "hidratos_g": 12.1,
+          "ag_saturados_g": 0.1,
+          "ag_monoinsaturados_g": 0.2,
+          "ag_poliinsaturados_g": 0.2,
+          "colesterol_mg": 0.0,
+          "azucar_g": 9.9,
+          "fibra_g": 0.6,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 59.0,
+          "acido_ascorbico_mg": 15.0,
+          "acido_folico_mcg": 4.0,
+          "calcio_mg": 13.0,
+          "hierro_mg": 0.3,
+          "potasio_mg": 186.0,
+          "sodio_mg": 3.0,
+          "fosforo_mg": 14.0
+        }
+      },
+      "indices": {
+        "glucemico": 72.0,
+        "carga_glucemica": 8.7
+      }
+    },
+    {
+      "id": "frut-210",
+      "metadata": {
+        "nombre": "Sandía rebanada",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "reb",
+        "peso_bruto_g": 200,
+        "peso_neto_g": 200
+      },
+      "nutrientes": {
+        "energia_kcal": 60,
+        "macros": {
+          "proteina_g": 1.3,
+          "lipidos_g": 0.3,
+          "hidratos_g": 15.1,
+          "ag_saturados_g": 0.1,
+          "ag_monoinsaturados_g": 0.3,
+          "ag_poliinsaturados_g": 0.3,
+          "colesterol_mg": 0.0,
+          "azucar_g": 12.4,
+          "fibra_g": 0.8,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 73.8,
+          "acido_ascorbico_mg": 18.8,
+          "acido_folico_mcg": 5.0,
+          "calcio_mg": 16.3,
+          "hierro_mg": 0.3,
+          "potasio_mg": 232.5,
+          "sodio_mg": 3.8,
+          "fosforo_mg": 17.5
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-211",
+      "metadata": {
+        "nombre": "Saramuyo",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "130",
+        "unidad": "gramos",
+        "peso_bruto_g": 130,
+        "peso_neto_g": 85
+      },
+      "nutrientes": {
+        "energia_kcal": 63,
+        "macros": {
+          "proteina_g": 1.8,
+          "lipidos_g": 0.8,
+          "hidratos_g": 13.8,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 0.0,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 7.6,
+          "acido_ascorbico_mg": 27.0,
+          "acido_folico_mcg": null,
+          "calcio_mg": 37.2,
+          "hierro_mg": null,
+          "potasio_mg": null,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-212",
+      "metadata": {
+        "nombre": "Semilla de jinicuil",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "200",
+        "unidad": "gramos",
+        "peso_bruto_g": 200,
+        "peso_neto_g": 40
+      },
+      "nutrientes": {
+        "energia_kcal": 58,
+        "macros": {
+          "proteina_g": 4.8,
+          "lipidos_g": 0.4,
+          "hidratos_g": 10.8,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 0.4,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 8.0,
+          "acido_ascorbico_mg": 11.2,
+          "acido_folico_mcg": null,
+          "calcio_mg": 18.4,
+          "hierro_mg": 0.8,
+          "potasio_mg": null,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-213",
+      "metadata": {
+        "nombre": "Tamarindo",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "50",
+        "unidad": "gramos",
+        "peso_bruto_g": 50,
+        "peso_neto_g": 25
+      },
+      "nutrientes": {
+        "energia_kcal": 60,
+        "macros": {
+          "proteina_g": 0.7,
+          "lipidos_g": 0.1,
+          "hidratos_g": 15.6,
+          "ag_saturados_g": 0.1,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 14.4,
+          "fibra_g": 1.3,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 0.8,
+          "acido_ascorbico_mg": 0.8,
+          "acido_folico_mcg": 3.5,
+          "calcio_mg": 18.5,
+          "hierro_mg": 0.7,
+          "potasio_mg": 157.1,
+          "sodio_mg": 7.1,
+          "fosforo_mg": 28.3
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-214",
+      "metadata": {
+        "nombre": "Tamarindo (pulpa sin azúcar)",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "8",
+        "unidad": "cda",
+        "peso_bruto_g": 100,
+        "peso_neto_g": 100
+      },
+      "nutrientes": {
+        "energia_kcal": 57,
+        "macros": {
+          "proteina_g": 0.1,
+          "lipidos_g": 0.1,
+          "hidratos_g": 14.7,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 12.7,
+          "fibra_g": 0.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": null,
+          "acido_folico_mcg": null,
+          "calcio_mg": null,
+          "hierro_mg": null,
+          "potasio_mg": null,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-215",
+      "metadata": {
+        "nombre": "Tamarindo pelado",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/4",
+        "unidad": "taza",
+        "peso_bruto_g": 30,
+        "peso_neto_g": 30
+      },
+      "nutrientes": {
+        "energia_kcal": 72,
+        "macros": {
+          "proteina_g": 0.9,
+          "lipidos_g": 0.2,
+          "hidratos_g": 18.8,
+          "ag_saturados_g": 0.1,
+          "ag_monoinsaturados_g": 0.1,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 17.2,
+          "fibra_g": 1.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 1.0,
+          "acido_ascorbico_mg": 1.0,
+          "acido_folico_mcg": 4.3,
+          "calcio_mg": 22.3,
+          "hierro_mg": 0.8,
+          "potasio_mg": 188.5,
+          "sodio_mg": 8.5,
+          "fosforo_mg": 34.0
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-216",
+      "metadata": {
+        "nombre": "Tangerina",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "2",
+        "unidad": "pieza",
+        "peso_bruto_g": 180,
+        "peso_neto_g": 128
+      },
+      "nutrientes": {
+        "energia_kcal": 56,
+        "macros": {
+          "proteina_g": 0.6,
+          "lipidos_g": 0.3,
+          "hidratos_g": 15.3,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 0.4,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 138.0,
+          "acido_ascorbico_mg": 92.0,
+          "acido_folico_mcg": 10.2,
+          "calcio_mg": 23.0,
+          "hierro_mg": 0.4,
+          "potasio_mg": 227.5,
+          "sodio_mg": 1.3,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-217",
+      "metadata": {
+        "nombre": "Tejocote",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "2",
+        "unidad": "pieza",
+        "peso_bruto_g": 70,
+        "peso_neto_g": 60
+      },
+      "nutrientes": {
+        "energia_kcal": 52,
+        "macros": {
+          "proteina_g": 0.5,
+          "lipidos_g": 0.4,
+          "hidratos_g": 13.1,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 1.6,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 251.1,
+          "acido_ascorbico_mg": 27.4,
+          "acido_folico_mcg": null,
+          "calcio_mg": 55.9,
+          "hierro_mg": 1.0,
+          "potasio_mg": null,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-218",
+      "metadata": {
+        "nombre": "Toronja",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "pieza",
+        "peso_bruto_g": 246,
+        "peso_neto_g": 162
+      },
+      "nutrientes": {
+        "energia_kcal": 54,
+        "macros": {
+          "proteina_g": 0.9,
+          "lipidos_g": 0.2,
+          "hidratos_g": 13.7,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 11.9,
+          "fibra_g": 1.8,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 4.9,
+          "acido_ascorbico_mg": 86.1,
+          "acido_folico_mcg": 16.2,
+          "calcio_mg": 47.1,
+          "hierro_mg": 0.2,
+          "potasio_mg": 225.7,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": 25.0,
+        "carga_glucemica": 3.4
+      }
+    },
+    {
+      "id": "frut-219",
+      "metadata": {
+        "nombre": "Toronja en gajos",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "taza",
+        "peso_bruto_g": 150,
+        "peso_neto_g": 150
+      },
+      "nutrientes": {
+        "energia_kcal": 50,
+        "macros": {
+          "proteina_g": 0.8,
+          "lipidos_g": 0.2,
+          "hidratos_g": 12.6,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 11.0,
+          "fibra_g": 1.7,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 18.3,
+          "acido_ascorbico_mg": 51.2,
+          "acido_folico_mcg": 15.9,
+          "calcio_mg": 18.3,
+          "hierro_mg": 0.1,
+          "potasio_mg": 208.5,
+          "sodio_mg": null,
+          "fosforo_mg": 12.2
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-220",
+      "metadata": {
+        "nombre": "Toronja enlatada con jugo",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "taza",
+        "peso_bruto_g": 125,
+        "peso_neto_g": 125
+      },
+      "nutrientes": {
+        "energia_kcal": 46,
+        "macros": {
+          "proteina_g": 0.9,
+          "lipidos_g": 0.1,
+          "hidratos_g": 11.5,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": 11.0,
+          "fibra_g": 0.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": 42.0,
+          "acido_folico_mcg": 11.2,
+          "calcio_mg": null,
+          "hierro_mg": 0.3,
+          "potasio_mg": 213.5,
+          "sodio_mg": 8.5,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-221",
+      "metadata": {
+        "nombre": "Toronjas en almíbar",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "taza",
+        "peso_bruto_g": 127,
+        "peso_neto_g": 127
+      },
+      "nutrientes": {
+        "energia_kcal": 76,
+        "macros": {
+          "proteina_g": 0.7,
+          "lipidos_g": 0.2,
+          "hidratos_g": 19.6,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 19.1,
+          "fibra_g": 0.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": null,
+          "acido_ascorbico_mg": 27.0,
+          "acido_folico_mcg": 11.5,
+          "calcio_mg": null,
+          "hierro_mg": 0.5,
+          "potasio_mg": 164.0,
+          "sodio_mg": 2.5,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-222",
+      "metadata": {
+        "nombre": "Tuna",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "2",
+        "unidad": "pieza",
+        "peso_bruto_g": 250,
+        "peso_neto_g": 138
+      },
+      "nutrientes": {
+        "energia_kcal": 56,
+        "macros": {
+          "proteina_g": 1.0,
+          "lipidos_g": 0.7,
+          "hidratos_g": 13.2,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 5.0,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 6.9,
+          "acido_ascorbico_mg": 19.3,
+          "acido_folico_mcg": null,
+          "calcio_mg": 77.0,
+          "hierro_mg": 0.4,
+          "potasio_mg": 302.5,
+          "sodio_mg": 6.9,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-223",
+      "metadata": {
+        "nombre": "Tuna Cardona",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "2",
+        "unidad": "pieza",
+        "peso_bruto_g": 250,
+        "peso_neto_g": 138
+      },
+      "nutrientes": {
+        "energia_kcal": 56,
+        "macros": {
+          "proteina_g": 1.0,
+          "lipidos_g": 0.7,
+          "hidratos_g": 13.2,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 5.0,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 6.9,
+          "acido_ascorbico_mg": 30.3,
+          "acido_folico_mcg": null,
+          "calcio_mg": 67.4,
+          "hierro_mg": 3.6,
+          "potasio_mg": 302.5,
+          "sodio_mg": 6.9,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-224",
+      "metadata": {
+        "nombre": "Tuna picada",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "taza",
+        "peso_bruto_g": 150,
+        "peso_neto_g": 150
+      },
+      "nutrientes": {
+        "energia_kcal": 62,
+        "macros": {
+          "proteina_g": 1.1,
+          "lipidos_g": 0.8,
+          "hidratos_g": 14.4,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 5.4,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 7.5,
+          "acido_ascorbico_mg": 21.0,
+          "acido_folico_mcg": null,
+          "calcio_mg": 84.0,
+          "hierro_mg": 0.5,
+          "potasio_mg": 330.0,
+          "sodio_mg": 7.5,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-225",
+      "metadata": {
+        "nombre": "Tuna roja",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "2",
+        "unidad": "pieza",
+        "peso_bruto_g": 250,
+        "peso_neto_g": 138
+      },
+      "nutrientes": {
+        "energia_kcal": 56,
+        "macros": {
+          "proteina_g": 1.0,
+          "lipidos_g": 0.7,
+          "hidratos_g": 13.2,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 5.0,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 6.9,
+          "acido_ascorbico_mg": 30.3,
+          "acido_folico_mcg": null,
+          "calcio_mg": 67.4,
+          "hierro_mg": 3.6,
+          "potasio_mg": 302.5,
+          "sodio_mg": 6.9,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-226",
+      "metadata": {
+        "nombre": "Uva",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "18",
+        "unidad": "pieza",
+        "peso_bruto_g": 126,
+        "peso_neto_g": 86
+      },
+      "nutrientes": {
+        "energia_kcal": 61,
+        "macros": {
+          "proteina_g": 0.6,
+          "lipidos_g": 0.5,
+          "hidratos_g": 15.3,
+          "ag_saturados_g": 0.2,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 1.1,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 1.7,
+          "acido_ascorbico_mg": 9.4,
+          "acido_folico_mcg": 3.4,
+          "calcio_mg": 9.4,
+          "hierro_mg": 0.2,
+          "potasio_mg": 158.5,
+          "sodio_mg": 1.7,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": 43.0,
+        "carga_glucemica": 6.6
+      }
+    },
+    {
+      "id": "frut-227",
+      "metadata": {
+        "nombre": "Uva blanca",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "taza",
+        "peso_bruto_g": 92,
+        "peso_neto_g": 87
+      },
+      "nutrientes": {
+        "energia_kcal": 59,
+        "macros": {
+          "proteina_g": 0.6,
+          "lipidos_g": 0.3,
+          "hidratos_g": 15.0,
+          "ag_saturados_g": 0.1,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 14.3,
+          "fibra_g": 0.8,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 8.6,
+          "acido_ascorbico_mg": 3.8,
+          "acido_folico_mcg": 3.8,
+          "calcio_mg": 12.4,
+          "hierro_mg": 0.3,
+          "potasio_mg": 167.2,
+          "sodio_mg": 1.9,
+          "fosforo_mg": 8.6
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-228",
+      "metadata": {
+        "nombre": "Uva con semilla",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "taza",
+        "peso_bruto_g": 120,
+        "peso_neto_g": 114
+      },
+      "nutrientes": {
+        "energia_kcal": 76,
+        "macros": {
+          "proteina_g": 0.7,
+          "lipidos_g": 0.4,
+          "hidratos_g": 19.6,
+          "ag_saturados_g": 0.1,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 18.7,
+          "fibra_g": 1.0,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 7.8,
+          "acido_ascorbico_mg": 12.1,
+          "acido_folico_mcg": 4.3,
+          "calcio_mg": 12.8,
+          "hierro_mg": 0.3,
+          "potasio_mg": 210.9,
+          "sodio_mg": 2.1,
+          "fosforo_mg": 15.0
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-229",
+      "metadata": {
+        "nombre": "Uva roja",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "taza",
+        "peso_bruto_g": 120,
+        "peso_neto_g": 114
+      },
+      "nutrientes": {
+        "energia_kcal": 76,
+        "macros": {
+          "proteina_g": 0.7,
+          "lipidos_g": 0.4,
+          "hidratos_g": 19.6,
+          "ag_saturados_g": 0.1,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 18.7,
+          "fibra_g": 1.0,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 7.8,
+          "acido_ascorbico_mg": 12.1,
+          "acido_folico_mcg": 4.3,
+          "calcio_mg": 12.8,
+          "hierro_mg": 0.3,
+          "potasio_mg": 210.9,
+          "sodio_mg": 2.1,
+          "fosforo_mg": 15.0
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-230",
+      "metadata": {
+        "nombre": "Uva sin semilla",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "taza",
+        "peso_bruto_g": 92,
+        "peso_neto_g": 87
+      },
+      "nutrientes": {
+        "energia_kcal": 55,
+        "macros": {
+          "proteina_g": 0.6,
+          "lipidos_g": 0.3,
+          "hidratos_g": 15.0,
+          "ag_saturados_g": 0.1,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 14.3,
+          "fibra_g": 0.9,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 8.6,
+          "acido_ascorbico_mg": 3.8,
+          "acido_folico_mcg": 3.8,
+          "calcio_mg": 12.4,
+          "hierro_mg": 0.3,
+          "potasio_mg": 167.2,
+          "sodio_mg": 1.9,
+          "fosforo_mg": 8.6
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-231",
+      "metadata": {
+        "nombre": "Uva verde",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "taza",
+        "peso_bruto_g": 92,
+        "peso_neto_g": 87
+      },
+      "nutrientes": {
+        "energia_kcal": 55,
+        "macros": {
+          "proteina_g": 0.6,
+          "lipidos_g": 0.3,
+          "hidratos_g": 15.0,
+          "ag_saturados_g": 0.1,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 14.3,
+          "fibra_g": 0.9,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 8.6,
+          "acido_ascorbico_mg": 3.8,
+          "acido_folico_mcg": 3.8,
+          "calcio_mg": 12.4,
+          "hierro_mg": 0.3,
+          "potasio_mg": 167.2,
+          "sodio_mg": 1.9,
+          "fosforo_mg": 8.6
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-232",
+      "metadata": {
+        "nombre": "Uva verde sin semilla",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "taza",
+        "peso_bruto_g": 92,
+        "peso_neto_g": 87
+      },
+      "nutrientes": {
+        "energia_kcal": 55,
+        "macros": {
+          "proteina_g": 0.6,
+          "lipidos_g": 0.3,
+          "hidratos_g": 15.0,
+          "ag_saturados_g": 0.1,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 14.3,
+          "fibra_g": 0.9,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 8.6,
+          "acido_ascorbico_mg": 3.8,
+          "acido_folico_mcg": 3.8,
+          "calcio_mg": 12.4,
+          "hierro_mg": 0.3,
+          "potasio_mg": 167.2,
+          "sodio_mg": 1.9,
+          "fosforo_mg": 8.6
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-233",
+      "metadata": {
+        "nombre": "Uvas enlatadas en agua",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "taza",
+        "peso_bruto_g": 123,
+        "peso_neto_g": 123
+      },
+      "nutrientes": {
+        "energia_kcal": 49,
+        "macros": {
+          "proteina_g": 0.6,
+          "lipidos_g": 0.2,
+          "hidratos_g": 12.6,
+          "ag_saturados_g": 0.1,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 11.9,
+          "fibra_g": 0.8,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 2.5,
+          "acido_ascorbico_mg": 1.0,
+          "acido_folico_mcg": 3.7,
+          "calcio_mg": null,
+          "hierro_mg": 1.2,
+          "potasio_mg": 131.0,
+          "sodio_mg": 7.5,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": 28.0,
+        "carga_glucemica": 3.5
+      }
+    },
+    {
+      "id": "frut-234",
+      "metadata": {
+        "nombre": "Xocoyol",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "900",
+        "unidad": "gramos",
+        "peso_bruto_g": 900,
+        "peso_neto_g": 225
+      },
+      "nutrientes": {
+        "energia_kcal": 56,
+        "macros": {
+          "proteina_g": 0.5,
+          "lipidos_g": 0.2,
+          "hidratos_g": 14.9,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 2.9,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 873.0,
+          "acido_ascorbico_mg": 58.5,
+          "acido_folico_mcg": null,
+          "calcio_mg": 292.5,
+          "hierro_mg": 9.7,
+          "potasio_mg": null,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-235",
+      "metadata": {
+        "nombre": "Zapote",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/4",
+        "unidad": "pieza",
+        "peso_bruto_g": 56,
+        "peso_neto_g": 51
+      },
+      "nutrientes": {
+        "energia_kcal": 68,
+        "macros": {
+          "proteina_g": 1.1,
+          "lipidos_g": 0.3,
+          "hidratos_g": 17.1,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 1.3,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 20.7,
+          "acido_ascorbico_mg": 10.1,
+          "acido_folico_mcg": null,
+          "calcio_mg": 19.8,
+          "hierro_mg": 0.5,
+          "potasio_mg": 174.2,
+          "sodio_mg": 5.2,
+          "fosforo_mg": 14.2
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-236",
+      "metadata": {
+        "nombre": "Zapote amarillo",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "pieza",
+        "peso_bruto_g": 152,
+        "peso_neto_g": 94
+      },
+      "nutrientes": {
+        "energia_kcal": 74,
+        "macros": {
+          "proteina_g": 1.1,
+          "lipidos_g": 0.5,
+          "hidratos_g": 18.8,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 1.0,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 16.9,
+          "acido_ascorbico_mg": 55.4,
+          "acido_folico_mcg": null,
+          "calcio_mg": 31.9,
+          "hierro_mg": 2.0,
+          "potasio_mg": 44.1,
+          "sodio_mg": 14.1,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-237",
+      "metadata": {
+        "nombre": "Zapote blanco",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "pieza",
+        "peso_bruto_g": 152,
+        "peso_neto_g": 115
+      },
+      "nutrientes": {
+        "energia_kcal": 81,
+        "macros": {
+          "proteina_g": 2.0,
+          "lipidos_g": 0.8,
+          "hidratos_g": 18.5,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 1.4,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 8.1,
+          "acido_ascorbico_mg": 41.5,
+          "acido_folico_mcg": null,
+          "calcio_mg": 9.2,
+          "hierro_mg": 0.2,
+          "potasio_mg": null,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-238",
+      "metadata": {
+        "nombre": "Zapote borracho",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/4",
+        "unidad": "pieza",
+        "peso_bruto_g": 75,
+        "peso_neto_g": 45
+      },
+      "nutrientes": {
+        "energia_kcal": 63,
+        "macros": {
+          "proteina_g": 0.6,
+          "lipidos_g": 0.4,
+          "hidratos_g": 16.3,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 0.5,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 11.3,
+          "acido_ascorbico_mg": 18.0,
+          "acido_folico_mcg": null,
+          "calcio_mg": 16.2,
+          "hierro_mg": 0.3,
+          "potasio_mg": null,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-239",
+      "metadata": {
+        "nombre": "Zapote negro",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "pieza",
+        "peso_bruto_g": 150,
+        "peso_neto_g": 93
+      },
+      "nutrientes": {
+        "energia_kcal": 52,
+        "macros": {
+          "proteina_g": 0.7,
+          "lipidos_g": 0.1,
+          "hidratos_g": 13.5,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 1.1,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 9.3,
+          "acido_ascorbico_mg": 77.2,
+          "acido_folico_mcg": null,
+          "calcio_mg": 43.7,
+          "hierro_mg": 1.5,
+          "potasio_mg": null,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-240",
+      "metadata": {
+        "nombre": "Zapote negro limpio",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "taza",
+        "peso_bruto_g": 115,
+        "peso_neto_g": 115
+      },
+      "nutrientes": {
+        "energia_kcal": 64,
+        "macros": {
+          "proteina_g": 0.9,
+          "lipidos_g": 0.1,
+          "hidratos_g": 16.7,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.0,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 1.4,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 11.5,
+          "acido_ascorbico_mg": 95.5,
+          "acido_folico_mcg": null,
+          "calcio_mg": 54.1,
+          "hierro_mg": 1.8,
+          "potasio_mg": null,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-241",
+      "metadata": {
+        "nombre": "Zarzamora",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1",
+        "unidad": "taza",
+        "peso_bruto_g": 150,
+        "peso_neto_g": 144
+      },
+      "nutrientes": {
+        "energia_kcal": 75,
+        "macros": {
+          "proteina_g": 1.0,
+          "lipidos_g": 0.9,
+          "hidratos_g": 18.4,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.1,
+          "ag_poliinsaturados_g": 0.3,
+          "colesterol_mg": 0.0,
+          "azucar_g": null,
+          "fibra_g": 5.9,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 56.2,
+          "acido_ascorbico_mg": 30.2,
+          "acido_folico_mcg": null,
+          "calcio_mg": 46.1,
+          "hierro_mg": 0.7,
+          "potasio_mg": 282.2,
+          "sodio_mg": null,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-242",
+      "metadata": {
+        "nombre": "Zarzamora congelada sin azúcar",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/2",
+        "unidad": "taza",
+        "peso_bruto_g": 76,
+        "peso_neto_g": 76
+      },
+      "nutrientes": {
+        "energia_kcal": 49,
+        "macros": {
+          "proteina_g": 0.9,
+          "lipidos_g": 0.3,
+          "hidratos_g": 11.9,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.1,
+          "ag_poliinsaturados_g": 0.2,
+          "colesterol_mg": 0.0,
+          "azucar_g": 8.1,
+          "fibra_g": 3.8,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 4.5,
+          "acido_ascorbico_mg": 2.5,
+          "acido_folico_mcg": 25.7,
+          "calcio_mg": null,
+          "hierro_mg": 0.6,
+          "potasio_mg": 105.5,
+          "sodio_mg": 1.0,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
+    },
+    {
+      "id": "frut-243",
+      "metadata": {
+        "nombre": "Zarzamora en almíbar",
+        "grupo_smae": "frutas",
+        "fuente": "SMAE_5ed_2023",
+        "validado": false
+      },
+      "porcion": {
+        "cantidad_sugerida": "1/4",
+        "unidad": "taza",
+        "peso_bruto_g": 64,
+        "peso_neto_g": 64
+      },
+      "nutrientes": {
+        "energia_kcal": 59,
+        "macros": {
+          "proteina_g": 0.9,
+          "lipidos_g": 0.1,
+          "hidratos_g": 14.8,
+          "ag_saturados_g": 0.0,
+          "ag_monoinsaturados_g": 0.0,
+          "ag_poliinsaturados_g": 0.1,
+          "colesterol_mg": 0.0,
+          "azucar_g": 12.6,
+          "fibra_g": 2.2,
+          "etanol_g": 0.0
+        },
+        "micros": {
+          "vitamina_a_mcg_re": 7.0,
+          "acido_ascorbico_mg": 1.8,
+          "acido_folico_mcg": 17.3,
+          "calcio_mg": null,
+          "hierro_mg": 0.4,
+          "potasio_mg": 63.3,
+          "sodio_mg": 2.0,
+          "fosforo_mg": null
+        }
+      },
+      "indices": {
+        "glucemico": null,
+        "carga_glucemica": null
+      }
     }
   ]
 }

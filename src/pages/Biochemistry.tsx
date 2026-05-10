@@ -771,41 +771,46 @@ function SeccionRenal() {
             </div>
 
             {/* Tabla de estadios */}
-            <div className="mt-5 rounded-xl border border-[color:var(--color-border)] overflow-hidden">
-              <table className="w-full text-[12px]" aria-label="Tabla de estadios ERC">
-                <thead>
-                  <tr style={{ background: '#F2F2F7' }}>
-                    <th className="px-3 py-2.5 text-left font-semibold text-[color:var(--color-text-secondary)]">Estadio</th>
-                    <th className="px-3 py-2.5 text-left font-semibold text-[color:var(--color-text-secondary)]">TFG</th>
-                    <th className="px-3 py-2.5 text-left font-semibold text-[color:var(--color-text-secondary)] hidden sm:table-cell">Descripción</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    { estadio: 'G1',  rango: '≥90',   desc: 'Normal o alta' },
-                    { estadio: 'G2',  rango: '60–89', desc: 'Ligeramente disminuida' },
-                    { estadio: 'G3a', rango: '45–59', desc: 'Leve a moderadamente disminuida' },
-                    { estadio: 'G3b', rango: '30–44', desc: 'Moderada a severamente disminuida' },
-                    { estadio: 'G4',  rango: '15–29', desc: 'Severamente disminuida' },
-                    { estadio: 'G5',  rango: '<15',   desc: 'Falla renal' },
-                  ].map((row) => (
-                    <tr
-                      key={row.estadio}
-                      className="border-t border-[color:var(--color-border)]"
-                      style={{
-                        background: row.estadio === resCKD.estadio_erc
-                          ? COLOR_MAP[colorEstadioERC(resCKD.estadio_erc)].bg
-                          : 'white',
-                        fontWeight: row.estadio === resCKD.estadio_erc ? '600' : '400',
-                      }}
-                    >
-                      <td className="px-3 py-2.5 font-mono">{row.estadio}</td>
-                      <td className="px-3 py-2.5 font-mono">{row.rango}</td>
-                      <td className="px-3 py-2.5 hidden sm:table-cell text-[color:var(--color-text-secondary)]">{row.desc}</td>
+            <div className="mt-5 overflow-x-auto">
+              <div className="rounded-xl border border-[#E5E5EA] overflow-hidden">
+                <table className="w-full text-[12px]" aria-label="Tabla de estadios ERC">
+                  <thead>
+                    <tr className="bg-[#F2F2F7]">
+                      <th className="px-4 py-3 text-left text-[11px] font-semibold uppercase tracking-wider text-[#8E8E93]">Estadio</th>
+                      <th className="px-4 py-3 text-left text-[11px] font-semibold uppercase tracking-wider text-[#8E8E93]">TFG</th>
+                      <th className="px-4 py-3 text-left text-[11px] font-semibold uppercase tracking-wider text-[#8E8E93] hidden sm:table-cell">Descripción</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {[
+                      { estadio: 'G1',  rango: '≥90',   desc: 'Normal o alta' },
+                      { estadio: 'G2',  rango: '60–89', desc: 'Ligeramente disminuida' },
+                      { estadio: 'G3a', rango: '45–59', desc: 'Leve a moderadamente disminuida' },
+                      { estadio: 'G3b', rango: '30–44', desc: 'Moderada a severamente disminuida' },
+                      { estadio: 'G4',  rango: '15–29', desc: 'Severamente disminuida' },
+                      { estadio: 'G5',  rango: '<15',   desc: 'Falla renal' },
+                    ].map((row) => (
+                      <tr
+                        key={row.estadio}
+                        className="border-b border-[#F2F2F7] hover:bg-[#FAFAFA]"
+                        style={{
+                          background: row.estadio === resCKD.estadio_erc
+                            ? COLOR_MAP[colorEstadioERC(resCKD.estadio_erc)].bg
+                            : undefined,
+                          fontWeight: row.estadio === resCKD.estadio_erc ? '600' : '400',
+                        }}
+                      >
+                        <td className="px-4 py-2 text-[13px] text-[#000] font-mono">{row.estadio}</td>
+                        <td className="px-4 py-2 text-[13px] text-[#000] font-mono">{row.rango}</td>
+                        <td className="px-4 py-2 text-[13px] text-[#000] hidden sm:table-cell">
+                          {row.desc}
+                          <span className="block text-[12px] text-[#8E8E93]">mL/min/1.73m²</span>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </>
         )}

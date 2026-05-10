@@ -440,11 +440,12 @@ const TabDistribucion = ({
   const [tiempo_activo, setTiempoActivo] = useState<TiempoComida>('desayuno')
 
   // Grupos con presupuesto asignado — únicos relevantes
-  const grupos_activos = GRUPOS_SMAE_INFO.filter(
+  const grupos_con_presupuesto = GRUPOS_SMAE_INFO.filter(
     (g) => presupuesto[g.grupo] > 0 && g.grupo !== 'libres'
   )
 
-  if (grupos_activos.length === 0) {
+  // Sin presupuesto: estado vacío global
+  if (grupos_con_presupuesto.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center py-16 text-center">
         <div className="text-[40px] mb-3" aria-hidden="true">🫙</div>
@@ -452,7 +453,7 @@ const TabDistribucion = ({
           Sin presupuesto asignado
         </p>
         <p className="text-[13px] text-[#8E8E93] max-w-[260px]">
-          Ve a la pestaña Presupuesto y asigna equivalentes a los grupos SMAE.
+          Primero asigna equivalentes en la tab Presupuesto
         </p>
       </div>
     )
@@ -460,15 +461,19 @@ const TabDistribucion = ({
 
   return (
     <div className="space-y-4">
-      {/* Selector de tiempo — chips horizontales */}
+      {/* Chips de tiempo */}
       <div
         className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1"
         role="tablist"
         aria-label="Tiempos de comida"
       >
         {TIEMPOS_ORDENADOS.map((tiempo) => {
-          const info      = TIEMPOS_INFO[tiempo]
-          const activo    = tiempo === tiempo_activo
+          const info   = TIEMPOS_INFO[tiempo]
+          const activo = tiempo === tiempo_activo
+          // Badge: total de equivalentes asignados en ese tiempo
+          const total_en_tiempo = grupos_con_presupuesto.reduce(
+            (sum, g) => sum + (distribucion[tiempo][g.grupo] ?? 0), 0
+          )
           return (
             <button
               key={tiempo}
@@ -486,65 +491,139 @@ const TabDistribucion = ({
             >
               <span aria-hidden="true">{info.icono}</span>
               <span>{info.label}</span>
-              <span className={`text-[11px] ${activo ? 'text-white/80' : 'text-[#8E8E93]'}`}>
-                {info.pct}%
-              </span>
+              {total_en_tiempo > 0 && (
+                <span
+                  className={`
+                    text-[11px] font-semibold px-1.5 py-0.5 rounded-full tabular-nums
+                    ${activo ? 'bg-white/20 text-white' : 'bg-[#007AFF]/10 text-[#007AFF]'}
+                  `}
+                >
+                  {total_en_tiempo}
+                </span>
+              )}
             </button>
           )
         })}
       </div>
 
-      {/* Progreso global de distribución */}
+      {/* Tarjeta de distribución del tiempo activo */}
       <div className="bg-white rounded-2xl border border-[#E5E5EA] p-4 shadow-sm">
-        <p className="text-[12px] font-semibold text-[#8E8E93] uppercase tracking-[0.06em] mb-3">
-          Resumen de distribución — {TIEMPOS_INFO[tiempo_activo].label}
-        </p>
+        <div className="flex items-center justify-between mb-4">
+          <p className="text-[13px] font-semibold text-[#1C1C1E]">
+            {TIEMPOS_INFO[tiempo_activo].icono} {TIEMPOS_INFO[tiempo_activo].label}
+          </p>
+          <span className="text-[12px] text-[#8E8E93]">
+            Meta: {TIEMPOS_INFO[tiempo_activo].pct}% del total
+          </span>
+        </div>
 
-        <div className="space-y-3">
-          {grupos_activos.map(({ grupo, icono, nombre_corto, color }) => {
-            const saldo      = obtenerSaldo(grupo)
-            const en_tiempo  = distribucion[tiempo_activo][grupo] ?? 0
-            const pct_global = saldo.presupuesto > 0
+        <div className="space-y-4">
+          {grupos_con_presupuesto.map(({ grupo, icono, nombre_corto, color }) => {
+            const saldo        = obtenerSaldo(grupo)           // { distribuido, presupuesto }
+            const en_tiempo    = distribucion[tiempo_activo][grupo] ?? 0
+            // Disponible = lo que queda sin distribuir + lo ya puesto en este tiempo
+            const disponible   = (saldo.presupuesto - saldo.distribuido) + en_tiempo
+            // Barra: porcentaje que representa este tiempo sobre el presupuesto total del grupo
+            const pct_tiempo   = saldo.presupuesto > 0
+              ? Math.round((en_tiempo / saldo.presupuesto) * 100)
+              : 0
+            // Porcentaje global del grupo (cuánto del presupuesto total ya se distribuyó)
+            const pct_global   = saldo.presupuesto > 0
               ? Math.round((saldo.distribuido / saldo.presupuesto) * 100)
               : 0
 
             return (
               <div key={grupo}>
-                <div className="flex items-center justify-between mb-1">
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-[14px]" aria-hidden="true">{icono}</span>
-                    <span className="text-[13px] font-medium text-[#1C1C1E]">{nombre_corto}</span>
+                {/* Nombre + saldo disponible + stepper */}
+                <div className="flex items-center justify-between mb-2">
+                  <div className="flex items-center gap-1.5 min-w-0">
+                    <span className="text-[15px] flex-shrink-0" aria-hidden="true">{icono}</span>
+                    <span className="text-[13px] font-medium text-[#1C1C1E] truncate">{nombre_corto}</span>
                   </div>
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-2 flex-shrink-0">
+                    {/* Saldo disponible para poner en cualquier tiempo */}
                     <span className="text-[12px] text-[#8E8E93] tabular-nums">
-                      {saldo.distribuido}/{saldo.presupuesto}
+                      {disponible > 0
+                        ? `${disponible} disponible${disponible !== 1 ? 's' : ''}`
+                        : 'sin saldo'
+                      }
                     </span>
                     <Stepper
                       valor={en_tiempo}
                       onIncrement={() => onIncrementar(tiempo_activo, grupo)}
                       onDecrement={() => onDecrementar(tiempo_activo, grupo)}
-                      max={saldo.presupuesto}
+                      max={saldo.presupuesto}   // el hook bloquea si no hay saldo real
                     />
                   </div>
                 </div>
 
-                {/* Barra de progreso del grupo */}
-                <div className="h-[5px] bg-[#F2F2F7] rounded-full overflow-hidden">
+                {/* Barra segmentada: porción en este tiempo (color vivo) + resto distribuido (gris claro) */}
+                <div className="relative h-[6px] bg-[#F2F2F7] rounded-full overflow-hidden">
+                  {/* Resto distribuido en otros tiempos */}
                   <div
-                    className="h-full rounded-full transition-[width] duration-300"
+                    className="absolute left-0 top-0 h-full rounded-full opacity-30"
                     style={{
-                      width:           `${Math.min(pct_global, 100)}%`,
-                      backgroundColor: pct_global > 100 ? '#FF3B30' : color,
+                      width: `${Math.min(pct_global, 100)}%`,
+                      backgroundColor: color,
+                    }}
+                  />
+                  {/* Porción en este tiempo (encima, opaco) */}
+                  <div
+                    className="absolute left-0 top-0 h-full rounded-full transition-[width] duration-300"
+                    style={{
+                      width: `${Math.min(pct_tiempo, 100)}%`,
+                      backgroundColor: en_tiempo > 0 ? color : 'transparent',
                     }}
                   />
                 </div>
 
-                {/* Bloqueo visual si se excede */}
-                {pct_global > 100 && (
-                  <p className="text-[11px] text-[#FF3B30] font-medium mt-0.5" role="alert">
-                    ⚠ Excede el presupuesto del día
-                  </p>
-                )}
+                {/* Etiqueta de estado */}
+                <div className="flex items-center justify-between mt-1">
+                  <span className="text-[11px] text-[#8E8E93] tabular-nums">
+                    {en_tiempo} de {saldo.presupuesto} equiv. en este tiempo
+                  </span>
+                  {pct_global > 100 && (
+                    <span className="text-[11px] text-[#FF3B30] font-medium" role="alert">
+                      ⚠ Excede el presupuesto
+                    </span>
+                  )}
+                  {pct_global === 100 && (
+                    <span className="text-[11px] text-[#34C759] font-medium">
+                      ✓ Distribuido completo
+                    </span>
+                  )}
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+
+      {/* Resumen global — mini chips por grupo */}
+      <div className="bg-white rounded-2xl border border-[#E5E5EA] px-4 py-3 shadow-sm">
+        <p className="text-[11px] font-semibold text-[#8E8E93] uppercase tracking-[0.07em] mb-3">
+          Saldo restante del día
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {grupos_con_presupuesto.map(({ grupo, icono, nombre_corto, color }) => {
+            const saldo      = obtenerSaldo(grupo)
+            const restante   = saldo.presupuesto - saldo.distribuido
+            const completo   = restante === 0
+            return (
+              <div
+                key={grupo}
+                className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full border text-[12px] font-medium tabular-nums"
+                style={{
+                  borderColor: completo ? '#34C759' : color + '40',
+                  background:  completo ? '#F0FBF3' : color + '10',
+                  color:       completo ? '#1B7A34' : '#1C1C1E',
+                }}
+              >
+                <span aria-hidden="true">{icono}</span>
+                <span>{nombre_corto}</span>
+                <span className="font-semibold" style={{ color: completo ? '#1B7A34' : color }}>
+                  {restante}/{saldo.presupuesto}
+                </span>
               </div>
             )
           })}

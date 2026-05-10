@@ -63,7 +63,7 @@ const GRUPOS_NAV: NavGroup[] = [
     titulo: 'Planificación',
     items: [
       { label: 'Planeador SMAE', ruta: '/planeador',  icono: <LayoutGrid size={16} /> },
-      { label: 'Adecuación',     ruta: '/adecuacion', icono: <CheckCircle size={16} /> },
+      { label: 'Evaluación 24h', ruta: '/adecuacion', icono: <CheckCircle size={16} /> },
     ],
   },
 ]
