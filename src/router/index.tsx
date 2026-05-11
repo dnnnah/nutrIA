@@ -8,8 +8,11 @@
  *   ├── calculadora               → Calculator
  *   ├── antropometria             → Anthropometry
  *   ├── laboratorios              → Biochemistry
+ *   ├── diabetes                  → Diabetes
+ *   ├── renal                     → Renal
+ *   ├── obesidad-cardiovascular   → ObesidadCardiovascular
+ *   ├── hidratacion               → Hidratacion          ← NUEVO
  *   ├── mets                      → Mets
- *   ├── obesidad-cardiovascular   → ObesidadCardiovascular  ← NUEVO
  *   ├── planeador                 → Planner
  *   ├── adecuacion                → Adequacy
  *   ├── referencias               → References
@@ -29,6 +32,8 @@ import Biochemistry           from '../pages/Biochemistry'
 import Diabetes               from '../pages/Diabetes'
 import Renal                  from '../pages/Renal'
 import ObesidadCardiovascular from '../pages/ObesidadCardiovascular'
+import Hidratacion            from '../pages/Hidratacion'
+import Embarazo               from '../pages/Embarazo'
 import Mets                   from '../pages/Mets'
 import Planner                from '../pages/Planner'
 import Adequacy               from '../pages/Adequacy'
@@ -49,6 +54,8 @@ const router = createBrowserRouter([
       { path: 'diabetes',                         element: <Diabetes /> },
       { path: 'renal',                            element: <Renal /> },
       { path: 'obesidad-cardiovascular',          element: <ObesidadCardiovascular /> },
+      { path: 'hidratacion',                      element: <Hidratacion /> },
+      { path: 'embarazo',                         element: <Embarazo /> },
       { path: 'mets',                             element: <Mets /> },
       { path: 'planeador',                        element: <Planner /> },
       { path: 'adecuacion',                       element: <Adequacy /> },

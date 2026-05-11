@@ -26,8 +26,10 @@ import {
   Activity,
   ChevronRight,
   Heart,
+  Droplet,
   Droplets,
   HeartPulse,
+  Baby,
 } from 'lucide-react'
 
 // ─── Tipos ───────────────────────────────────────────────────────────────────
@@ -62,6 +64,8 @@ const GRUPOS_NAV: NavGroup[] = [
       { label: 'Diabetes / SM',   ruta: '/diabetes',                icono: <HeartPulse   size={16} /> },
       { label: 'Nutrición Renal', ruta: '/renal',                   icono: <Droplets     size={16} /> },
       { label: 'Obesidad / CV',   ruta: '/obesidad-cardiovascular', icono: <Heart        size={16} /> },
+      { label: 'Hidratación',     ruta: '/hidratacion',             icono: <Droplet      size={16} /> },
+      { label: 'Embarazo / Lactancia ',     ruta: '/embarazo',             icono: <Baby      size={16} /> },
       { label: 'METs',            ruta: '/mets',                    icono: <Zap          size={16} /> },
     ],
   },
