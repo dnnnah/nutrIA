@@ -30,6 +30,7 @@ import {
   Droplets,
   HeartPulse,
   Baby,
+  //HeartHandshake,
 } from 'lucide-react'
 
 // ─── Tipos ───────────────────────────────────────────────────────────────────
@@ -65,7 +66,8 @@ const GRUPOS_NAV: NavGroup[] = [
       { label: 'Nutrición Renal', ruta: '/renal',                   icono: <Droplets     size={16} /> },
       { label: 'Obesidad / CV',   ruta: '/obesidad-cardiovascular', icono: <Heart        size={16} /> },
       { label: 'Hidratación',     ruta: '/hidratacion',             icono: <Droplet      size={16} /> },
-      { label: 'Embarazo / Lactancia ',     ruta: '/embarazo',             icono: <Baby      size={16} /> },
+      { label: 'Embarazo / Lactancia ',  ruta: '/embarazo',         icono: <Baby      size={16} /> },
+      //{ label: 'Pediatría',       ruta: '/embarazo',                icono: <HeartHandshake         size={16} /> },
       { label: 'METs',            ruta: '/mets',                    icono: <Zap          size={16} /> },
     ],
   },

@@ -34,6 +34,7 @@ import Renal                  from '../pages/Renal'
 import ObesidadCardiovascular from '../pages/ObesidadCardiovascular'
 import Hidratacion            from '../pages/Hidratacion'
 import Embarazo               from '../pages/Embarazo'
+// import Pediatria               from '../pages/Pediatria'
 import Mets                   from '../pages/Mets'
 import Planner                from '../pages/Planner'
 import Adequacy               from '../pages/Adequacy'
@@ -56,6 +57,7 @@ const router = createBrowserRouter([
       { path: 'obesidad-cardiovascular',          element: <ObesidadCardiovascular /> },
       { path: 'hidratacion',                      element: <Hidratacion /> },
       { path: 'embarazo',                         element: <Embarazo /> },
+      //{ path: 'pediatria',                         element: <Pediatria /> },
       { path: 'mets',                             element: <Mets /> },
       { path: 'planeador',                        element: <Planner /> },
       { path: 'adecuacion',                       element: <Adequacy /> },

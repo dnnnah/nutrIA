@@ -18,6 +18,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import { LayoutGrid, Plus, Search, X, Utensils, BarChart3, Grid3x3, ClipboardList } from 'lucide-react'
 
+ import { buscarAlimentos } from '../utils/smae.utils'
+
 import { useSMAEPlanner } from '../hooks/useSMAEPlanner'
 import { useUIStore } from '../stores/ui.store'
 import { GRUPOS_SMAE_INFO, GRUPO_INFO_MAP, MACROS_POR_EQUIVALENTE } from '../constants/smae.constants'
@@ -34,7 +36,7 @@ import type { AlimentoSMAE } from '../types/food.types'
 // ---------------------------------------------------------------------------
 
 // Placeholder tipado — reemplazar con import real cuando resolveJsonModule esté activo
-const ALIMENTOS_SMAE: AlimentoSMAE[] = []
+// const ALIMENTOS_SMAE: AlimentoSMAE[] = []
 
 // ===========================================================================
 // CONSTANTES UI
@@ -721,12 +723,7 @@ const TabAlimentos = ({
     const grupo_efectivo = grupo_filtro ?? grupos_en_tiempo[0]?.grupo
     if (!grupo_efectivo) return []
 
-    return ALIMENTOS_SMAE.filter((a) => {
-      const coincide_grupo  = a.grupo_smae === grupo_efectivo
-      const coincide_buscar = busqueda.trim() === '' ||
-        a.nombre.toLowerCase().includes(busqueda.toLowerCase())
-      return coincide_grupo && coincide_buscar
-    })
+    return buscarAlimentos(busqueda, grupo_efectivo)
   }, [grupo_filtro, grupos_en_tiempo, busqueda])
 
   const grupo_activo_efectivo = grupo_filtro ?? grupos_en_tiempo[0]?.grupo
